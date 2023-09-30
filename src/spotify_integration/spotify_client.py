@@ -1,10 +1,9 @@
 import requests
 
 from settings.settings import Settings
+from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 class SpotifyClient:
-    __GENERATE_CLIENT_TOKEN_URL = "https://accounts.spotify.com/api/token"
-    __PRIVATE_CLIENT_TOKEN_URL = "https://clienttoken.spotify.com/v1/clienttoken"
     __DEFAULT_TIMEOUT = 1
 
     def generate_client_token(self):
@@ -20,7 +19,7 @@ class SpotifyClient:
 
         try:
             response = requests.post(
-                self.__GENERATE_CLIENT_TOKEN_URL,
+                SpotifyEndpoints.GENERATE_CLIENT_TOKEN_URL,
                 data=payload,
                 headers=headers,
                 timeout=self.__DEFAULT_TIMEOUT
@@ -51,7 +50,7 @@ class SpotifyClient:
 
         try:
             response = requests.post(
-                self.__PRIVATE_CLIENT_TOKEN_URL,
+                SpotifyEndpoints.PRIVATE_CLIENT_TOKEN_URL,
                 json=payload,
                 headers=headers,
                 timeout=self.__DEFAULT_TIMEOUT
