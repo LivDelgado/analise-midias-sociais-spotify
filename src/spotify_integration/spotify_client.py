@@ -1,10 +1,25 @@
 import requests
 
+from typing import Dict
+
 from settings.settings import Settings
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 class SpotifyClient:
     __DEFAULT_TIMEOUT = 1
+
+    def __init__(self) -> None:
+        self.client_token = self.generate_client_token()
+        self.private_client_token = self.generate_private_client_token()
+
+        self.base_header = {
+            "Authorization": f"Bearer {self.client_token}"
+        }
+
+        self.private_header = {
+            **self.base_header,
+            "Client-Token": self.private_client_token,
+        }
 
     def generate_client_token(self):
         payload = {
@@ -68,3 +83,22 @@ class SpotifyClient:
 
         return None
 
+    def get_playlist_items(self, playlist_id: str):
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.PLAYLIST_ITEMS.replace("{playlist_id}", playlist_id)
+        headers = self.base_header
+
+        return self.__make_get_request(url=url, headers=headers)
+
+    def __make_get_request(self, *, url: str, headers: Dict):
+        should_retry = True
+        while should_retry:
+            try:
+                response = requests.get(url=url, headers=headers, timeout=self.__DEFAULT_TIMEOUT)
+                response.raise_for_status()
+
+                return response.json()
+            except requests.HTTPError as error:
+                if error.response.status_code not in [401, 403]:
+                    should_retry = False
+        
+        return None
