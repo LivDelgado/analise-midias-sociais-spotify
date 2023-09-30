@@ -2,10 +2,10 @@ import requests
 
 from settings.settings import Settings
 
-
 class SpotifyClient:
     __GENERATE_CLIENT_TOKEN_URL = "https://accounts.spotify.com/api/token"
     __PRIVATE_CLIENT_TOKEN_URL = "https://clienttoken.spotify.com/v1/clienttoken"
+    __DEFAULT_TIMEOUT = 1
 
     def generate_client_token(self):
         payload = {
@@ -23,11 +23,12 @@ class SpotifyClient:
                 self.__GENERATE_CLIENT_TOKEN_URL,
                 data=payload,
                 headers=headers,
-                timeout=0.001
+                timeout=self.__DEFAULT_TIMEOUT
             )
 
             response.raise_for_status()
-        except requests.HTTPError:
+        except requests.HTTPError as error:
+            print(error)
             return None
 
         response_json = response.json()
@@ -38,24 +39,27 @@ class SpotifyClient:
         payload = {
             "client_data": {
                 "client_id": Settings.SPOTIFY_GENERIC_CLIENT_ID,
-                "js_sdk_data": {}
+                "js_sdk_data": {"device_model": "unknown"}
             }
         }
 
         headers = {
-            "Accept": "application/json"
+            "Accept": "application/json",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Content-Type": "application/json"
         }
 
         try:
             response = requests.post(
                 self.__PRIVATE_CLIENT_TOKEN_URL,
-                data=payload,
+                json=payload,
                 headers=headers,
-                timeout=0.001
+                timeout=self.__DEFAULT_TIMEOUT
             )
 
             response.raise_for_status()
-        except requests.HTTPError:
+        except requests.HTTPError as error:
+            print(error)
             return None
 
         response_json = response.json()
