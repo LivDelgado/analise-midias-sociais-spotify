@@ -7,6 +7,7 @@ from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 class SpotifyClient:
     __DEFAULT_TIMEOUT = 1
+    __MAX_RETRIES = 4
 
     def __init__(self) -> None:
         self.client_token = self.generate_client_token()
@@ -88,17 +89,22 @@ class SpotifyClient:
         headers = self.base_header
 
         return self.__make_get_request(url=url, headers=headers)
-
+    
     def __make_get_request(self, *, url: str, headers: Dict):
         should_retry = True
-        while should_retry:
+        retry_attempts = 0
+        
+        while should_retry and retry_attempts < self.__MAX_RETRIES:
             try:
                 response = requests.get(url=url, headers=headers, timeout=self.__DEFAULT_TIMEOUT)
                 response.raise_for_status()
 
                 return response.json()
             except requests.HTTPError as error:
+                print(error)
                 if error.response.status_code not in [401, 403]:
                     should_retry = False
+                    break
+                retry_attempts += 1
         
         return None
