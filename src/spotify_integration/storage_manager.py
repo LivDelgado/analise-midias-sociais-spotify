@@ -15,6 +15,8 @@ class StorageManager:
         self.credits_df = pd.DataFrame()
         self.lyrics_df = pd.DataFrame()
 
+        self.albums_artists_df = pd.DataFrame()
+
     def save_artists(self, artists):
         for artist in artists:
             del artist["images"]
@@ -23,12 +25,28 @@ class StorageManager:
         self.artists_df = pd.concat([self.artists_df, new_artists], ignore_index=True)
 
     def save_albums(self, albums):
+        albums_artists_list = []
+
         for album in albums:
+            artists = album.get("artists")
+            for artist in artists:
+                album_artist = {
+                    "album_id": album.get("id"),
+                    "artist_id": artist.get("id"),
+                    "artist_name": artist.get("name"),
+                    "artist_type": artist.get("type"),
+                }
+
+                albums_artists_list.append(album_artist)
+
             del album["images"]
             del album["artists"]
-
+        
         new_albums = pd.DataFrame.from_dict(albums)
         self.albums_df = pd.concat([self.albums_df, new_albums], ignore_index=True)
+
+        new_albums_artists = pd.DataFrame.from_dict(albums_artists_list)
+        self.albums_artists_df = pd.concat([self.albums_artists_df, new_albums_artists], ignore_index=True)
 
     def save_songs(self, songs):
         for song in songs:
@@ -84,4 +102,6 @@ class StorageManager:
         self.songs_df.drop_duplicates(subset=['id'], inplace=True)
         self.credits_df.drop_duplicates(subset=['trackUri', 'artist_uri', 'artist_creator_uri'], inplace=True)
         self.lyrics_df.drop_duplicates(subset=['trackUri'], inplace=True)
+        
+        self.albums_artists_df.drop_duplicates(subset=['album_id', "artist_id"], inplace=True)
         

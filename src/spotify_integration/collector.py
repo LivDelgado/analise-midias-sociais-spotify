@@ -15,11 +15,11 @@ class Collector:
     def collect_data(self):
         start_time = time.time()
         print("Coletando artistas")
-        artists = set(self.get_artists(artist_name="Beyonce", offset=0, limit=1))
+        artists = self.get_artists(artist_name="Beyonce", offset=0, limit=1)
 
         for artist in artists:
             print("Coletando albums")
-            albums = set(self.get_albums(artist_id=artist.get("id"), offset=0, limit=50))
+            albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=50)
 
             tracks = []
             tracks_credits = []
