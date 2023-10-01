@@ -16,6 +16,7 @@ class StorageManager:
         self.lyrics_df = pd.DataFrame()
 
         self.albums_artists_df = pd.DataFrame()
+        self.songs_artists_df = pd.DataFrame()
 
     def save_artists(self, artists):
         for artist in artists:
@@ -49,11 +50,28 @@ class StorageManager:
         self.albums_artists_df = pd.concat([self.albums_artists_df, new_albums_artists], ignore_index=True)
 
     def save_songs(self, songs):
+        songs_artists_list = []
+
         for song in songs:
+            artists = song.get("artists")
+            for artist in artists:
+                song_artist = {
+                    "track_id": song.get("id"),
+                    "artist_id": artist.get("id"),
+                    "artist_name": artist.get("name"),
+                    "artist_type": artist.get("type"),
+                }
+
+                songs_artists_list.append(song_artist)
+
             del song["artists"]
 
         new_songs = pd.DataFrame.from_dict(songs)
         self.songs_df = pd.concat([self.songs_df, new_songs], ignore_index=True)
+
+        new_songs_artists = pd.DataFrame.from_dict(songs_artists_list)
+        self.songs_artists_df = pd.concat([self.songs_artists_df, new_songs_artists], ignore_index=True)
+
 
     def save_credits(self, credits):
         track_credits_flatten_list = []
@@ -93,6 +111,8 @@ class StorageManager:
                 self.songs_df.to_excel(writer, sheet_name='songs')
                 self.credits_df.to_excel(writer, sheet_name='credits')
                 self.lyrics_df.to_excel(writer, sheet_name='lyrics')
+                self.albums_artists_df.to_excel(writer, sheet_name='albums_artists')
+                self.songs_artists_df.to_excel(writer, sheet_name='songs_artists')
         except Exception as error:
             print(error)
 
@@ -104,4 +124,5 @@ class StorageManager:
         self.lyrics_df.drop_duplicates(subset=['trackUri'], inplace=True)
         
         self.albums_artists_df.drop_duplicates(subset=['album_id', "artist_id"], inplace=True)
+        self.songs_artists_df.drop_duplicates(subset=['track_id', "artist_id"], inplace=True)
         
