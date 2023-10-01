@@ -1,16 +1,5 @@
-import os
-import json
-try:
-    import requests
-    import random
-    import httpx
-    import datetime
-
-except ModuleNotFoundError:
-    os.system("pip install requests")
-    os.system("pip install random")
-    os.system("pip install httpx")
-    os.system("pip install datetime")
+import httpx
+import requests
 
 from datetime import datetime
 
