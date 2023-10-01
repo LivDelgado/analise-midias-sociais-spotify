@@ -4,18 +4,27 @@ import requests
 from datetime import datetime
 
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
+from spotify_integration.base_client import BaseClient
 
-class SpotifyPublicClient:
+class SpotifyPublicClient(BaseClient):
     def __init__(self) -> None:
+        self._reset_auth_token()
+
+    def _reset_auth_token(self):
         self.client_id, self.auth = self.get_auth()
         self.session = self.get_session()
         self.token = self.get_client_token()
         self.csrf = self.get_csrf()
 
+        self.base_header = {
+            "Accept": "application/json",
+            "Authorization": "Bearer " + self.auth,
+            "Client-Token": self.token,
+        }
+
     def get_current_time(self):
         current_time = datetime.now().strftime("%H:%M:%S")
         return current_time
-
 
     def get_session(self):
         headers = {
@@ -23,7 +32,6 @@ class SpotifyPublicClient:
         }
         session = httpx.Client(headers=headers, timeout=3600)
         return session
-
 
     def get_client_token(self):
         payload = {
@@ -104,7 +112,18 @@ class SpotifyPublicClient:
         } 
         current_time = self.get_current_time()
         response = self.session.get(url=SpotifyEndpoints.CSRF_URL, headers=headers)
+
         if response.status_code == 200:
             return response.text.split("csrfToken")[1].split('"')[2]
         else:
             pass
+
+    def get_lyrics(self, track_id: str):
+        headers = {
+            **self.base_header,
+            "App-Platform": "WebPlayer"
+        }
+
+        url = SpotifyEndpoints.PLAYER_BASE_URL + SpotifyEndpoints.LYRICS.replace("{track_id}", track_id)
+
+        return self._make_get_request(url=url, headers=headers)
