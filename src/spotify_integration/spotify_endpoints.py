@@ -6,6 +6,8 @@ class SpotifyEndpoints:
     CSRF_URL = "https://www.spotify.com/us/signup"
     PLAYER_BASE_URL = "https://spclient.wg.spotify.com/"
 
+    CREDITS_URL = "https://spclient.wg.spotify.com/track-credits-view/v0/experimental/{track_id}/credits"
+
     SEARCH = "search"
     PLAYLIST_ITEMS = "playlists/{playlist_id}/tracks"
     ARTIST_ALBUMS = "artists/{artist_id}/albums"
