@@ -61,11 +61,23 @@ class SpotifyClient:
 
         return self.__make_get_request(url=url, headers=headers)
     
-    # TODO - ver se tem opção de paginação
-    def find_artist(self, artist_name): 
-        query = f"?q={artist_name}&type=artist&limit=50&offset=50"
+    def find_artist(self, artist_name, offset, limit=50): 
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.SEARCH
+        query = f"?q={artist_name}&type=artist&limit={limit}&offset={offset}&market=BR"
 
-        return self.__make_get_request(url=SpotifyEndpoints.SEARCH + query, headers=self.base_header)
+        return self.__make_get_request(url=url + query, headers=self.base_header)
+    
+    def get_artist_albums(self, artist_id, offset, limit=50):
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ARTIST_ALBUMS.replace("{artist_id}", artist_id)
+        query = f"?market=BR&limit={limit}&offset={offset}"
+
+        return self.__make_get_request(url=url + query, headers=self.base_header)
+    
+    def get_albums_tracks(self, album_id, offset, limit=50):
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ALBUM_TRACKS.replace("{album_id}", album_id)
+        query = f"?market=BR&limit={limit}&offset={offset}"
+
+        return self.__make_get_request(url=url + query, headers=self.base_header)
 
     def __make_get_request(self, *, url: str, headers: Dict):
         should_retry = True
