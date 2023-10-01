@@ -27,7 +27,7 @@ class BaseClient:
                     should_retry = False
                     break
                 else:
-                    self.reset_auth_token()
+                    self._reset_auth_token()
                     retry_attempts = 0
 
                 retry_attempts += 1
