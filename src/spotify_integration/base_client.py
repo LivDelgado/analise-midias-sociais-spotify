@@ -1,4 +1,5 @@
 import requests 
+import time
 
 from abc import ABC, abstractmethod
 from typing import Dict
@@ -12,10 +13,9 @@ class BaseClient:
         pass
 
     def _make_get_request(self, *, url: str, headers: Dict):
-        should_retry = True
         retry_attempts = 0
         
-        while should_retry and retry_attempts < self.__MAX_RETRIES:
+        while retry_attempts < self.__MAX_RETRIES:
             try:
                 response = requests.get(url=url, headers=headers, timeout=self._DEFAULT_TIMEOUT)
                 response.raise_for_status()
@@ -24,7 +24,7 @@ class BaseClient:
             except requests.HTTPError as error:
                 print(error)
                 if error.response.status_code not in [401, 403]:
-                    should_retry = False
+                    time.sleep(1)
                     break
                 else:
                     self._reset_auth_token()
