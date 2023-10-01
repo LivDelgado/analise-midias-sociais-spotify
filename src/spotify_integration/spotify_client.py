@@ -1,10 +1,15 @@
+import os
+import json
+import base64
 import requests
 
 from typing import Dict
+from dotenv import load_dotenv
 
 from settings.settings import Settings
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
+load_dotenv()
 class SpotifyClient:
     __DEFAULT_TIMEOUT = 1
     __MAX_RETRIES = 4
@@ -108,3 +113,25 @@ class SpotifyClient:
                 retry_attempts += 1
         
         return None
+    
+    def find_artist(self, artist_name): 
+        headers = self.get_auth_header(self.token)
+        query = f"?q={artist_name}&type=artist&limit=1"
+
+        try:
+            response = requests.get(
+                SpotifyEndpoints.SEARCH + query,
+                headers=headers,
+                timeout=self.__DEFAULT_TIMEOUT
+            )
+
+            response.raise_for_status()
+        except requests.HTTPError as error:
+            print(error)
+            return None
+
+        response_json = response.json().get("artists").get("items")
+        if len(response_json) == 0:
+            return None
+
+        return response_json[0]
