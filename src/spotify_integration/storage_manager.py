@@ -7,11 +7,11 @@ class StorageManager:
     __FILE_NAME = "arquivos/teste.xlsx"
 
     def __init__(self) -> None:
-        self.artists_df = pd.DataFrame(index=['id'])
-        self.albums_df = pd.DataFrame(index=['id'])
-        self.songs_df = pd.DataFrame(index=['id'])
-        self.credits_df = pd.DataFrame(index=['id'])
-        self.lyrics_df = pd.DataFrame(index=['id'])
+        self.artists_df = pd.DataFrame()
+        self.albums_df = pd.DataFrame()
+        self.songs_df = pd.DataFrame()
+        self.credits_df = pd.DataFrame()
+        self.lyrics_df = pd.DataFrame()
 
     def save_artists(self, artists):
         new_artists = pd.DataFrame.from_dict(artists)
