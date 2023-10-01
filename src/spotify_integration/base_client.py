@@ -5,7 +5,7 @@ from abc import ABC, abstractmethod
 from typing import Dict
 
 class BaseClient:
-    _DEFAULT_TIMEOUT = 1
+    _DEFAULT_TIMEOUT = 3
     __MAX_RETRIES = 4
 
     @abstractmethod
