@@ -4,17 +4,18 @@ import base64
 import requests
 
 from typing import Dict
-from dotenv import load_dotenv
 
 from settings.settings import Settings
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
-load_dotenv()
 class SpotifyClient:
     __DEFAULT_TIMEOUT = 1
     __MAX_RETRIES = 4
 
     def __init__(self) -> None:
+        self.client_id = Settings.SPOTIFY_CLIENT_ID
+        self.client_secret = Settings.SPOTIFY_CLIENT_SECRET
+        self.auth_encoded = self.generate_client_authorization_encoded()
         self.client_token = self.generate_client_token()
         self.private_client_token = self.generate_private_client_token()
 
@@ -26,6 +27,12 @@ class SpotifyClient:
             **self.base_header,
             "Client-Token": self.private_client_token,
         }
+    
+    def generate_client_authorization_encoded(self):
+        auth_string = self.client_id + ":" + self.client_secret
+        auth_bytes = auth_string.encode("utf-8")
+        auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
+        return auth_base64
 
     def generate_client_token(self):
         payload = {
@@ -35,6 +42,7 @@ class SpotifyClient:
         }
 
         headers = {
+            "Authorization": "Basic " + self.auth_encoded,
             "Content-Type": "application/x-www-form-urlencoded"
         }
 
@@ -95,6 +103,9 @@ class SpotifyClient:
 
         return self.__make_get_request(url=url, headers=headers)
     
+    def get_auth_header(self, token):
+        return {"Authorization": "Bearer " + token}
+    
     def __make_get_request(self, *, url: str, headers: Dict):
         should_retry = True
         retry_attempts = 0
@@ -114,9 +125,10 @@ class SpotifyClient:
         
         return None
     
+    # ver se tem opção de paginação
     def find_artist(self, artist_name): 
-        headers = self.get_auth_header(self.token)
-        query = f"?q={artist_name}&type=artist&limit=1"
+        headers = self.get_auth_header(self.client_token)
+        query = f"?q={artist_name}&type=artist&limit=50&offset=50"
 
         try:
             response = requests.get(
@@ -134,4 +146,4 @@ class SpotifyClient:
         if len(response_json) == 0:
             return None
 
-        return response_json[0]
+        return response_json

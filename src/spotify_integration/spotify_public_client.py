@@ -37,50 +37,37 @@ class SpotifyPublicClient:
 
 
     def get_client_token(self):
-        self.session = self.get_session()
+        payload = {
+            "client_data": {
+                "client_id": self.client_id,
+                "js_sdk_data": {"device_model": "unknown"}
+            }
+        }
+
+        headers = {
+            "Accept": "application/json",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Content-Type": "application/json"
+        }
+
         try:
-            payload = {
-                "client_data": {
-                    "client_id": self.client_id,
-                    "client_version": "1.2.22.532.g9e6e8af9",
-                    "js_sdk_data": {
-                        "device_brand": "unknown",
-                        "device_model": "desktop",
-                        "os": "Windows",
-                        "os_version": "NT 10.0",
-                    },
-                }
-            }
-
-            headers = {
-                "Host": "clienttoken.spotify.com",
-                "Accept": "application/json",
-                "Accept-Language": "tr-TR,tr;q=0.8,en-US;q=0.5,en;q=0.3",
-                "Accept-Encoding": "gzip, deflate, br",
-                "Content-Type": "application/json",
-                "Content-Length": str(len(json.dumps(payload))),
-                "Origin": "https://open.spotify.com",
-                "Sec-Fetch-Dest": "empty",
-                "Sec-Fetch-Mode": "cors",
-                "Sec-Fetch-Site": "same-site",
-                "Referer": "https://open.spotify.com/",
-                "Connection": "keep-alive",
-                "TE": "trailers",
-            }
-
-            response = self.session.post(
-                url=SpotifyEndpoints.PRIVATE_CLIENT_TOKEN_URL,
-                headers=headers,
+            response = requests.post(
+                SpotifyEndpoints.PRIVATE_CLIENT_TOKEN_URL,
                 json=payload,
+                headers=headers  
             )
-            if response.status_code == 200:
-                current_time = self.get_current_time()
-                return response.json()["granted_token"]["token"]
-            else:
-                pass
-        except requests.exceptions.RequestException as e:
-            pass
 
+            response.raise_for_status()
+        except requests.HTTPError as error:
+            print(error)
+            return None
+
+        response_json = response.json()
+        granted_token = response_json.get("granted_token")
+        if granted_token:
+            return granted_token.get("token")
+
+        return None
 
     def get_auth(self):
         self.session = self.get_session()
@@ -125,7 +112,7 @@ class SpotifyPublicClient:
             "Sec-Fetch-Site": "none",
             "Sec-Fetch-User": "?1",
             "TE": "trailers",
-        }
+        } 
         current_time = self.get_current_time()
         response = self.session.get(url=SpotifyEndpoints.CSRF_URL, headers=headers)
         if response.status_code == 200:
