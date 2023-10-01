@@ -31,5 +31,8 @@ class BaseClient:
                     retry_attempts = 0
 
                 retry_attempts += 1
+            except Exception as error:
+                print(error)
+                retry_attempts += 1
         
         return None

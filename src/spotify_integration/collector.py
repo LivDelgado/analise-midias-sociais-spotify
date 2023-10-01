@@ -28,9 +28,9 @@ class Collector:
                 print("Coletando tracks do album " + album.get("id"))
                 tracks += self.get_tracks(album_id=album.get("id"), offset=0, limit=50)
 
-                for track in tracks:
-                    print("Coletando credits da track " + track.get("id"))
-                    tracks_credits += self.get_credits(track_id=track.get("id"))
+            for track in tracks:
+                print("Coletando credits da track " + track.get("id"))
+                tracks_credits += self.get_credits(track_id=track.get("id"))
 
             self.storage_manager.save_songs(tracks)
             self.storage_manager.save_credits(tracks_credits)

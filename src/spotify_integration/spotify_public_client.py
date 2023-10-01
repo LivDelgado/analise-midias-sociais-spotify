@@ -131,8 +131,7 @@ class SpotifyPublicClient(BaseClient):
         return self._make_get_request(url=url, headers=headers)
 
     def get_credits(self, track_id):
-        self._get_session()
-
+        # self._get_session()
         url = SpotifyEndpoints.CREDITS_URL.replace("{track_id}", track_id)
 
         return self._make_get_request(url=url, headers=self.base_header)
