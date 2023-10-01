@@ -4,7 +4,7 @@ from typing import Optional
 
 
 class StorageManager:
-    __FILE_NAME = "arquivos/teste.xlsx"
+    __FILE_NAME = "arquivos/coleta_dados_spotify.xlsx"
 
     def __init__(self) -> None:
         self.artists_df = pd.DataFrame()
