@@ -20,6 +20,8 @@ def run():
 
     print(storage_manager.artists_df.shape)
 
+    storage_manager.persist()
+
 
 if __name__ == "__main__":
     run()
