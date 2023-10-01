@@ -20,20 +20,22 @@ class Collector:
         for artist in artists:
             print("Coletando albums")
             albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=50) # Pegar albums da Beyonce
+
             tracks = []
+            tracks_credits = []
 
             for album in albums:
                 print("Coletando tracks do album " + album.get("id"))
 
-                tracks = self.get_tracks(album_id=album.get("id"), offset=0, limit=50) # Pegar dados do album RENAISSANCE da Beyonce
+                tracks += self.get_tracks(album_id=album.get("id"), offset=0, limit=50) # Pegar dados do album RENAISSANCE da Beyonce
 
                 for track in tracks:
                     print("Coletando credits da track " + track.get("id"))
                     tracks_credits = self.get_credits(track_id=track.get("id")) # Créditos da musica HEATED
 
-            self.storage_manager.save_albums(albums)
             self.storage_manager.save_songs(tracks)
             self.storage_manager.save_credits(tracks_credits)
+            self.storage_manager.save_albums(albums)
 
         self.storage_manager.save_artists(artists)
 
