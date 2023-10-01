@@ -55,8 +55,6 @@ class StorageManager:
                 }
                 track_credits_flatten_list.append(credits_flatten)
 
-        pprint(track_credits_flatten_list)
-
         new_credits = pd.DataFrame.from_dict(track_credits_flatten_list)
         self.credits_df = pd.concat([self.credits_df, new_credits], ignore_index=True)
 

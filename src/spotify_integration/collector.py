@@ -26,7 +26,6 @@ class Collector:
 
     def get_credits(self, track_id):
         credits_response = self.public_client.get_credits(track_id=track_id)
-        print(credits_response)
 
         return credits_response
 

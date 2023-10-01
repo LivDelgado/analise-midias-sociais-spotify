@@ -8,9 +8,8 @@ collector = Collector()
 storage_manager = StorageManager()
 
 def run():
-    print("Rodou")
     artists = collector.get_artists(artist_name="Beyonce", offset=0, limit=1) # Pegar Beyonce
-    albums = collector.get_albums(artist_id="6vWDO969PvNqNYHIOW5v0m", offset=0, limit=1) # Pegar albums da Beyonce
+    albums = collector.get_albums(artist_id="6vWDO969PvNqNYHIOW5v0m", offset=0, limit=50) # Pegar albums da Beyonce
     tracks = collector.get_tracks(album_id="6FJxoadUE4JNVwWHghBwnb", offset=0, limit=50) # Pegar dados do album RENAISSANCE da Beyonce
     tracks_credits = collector.get_credits(track_id="1w7cgGZR86yWz1pA2puVJD") # Créditos da mpusica HEATED
 
