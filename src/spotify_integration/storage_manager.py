@@ -38,7 +38,26 @@ class StorageManager:
         self.songs_df = pd.concat([self.songs_df, new_songs], ignore_index=True)
 
     def save_credits(self, credits):
-        new_credits = pd.DataFrame.from_dict(credits)
+        track_credits_flatten_list = []
+        for role_credits in credits["roleCredits"]:
+            for artist in role_credits.get("artists"):
+                credits_flatten = {
+                    "trackUri": credits["trackUri"],
+                    "trackTitle": credits["trackTitle"],
+                    "roleTitle": role_credits["roleTitle"],
+                    "artist_uri": artist.get("uri", ""),
+                    "artist_name": artist.get("name", ""),
+                    "artist_image_uri": artist.get("imageUri", ""),
+                    "artist_subroles": artist.get("subroles", []),
+                    "artist_weight": artist.get("weight", 0.0),
+                    "artist_external_url": artist.get("externalUrl", ""),
+                    "artist_creator_uri": artist.get("creatorUri", ""),
+                }
+                track_credits_flatten_list.append(credits_flatten)
+
+        pprint(track_credits_flatten_list)
+
+        new_credits = pd.DataFrame.from_dict(track_credits_flatten_list)
         self.credits_df = pd.concat([self.credits_df, new_credits], ignore_index=True)
 
     def save_lyrics(self, lyrics):
@@ -65,6 +84,6 @@ class StorageManager:
         self.artists_df.drop_duplicates(subset=['id'], inplace=True)
         self.albums_df.drop_duplicates(subset=['id'], inplace=True)
         self.songs_df.drop_duplicates(subset=['id'], inplace=True)
-        self.credits_df.drop_duplicates(subset=['id'], inplace=True)
+        self.credits_df.drop_duplicates(subset=['trackUri', 'artist_uri', 'artist_creator_uri'], inplace=True)
         self.lyrics_df.drop_duplicates(subset=['trackUri'], inplace=True)
         

@@ -4,6 +4,7 @@ from spotify_integration.spotify_public_client import SpotifyPublicClient
 class Collector:
     def __init__(self) -> None:
         self.client = SpotifyClient()
+        self.public_client = SpotifyPublicClient()
 
     def collect_data(self):
         pass
@@ -24,8 +25,10 @@ class Collector:
         return tracks_response.get("items", [])
 
     def get_credits(self, track_id):
-        publicClient = SpotifyPublicClient()
-        return publicClient.get_credits(track_id=track_id)
+        credits_response = self.public_client.get_credits(track_id=track_id)
+        print(credits_response)
+
+        return credits_response
 
     def get_lyrics(self):
         pass
