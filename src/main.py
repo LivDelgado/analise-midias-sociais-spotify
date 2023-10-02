@@ -1,26 +1,9 @@
-from spotify_integration.spotify_client import SpotifyClient
-from spotify_integration.spotify_public_client import SpotifyPublicClient
-from spotify_integration.storage_manager import StorageManager
+from spotify_integration.collector import Collector
 
-client = SpotifyClient()
-# publicClient = SpotifyPublicClient()
-
-storage_manager = StorageManager()
+collector = Collector()
 
 def run():
-    print("Rodou")
-    items = client.find_artist("a")
-    artists=items["artists"]["items"]
-
-    storage_manager.save_artists(artists)
-
-    items = client.find_artist("x")
-    artists=items["artists"]["items"]
-    storage_manager.save_artists(artists)
-
-    print(storage_manager.artists_df.shape)
-
-    storage_manager.persist()
+    collector.collect_data()
 
 
 if __name__ == "__main__":

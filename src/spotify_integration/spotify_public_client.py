@@ -1,31 +1,41 @@
 import httpx
 import requests
 
+from typing import Dict
 from datetime import datetime
 
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
+from spotify_integration.base_client import BaseClient
 
-class SpotifyPublicClient:
+class SpotifyPublicClient(BaseClient):
     def __init__(self) -> None:
-        self.client_id, self.auth = self.get_auth()
-        self.session = self.get_session()
-        self.token = self.get_client_token()
-        self.csrf = self.get_csrf()
+        self._reset_auth_token()
 
-    def get_current_time(self):
+    def _reset_auth_token(self):
+        self.client_id, self.auth = self._get_auth()
+        self.session = self._get_session()
+        self.token = self._get_client_token()
+        self.csrf = self._get_csrf()
+
+        self.base_header = {
+            "Authority": "spclient.wg.spotify.com",
+            "Accept": "application/json",
+            "Authorization": "Bearer " + self.auth,
+            "Client-Token": self.token,
+        }
+
+    def _get_current_time(self):
         current_time = datetime.now().strftime("%H:%M:%S")
         return current_time
 
-
-    def get_session(self):
+    def _get_session(self):
         headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0"
         }
         session = httpx.Client(headers=headers, timeout=3600)
         return session
 
-
-    def get_client_token(self):
+    def _get_client_token(self):
         payload = {
             "client_data": {
                 "client_id": self.client_id,
@@ -58,8 +68,8 @@ class SpotifyPublicClient:
 
         return None
 
-    def get_auth(self):
-        self.session = self.get_session()
+    def _get_auth(self):
+        self.session = self._get_session()
         try:
             headers = {
                 "Authority": "authority",
@@ -77,7 +87,7 @@ class SpotifyPublicClient:
                 params=params
             )
             if response.status_code == 200:
-                current_time = self.get_current_time()
+                current_time = self._get_current_time()
 
                 return response.json().get("clientId"), response.json().get("accessToken")
             else:
@@ -86,8 +96,8 @@ class SpotifyPublicClient:
             pass
 
     # Não está sendo udado por enquanto, mas vai que precisa
-    def get_csrf(self):
-        self.session = self.get_session()
+    def _get_csrf(self):
+        self.session = self._get_session()
         headers = {
             "Host": "www.spotify.com",
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0",
@@ -102,9 +112,25 @@ class SpotifyPublicClient:
             "Sec-Fetch-User": "?1",
             "TE": "trailers",
         } 
-        current_time = self.get_current_time()
+        current_time = self._get_current_time()
         response = self.session.get(url=SpotifyEndpoints.CSRF_URL, headers=headers)
+
         if response.status_code == 200:
             return response.text.split("csrfToken")[1].split('"')[2]
         else:
             pass
+
+    def get_lyrics(self, track_id: str):
+        headers = {
+            **self.base_header,
+            "App-Platform": "WebPlayer"
+        }
+
+        url = SpotifyEndpoints.PLAYER_BASE_URL + SpotifyEndpoints.LYRICS.replace("{track_id}", track_id)
+
+        return self._make_get_request(url=url, headers=headers)
+
+    def get_credits(self, track_id):
+        url = SpotifyEndpoints.CREDITS_URL.replace("{track_id}", track_id)
+
+        return self._make_get_request(url=url, headers=self.base_header)

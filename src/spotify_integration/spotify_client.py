@@ -1,20 +1,16 @@
 import base64
 import requests
 
-from typing import Dict
-
 from settings.settings import Settings
 from spotify_integration.spotify_endpoints import SpotifyEndpoints
+from spotify_integration.base_client import BaseClient
 
-class SpotifyClient:
-    __DEFAULT_TIMEOUT = 1
-    __MAX_RETRIES = 4
-
+class SpotifyClient(BaseClient):
     def __init__(self) -> None:
         self.auth_encoded = self.generate_client_authorization_encoded()
-        self.reset_auth_token()
+        self._reset_auth_token()
 
-    def reset_auth_token(self):
+    def _reset_auth_token(self):
         self.client_token = self.generate_client_token()
 
         self.base_header = {
@@ -44,7 +40,7 @@ class SpotifyClient:
                 SpotifyEndpoints.GENERATE_CLIENT_TOKEN_URL,
                 data=payload,
                 headers=headers,
-                timeout=self.__DEFAULT_TIMEOUT
+                timeout=self._DEFAULT_TIMEOUT
             )
 
             response.raise_for_status()
@@ -59,35 +55,22 @@ class SpotifyClient:
         url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.PLAYLIST_ITEMS.replace("{playlist_id}", playlist_id)
         headers = self.base_header
 
-        return self.__make_get_request(url=url, headers=headers)
+        return self._make_get_request(url=url, headers=headers)
     
-    # TODO - ver se tem opção de paginação
-    def find_artist(self, artist_name): 
-        query = f"?q={artist_name}&type=artist&limit=50&offset=50"
+    def find_artist(self, artist_name, offset, limit=50): 
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.SEARCH
+        query = f"?q={artist_name}&type=artist&limit={limit}&offset={offset}&market=BR"
 
-        return self.__make_get_request(url=SpotifyEndpoints.SEARCH + query, headers=self.base_header)
-
-    def __make_get_request(self, *, url: str, headers: Dict):
-        should_retry = True
-        retry_attempts = 0
-        
-        while should_retry and retry_attempts < self.__MAX_RETRIES:
-            try:
-                response = requests.get(url=url, headers=headers, timeout=self.__DEFAULT_TIMEOUT)
-                response.raise_for_status()
-
-                return response.json()
-            except requests.HTTPError as error:
-                print(error)
-                if error.response.status_code not in [401, 403]:
-                    should_retry = False
-                    break
-                else:
-                    self.reset_auth_token()
-                    retry_attempts = 0
-
-                retry_attempts += 1
-        
-        return None
+        return self._make_get_request(url=url + query, headers=self.base_header)
     
+    def get_artist_albums(self, artist_id, offset, limit=50):
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ARTIST_ALBUMS.replace("{artist_id}", artist_id)
+        query = f"?market=BR&limit={limit}&offset={offset}"
 
+        return self._make_get_request(url=url + query, headers=self.base_header)
+    
+    def get_albums_tracks(self, album_id, offset, limit=50):
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ALBUM_TRACKS.replace("{album_id}", album_id)
+        query = f"?market=BR&limit={limit}&offset={offset}"
+
+        return self._make_get_request(url=url + query, headers=self.base_header)
