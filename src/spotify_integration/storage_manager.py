@@ -75,21 +75,23 @@ class StorageManager:
 
     def save_credits(self, credits):
         track_credits_flatten_list = []
-        for role_credits in credits["roleCredits"]:
-            for artist in role_credits.get("artists"):
-                credits_flatten = {
-                    "trackUri": credits["trackUri"],
-                    "trackTitle": credits["trackTitle"],
-                    "roleTitle": role_credits["roleTitle"],
-                    "artist_uri": artist.get("uri", ""),
-                    "artist_name": artist.get("name", ""),
-                    "artist_image_uri": artist.get("imageUri", ""),
-                    "artist_subroles": artist.get("subroles", []),
-                    "artist_weight": artist.get("weight", 0.0),
-                    "artist_external_url": artist.get("externalUrl", ""),
-                    "artist_creator_uri": artist.get("creatorUri", ""),
-                }
-                track_credits_flatten_list.append(credits_flatten)
+        
+        for credit in credits:
+            for role_credits in credit["roleCredits"]:
+                for artist in role_credits.get("artists"):
+                    credits_flatten = {
+                        "trackUri": credits["trackUri"],
+                        "trackTitle": credits["trackTitle"],
+                        "roleTitle": role_credits["roleTitle"],
+                        "artist_uri": artist.get("uri", ""),
+                        "artist_name": artist.get("name", ""),
+                        "artist_image_uri": artist.get("imageUri", ""),
+                        "artist_subroles": artist.get("subroles", []),
+                        "artist_weight": artist.get("weight", 0.0),
+                        "artist_external_url": artist.get("externalUrl", ""),
+                        "artist_creator_uri": artist.get("creatorUri", ""),
+                    }
+                    track_credits_flatten_list.append(credits_flatten)
 
         new_credits = pd.DataFrame.from_dict(track_credits_flatten_list)
         self.credits_df = pd.concat([self.credits_df, new_credits], ignore_index=True)
