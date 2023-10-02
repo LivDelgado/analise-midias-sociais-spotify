@@ -2,8 +2,6 @@ import pandas as pd
 
 from typing import Optional
 
-from pprint import pprint
-
 
 class StorageManager:
     __FILE_NAME = "arquivos/coleta_dados_spotify.xlsx"
@@ -75,13 +73,13 @@ class StorageManager:
 
     def save_credits(self, credits):
         track_credits_flatten_list = []
-        
+
         for credit in credits:
             for role_credits in credit["roleCredits"]:
                 for artist in role_credits.get("artists"):
                     credits_flatten = {
-                        "trackUri": credits["trackUri"],
-                        "trackTitle": credits["trackTitle"],
+                        "trackUri": credit["trackUri"],
+                        "trackTitle": credit["trackTitle"],
                         "roleTitle": role_credits["roleTitle"],
                         "artist_uri": artist.get("uri", ""),
                         "artist_name": artist.get("name", ""),

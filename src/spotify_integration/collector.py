@@ -30,7 +30,7 @@ class Collector:
 
             for track in tracks:
                 print("Coletando credits da track " + track.get("id"))
-                tracks_credits += self.get_credits(track_id=track.get("id"))
+                tracks_credits.append(self.get_credits(track_id=track.get("id")))
 
             self.storage_manager.save_songs(tracks)
             self.storage_manager.save_credits(tracks_credits)
