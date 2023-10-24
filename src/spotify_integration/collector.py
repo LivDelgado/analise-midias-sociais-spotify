@@ -4,7 +4,7 @@ import time
 
 from spotify_integration.spotify_client import SpotifyClient
 from spotify_integration.spotify_public_client import SpotifyPublicClient
-from spotify_integration.storage_manager import StorageManager
+from storage.storage_manager import StorageManager
 
 
 class Collector:
