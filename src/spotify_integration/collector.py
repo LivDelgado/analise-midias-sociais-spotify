@@ -1,9 +1,9 @@
 import string
 import time
 
-from src.spotify_integration.spotify_client import SpotifyClient
-from src.spotify_integration.spotify_public_client import SpotifyPublicClient
-from src.storage.storage_manager import StorageManager
+from spotify_integration.spotify_client import SpotifyClient
+from spotify_integration.spotify_public_client import SpotifyPublicClient
+from storage.storage_manager import StorageManager
 
 
 class Collector:

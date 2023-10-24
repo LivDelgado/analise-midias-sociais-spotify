@@ -1,4 +1,4 @@
-from src.spotify_integration.collector import Collector
+from spotify_integration.collector import Collector
 
 collector = Collector()
 
