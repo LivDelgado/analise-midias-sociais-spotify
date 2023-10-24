@@ -1,4 +1,5 @@
 import time
+import string
 
 from spotify_integration.spotify_client import SpotifyClient
 from spotify_integration.spotify_public_client import SpotifyPublicClient
@@ -14,35 +15,53 @@ class Collector:
 
     def collect_data(self):
         start_time = time.time()
+
         print("Coletando artistas")
-        artists = self.get_artists(artist_name="Beyonce", offset=0, limit=1)
+        artists = self.list_all_artists_from_graph()
 
         for artist in artists:
-            print("Coletando albums")
-            albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=50)
-
-            tracks = []
-            tracks_credits = []
-
-            for album in albums:
-                print("Coletando tracks do album " + album.get("id"))
-                tracks += self.get_tracks(album_id=album.get("id"), offset=0, limit=50)
-
-            for track in tracks:
-                print("Coletando credits da track " + track.get("id"))
-                tracks_credits.append(self.get_credits(track_id=track.get("id")))
-
-            self.storage_manager.save_songs(tracks)
-            self.storage_manager.save_credits(tracks_credits)
-            self.storage_manager.save_albums(albums)
-
-        self.storage_manager.save_artists(artists)
+            collect_data_for_single_artist(artist)
 
         print("Tempo de coleta --- %s seconds ---" % (time.time() - start_time))
 
         start_time = time.time()
         self.storage_manager.persist()
         print("Tempo para salvar no arquivo --- %s seconds ---" % (time.time() - start_time))
+
+    def list_all_artists_from_graph(self):
+        alfabeto = list(string.ascii_lowercase)
+
+        todos_os_artistas_do_grafo = []
+
+        for letra in alfabeto:
+            todos_os_artistas_do_grafo += self.get_artists(artist_name=letra, offset=0, limit=50)
+
+        todos_os_artistas_do_grafo = list({artista['id']: artista for artista in todos_os_artistas_do_grafo}.values())
+
+        print(f"Serão coletados {len(todos_os_artistas_do_grafo)} artistas")
+
+        return todos_os_artistas_do_grafo
+
+    def collect_data_for_single_artist(self, artist):
+        print("Coletando albums")
+        albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=50)
+
+        tracks = []
+        tracks_credits = []
+
+        for album in albums:
+            print("Coletando tracks do album " + album.get("id"))
+            tracks += self.get_tracks(album_id=album.get("id"), offset=0, limit=50)
+
+        for track in tracks:
+            print("Coletando credits da track " + track.get("id"))
+            tracks_credits.append(self.get_credits(track_id=track.get("id")))
+
+        self.storage_manager.save_songs(tracks)
+        self.storage_manager.save_credits(tracks_credits)
+        self.storage_manager.save_albums(albums)
+
+        self.storage_manager.save_artists([artist])
 
 
     def get_artists(self, artist_name, offset, limit):
