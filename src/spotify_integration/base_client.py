@@ -30,6 +30,7 @@ class BaseClient:
                     time.sleep(1)
                     break
                 else:
+                    time.sleep(10)
                     self._reset_auth_token()
                     retry_attempts = 0
 
