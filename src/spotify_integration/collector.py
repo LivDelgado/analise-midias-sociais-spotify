@@ -50,6 +50,7 @@ class Collector:
             alfabeto = list(string.ascii_lowercase)
             indexes_busca = alfabeto
 
+            """
             duas_letras = list(itertools.permutations(alfabeto, 2))
             tres_letras = list(itertools.permutations(alfabeto, 3))
 
@@ -57,6 +58,7 @@ class Collector:
             indexes_busca += tres_letras
 
             indexes_busca = [''.join(element) for element in indexes_busca]
+            """
 
             for index_busca in indexes_busca:
                 offsets = range(0, 951, self._LIMITE_REQUEST)
