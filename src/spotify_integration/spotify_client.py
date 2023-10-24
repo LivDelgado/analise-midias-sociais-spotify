@@ -2,9 +2,9 @@ import base64
 
 import requests
 
-from src.settings.settings import Settings
-from src.spotify_integration.base_client import BaseClient
-from src.spotify_integration.spotify_endpoints import SpotifyEndpoints
+from settings.settings import Settings
+from spotify_integration.base_client import BaseClient
+from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 
 class SpotifyClient(BaseClient):

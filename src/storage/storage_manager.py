@@ -2,7 +2,7 @@ from typing import Optional
 
 import pandas as pd
 
-from src.storage.constants import Constants
+from storage.constants import Constants
 
 
 class StorageManager:
