@@ -15,6 +15,15 @@ class StorageManager:
 
         self.albums_artists_df = pd.DataFrame()
         self.songs_artists_df = pd.DataFrame()
+    
+    def get_artists_from_storage(self):
+        try:
+            with open(self.__FILE_NAME, 'rb') as outfile:
+                self.artists_df = pd.read_excel(outfile, index_col=0, sheet_name='artists')
+            return self.artists_df.reset_index().to_dict('records')
+        except Exception as error:
+            print(error)
+            return None
 
     def save_artists(self, artists):
         for artist in artists:
