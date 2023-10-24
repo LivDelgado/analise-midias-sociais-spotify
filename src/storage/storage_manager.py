@@ -25,6 +25,15 @@ class StorageManager:
             print(error)
             return None
 
+    def get_last_fetched_artist_id(self):
+        try:
+            with open(self.__FILE_NAME, 'rb') as outfile:
+                self.albums_artists_df = pd.read_excel(outfile, index_col=0, sheet_name='albums_artists')
+            return self.albums_artists_df.reset_index().to_dict('records')[-1].get("artist_id")
+        except Exception as error:
+            print(error)
+            return None
+
     def save_artists(self, artists):
         for artist in artists:
             del artist["images"]
@@ -84,6 +93,9 @@ class StorageManager:
         track_credits_flatten_list = []
 
         for credit in credits:
+            if not credit:
+                continue
+
             for role_credits in credit["roleCredits"]:
                 for artist in role_credits.get("artists"):
                     credits_flatten = {

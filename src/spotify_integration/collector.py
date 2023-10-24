@@ -21,15 +21,25 @@ class Collector:
 
         print("Listando artistas")
         artists = self.storage_manager.get_artists_from_storage()
+
         if artists is None or not len(artists):
             artists = self.list_all_artists_from_graph()
+        else:
+            # TODO - pegar todos os dados da planilha pra não sobrescrever
+            print('wohoo')
+
         print("Tempo para listar artistas --- %s segundos ---" % (time.time() - start_time))
 
         start_time = time.time()
 
         print("Coletando dados dos artistas")
 
+        ultimo_artista_coletado = self.storage_manager.get_last_fetched_artist_id()
+
+        indice_ultimo_artista_coletado = 1
+
         deveria_encerrar_o_programa = False
+
         for artist in artists:
             try:
                 self.collect_data_for_single_artist(artist)
