@@ -1,11 +1,12 @@
+from datetime import datetime
+from typing import Dict
+
 import httpx
 import requests
 
-from typing import Dict
-from datetime import datetime
-
-from spotify_integration.spotify_endpoints import SpotifyEndpoints
 from spotify_integration.base_client import BaseClient
+from spotify_integration.spotify_endpoints import SpotifyEndpoints
+
 
 class SpotifyPublicClient(BaseClient):
     def __init__(self) -> None:
@@ -39,21 +40,19 @@ class SpotifyPublicClient(BaseClient):
         payload = {
             "client_data": {
                 "client_id": self.client_id,
-                "js_sdk_data": {"device_model": "unknown"}
+                "js_sdk_data": {"device_model": "unknown"},
             }
         }
 
         headers = {
             "Accept": "application/json",
             "Accept-Encoding": "gzip, deflate, br",
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
         }
 
         try:
             response = requests.post(
-                SpotifyEndpoints.PRIVATE_CLIENT_TOKEN_URL,
-                json=payload,
-                headers=headers  
+                SpotifyEndpoints.PRIVATE_CLIENT_TOKEN_URL, json=payload, headers=headers
             )
 
             response.raise_for_status()
@@ -71,25 +70,19 @@ class SpotifyPublicClient(BaseClient):
     def _get_auth(self):
         self.session = self._get_session()
         try:
-            headers = {
-                "Authority": "authority",
-                "Accept": "application/json"
-            }
+            headers = {"Authority": "authority", "Accept": "application/json"}
 
-            params = {
-                "reason": "transport",
-                "productType": "web-player"
-            }
+            params = {"reason": "transport", "productType": "web-player"}
 
             response = self.session.get(
-                url=SpotifyEndpoints.GENERATE_AUTH_URL,
-                headers=headers,
-                params=params
+                url=SpotifyEndpoints.GENERATE_AUTH_URL, headers=headers, params=params
             )
             if response.status_code == 200:
                 current_time = self._get_current_time()
 
-                return response.json().get("clientId"), response.json().get("accessToken")
+                return response.json().get("clientId"), response.json().get(
+                    "accessToken"
+                )
             else:
                 pass
         except requests.exceptions.RequestException as e:
@@ -111,7 +104,7 @@ class SpotifyPublicClient(BaseClient):
             "Sec-Fetch-Site": "none",
             "Sec-Fetch-User": "?1",
             "TE": "trailers",
-        } 
+        }
         current_time = self._get_current_time()
         response = self.session.get(url=SpotifyEndpoints.CSRF_URL, headers=headers)
 
@@ -121,12 +114,11 @@ class SpotifyPublicClient(BaseClient):
             pass
 
     def get_lyrics(self, track_id: str):
-        headers = {
-            **self.base_header,
-            "App-Platform": "WebPlayer"
-        }
+        headers = {**self.base_header, "App-Platform": "WebPlayer"}
 
-        url = SpotifyEndpoints.PLAYER_BASE_URL + SpotifyEndpoints.LYRICS.replace("{track_id}", track_id)
+        url = SpotifyEndpoints.PLAYER_BASE_URL + SpotifyEndpoints.LYRICS.replace(
+            "{track_id}", track_id
+        )
 
         return self._make_get_request(url=url, headers=headers)
 

@@ -1,10 +1,9 @@
-import itertools
 import string
 import time
 
-from spotify_integration.spotify_client import SpotifyClient
-from spotify_integration.spotify_public_client import SpotifyPublicClient
-from storage.storage_manager import StorageManager
+from src.spotify_integration.spotify_client import SpotifyClient
+from src.spotify_integration.spotify_public_client import SpotifyPublicClient
+from src.storage.storage_manager import StorageManager
 
 
 class Collector:
@@ -21,16 +20,38 @@ class Collector:
 
         print("Listando artistas")
         artists = self.storage_manager.get_artists_from_storage()
+
         if artists is None or not len(artists):
             artists = self.list_all_artists_from_graph()
-        print("Tempo para listar artistas --- %s segundos ---" % (time.time() - start_time))
+
+        print(
+            "Tempo para listar artistas --- %s segundos ---"
+            % (time.time() - start_time)
+        )
 
         start_time = time.time()
 
         print("Coletando dados dos artistas")
 
+        ultimo_artista_coletado = self.storage_manager.get_last_fetched_artist_id(
+            artists
+        )
+
+        indice_ultimo_artista_coletado = next(
+            (
+                i
+                for i, item in enumerate(artists)
+                if item["id"] == ultimo_artista_coletado
+            ),
+            0,
+        )
+
         deveria_encerrar_o_programa = False
-        for artist in artists:
+
+        for artist in artists[indice_ultimo_artista_coletado:]:
+            if artist.get("popularity") == 0:
+                continue
+
             try:
                 self.collect_data_for_single_artist(artist)
             except KeyboardInterrupt:
@@ -64,10 +85,12 @@ class Collector:
                 offsets = range(0, 951, self._LIMITE_REQUEST)
 
                 for i in offsets:
-                    artistas = self.get_artists(artist_name=index_busca, offset=i, limit=self._LIMITE_REQUEST)
+                    artistas = self.get_artists(
+                        artist_name=index_busca, offset=i, limit=self._LIMITE_REQUEST
+                    )
 
                     for artista in artistas:
-                        todos_os_artistas_do_grafo[artista['id']] = artista
+                        todos_os_artistas_do_grafo[artista["id"]] = artista
 
         except KeyboardInterrupt:
             print("salvando dados antes de encerrar!")
@@ -79,7 +102,6 @@ class Collector:
 
         return list(todos_os_artistas_do_grafo.values())
 
-
     def collect_data_for_single_artist(self, artist):
         albums = []
         tracks = []
@@ -89,11 +111,15 @@ class Collector:
 
         try:
             print("Coletando albums")
-            albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=self._LIMITE_REQUEST)
+            albums = self.get_albums(
+                artist_id=artist.get("id"), offset=0, limit=self._LIMITE_REQUEST
+            )
 
             for album in albums:
                 print("Coletando tracks do album " + album.get("id"))
-                tracks += self.get_tracks(album_id=album.get("id"), offset=0, limit=self._LIMITE_REQUEST)
+                tracks += self.get_tracks(
+                    album_id=album.get("id"), offset=0, limit=self._LIMITE_REQUEST
+                )
 
             for track in tracks:
                 print("Coletando credits da track " + track.get("id"))
@@ -111,7 +137,9 @@ class Collector:
                 raise KeyboardInterrupt
 
     def get_artists(self, artist_name, offset, limit):
-        artists_response = self.client.find_artist(artist_name=artist_name, offset=offset, limit=limit)
+        artists_response = self.client.find_artist(
+            artist_name=artist_name, offset=offset, limit=limit
+        )
 
         if not artists_response:
             return []
@@ -119,7 +147,9 @@ class Collector:
         return artists_response["artists"].get("items", [])
 
     def get_albums(self, artist_id, offset, limit):
-        albums_response = self.client.get_artist_albums(artist_id=artist_id, offset=offset, limit=limit)
+        albums_response = self.client.get_artist_albums(
+            artist_id=artist_id, offset=offset, limit=limit
+        )
 
         if not albums_response:
             return []
@@ -127,7 +157,9 @@ class Collector:
         return albums_response.get("items", [])
 
     def get_tracks(self, album_id, offset, limit):
-        tracks_response = self.client.get_albums_tracks(album_id=album_id, offset=offset, limit=limit)
+        tracks_response = self.client.get_albums_tracks(
+            album_id=album_id, offset=offset, limit=limit
+        )
 
         if not tracks_response:
             return []

@@ -1,9 +1,11 @@
 import base64
+
 import requests
 
-from settings.settings import Settings
-from spotify_integration.spotify_endpoints import SpotifyEndpoints
-from spotify_integration.base_client import BaseClient
+from src.settings.settings import Settings
+from src.spotify_integration.base_client import BaseClient
+from src.spotify_integration.spotify_endpoints import SpotifyEndpoints
+
 
 class SpotifyClient(BaseClient):
     def __init__(self) -> None:
@@ -13,11 +15,10 @@ class SpotifyClient(BaseClient):
     def _reset_auth_token(self):
         self.client_token = self.generate_client_token()
 
-        self.base_header = {
-            "Authorization": f"Bearer {self.client_token}"
-        }
-    
-    def generate_client_authorization_encoded(self):
+        self.base_header = {"Authorization": f"Bearer {self.client_token}"}
+
+    @staticmethod
+    def generate_client_authorization_encoded():
         auth_string = Settings.SPOTIFY_CLIENT_ID + ":" + Settings.SPOTIFY_CLIENT_SECRET
         auth_bytes = auth_string.encode("utf-8")
         auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
@@ -32,7 +33,7 @@ class SpotifyClient(BaseClient):
 
         headers = {
             "Authorization": "Basic " + self.auth_encoded,
-            "Content-Type": "application/x-www-form-urlencoded"
+            "Content-Type": "application/x-www-form-urlencoded",
         }
 
         try:
@@ -40,7 +41,7 @@ class SpotifyClient(BaseClient):
                 SpotifyEndpoints.GENERATE_CLIENT_TOKEN_URL,
                 data=payload,
                 headers=headers,
-                timeout=self._DEFAULT_TIMEOUT
+                timeout=self._DEFAULT_TIMEOUT,
             )
 
             response.raise_for_status()
@@ -52,25 +53,33 @@ class SpotifyClient(BaseClient):
         return response_json.get("access_token")
 
     def get_playlist_items(self, playlist_id: str):
-        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.PLAYLIST_ITEMS.replace("{playlist_id}", playlist_id)
+        url = (
+            SpotifyEndpoints.SPOTIFY_BASE_URL
+            + SpotifyEndpoints.PLAYLIST_ITEMS.replace("{playlist_id}", playlist_id)
+        )
         headers = self.base_header
 
         return self._make_get_request(url=url, headers=headers)
-    
-    def find_artist(self, artist_name, offset, limit=50): 
+
+    def find_artist(self, artist_name, offset, limit=50):
         url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.SEARCH
         query = f"?q={artist_name}&type=artist&limit={limit}&offset={offset}&market=BR"
 
         return self._make_get_request(url=url + query, headers=self.base_header)
-    
+
     def get_artist_albums(self, artist_id, offset, limit=50):
-        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ARTIST_ALBUMS.replace("{artist_id}", artist_id)
+        url = (
+            SpotifyEndpoints.SPOTIFY_BASE_URL
+            + SpotifyEndpoints.ARTIST_ALBUMS.replace("{artist_id}", artist_id)
+        )
         query = f"?market=BR&limit={limit}&offset={offset}"
 
         return self._make_get_request(url=url + query, headers=self.base_header)
-    
+
     def get_albums_tracks(self, album_id, offset, limit=50):
-        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ALBUM_TRACKS.replace("{album_id}", album_id)
+        url = SpotifyEndpoints.SPOTIFY_BASE_URL + SpotifyEndpoints.ALBUM_TRACKS.replace(
+            "{album_id}", album_id
+        )
         query = f"?market=BR&limit={limit}&offset={offset}"
 
         return self._make_get_request(url=url + query, headers=self.base_header)

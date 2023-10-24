@@ -1,8 +1,9 @@
-import requests 
 import time
-
 from abc import ABC, abstractmethod
 from typing import Dict
+
+import requests
+
 
 class BaseClient:
     _DEFAULT_TIMEOUT = 3
@@ -14,10 +15,12 @@ class BaseClient:
 
     def _make_get_request(self, *, url: str, headers: Dict):
         retry_attempts = 0
-        
+
         while retry_attempts < self.__MAX_RETRIES:
             try:
-                response = requests.get(url=url, headers=headers, timeout=self._DEFAULT_TIMEOUT)
+                response = requests.get(
+                    url=url, headers=headers, timeout=self._DEFAULT_TIMEOUT
+                )
                 response.raise_for_status()
 
                 return response.json()
@@ -34,5 +37,5 @@ class BaseClient:
             except Exception as error:
                 print(error)
                 retry_attempts += 1
-        
+
         return None
