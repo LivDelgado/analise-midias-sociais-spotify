@@ -25,11 +25,20 @@ class StorageManager:
             print(error)
             return None
 
-    def get_last_fetched_artist_id(self):
+    def get_last_fetched_artist_id(self, artists):
         try:
             with open(self.__FILE_NAME, 'rb') as outfile:
                 self.albums_artists_df = pd.read_excel(outfile, index_col=0, sheet_name='albums_artists')
-            return self.albums_artists_df.reset_index().to_dict('records')[-1].get("artist_id")
+
+            indice = -1
+            ultimo_artista_coletado = self.albums_artists_df.reset_index().to_dict('records')[indice].get("artist_id")
+
+            while not next((item for item in artists if item.get("id") == ultimo_artista_coletado), None):
+                indice = indice - 1
+                ultimo_artista_coletado = self.albums_artists_df.reset_index().to_dict('records')[indice].get(
+                    "artist_id")
+
+            return ultimo_artista_coletado
         except Exception as error:
             print(error)
             return None

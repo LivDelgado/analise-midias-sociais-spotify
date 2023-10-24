@@ -34,13 +34,19 @@ class Collector:
 
         print("Coletando dados dos artistas")
 
-        ultimo_artista_coletado = self.storage_manager.get_last_fetched_artist_id()
+        ultimo_artista_coletado = self.storage_manager.get_last_fetched_artist_id(artists)
 
-        indice_ultimo_artista_coletado = 1
+        indice_ultimo_artista_coletado = next(
+            (i for i, item in enumerate(artists) if item['id'] == ultimo_artista_coletado),
+            0
+        )
 
         deveria_encerrar_o_programa = False
 
-        for artist in artists:
+        for artist in artists[indice_ultimo_artista_coletado:]:
+            if artist.get("popularity") == 0:
+                continue
+
             try:
                 self.collect_data_for_single_artist(artist)
             except KeyboardInterrupt:
