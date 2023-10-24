@@ -1,6 +1,7 @@
-from spotify_integration.collector import Collector
+from src.spotify_integration.collector import Collector
 
 collector = Collector()
+
 
 def run():
     collector.collect_data()
