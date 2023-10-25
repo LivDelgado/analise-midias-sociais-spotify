@@ -48,7 +48,7 @@ class Collector:
 
         deveria_encerrar_o_programa = False
 
-        for artist in artists[indice_ultimo_artista_coletado:]:
+        for artist in artists[indice_ultimo_artista_coletado+1:]:
             if artist.get("popularity") == 0:
                 continue
 
@@ -112,7 +112,7 @@ class Collector:
         try:
             print("Coletando albums")
             albums = self.get_albums(
-                artist_id=artist.get("id"), offset=0, limit=self._LIMITE_REQUEST
+                artist_id=artist.get("id"), offset=0, limit=20
             )
 
             for album in albums:
