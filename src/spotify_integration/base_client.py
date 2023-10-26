@@ -11,13 +11,16 @@ class BaseClient:
     __MAX_RETRIES = 4
 
     def __init__(self):
-        self.__first_request_time = None
+        self._first_request_time = None
 
     def __reset_first_request_time(self):
-        self.__first_request_time = datetime.datetime.utcnow()
+        self._first_request_time = datetime.datetime.utcnow()
 
     def __should_refresh_token(self):
-        return datetime.datetime.utcnow() - self.__first_request_time > datetime.timedelta(minutes=10)
+        return (
+            not self._first_request_time or
+            datetime.datetime.utcnow() - self._first_request_time > datetime.timedelta(minutes=10)
+        )
 
     @abstractmethod
     def _reset_auth_token(self):

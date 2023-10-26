@@ -22,7 +22,7 @@ class Collector:
         artists = self.storage_manager.get_artists_from_storage()
 
         if artists is None or not len(artists):
-            artists = self.list_all_artists_from_graph()
+            raise EOFError("This file does not exist.")
 
         print(
             "Tempo para listar artistas --- %s segundos ---"

@@ -10,6 +10,7 @@ from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 class SpotifyPublicClient(BaseClient):
     def __init__(self) -> None:
+        super().__init__()
         self._reset_auth_token()
 
     def _reset_auth_token(self):
