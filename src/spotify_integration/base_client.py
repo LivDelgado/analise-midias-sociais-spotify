@@ -25,6 +25,8 @@ class BaseClient:
 
                 return response.json()
             except requests.HTTPError as error:
+                retry_attempts += 1
+
                 print(error)
                 if error.response.status_code not in [401, 403]:
                     time.sleep(1)
@@ -32,9 +34,10 @@ class BaseClient:
                 else:
                     time.sleep(10)
                     self._reset_auth_token()
-                    retry_attempts = 0
 
-                retry_attempts += 1
+                    if retry_attempts == self.__MAX_RETRIES:
+                        raise KeyboardInterrupt
+
             except Exception as error:
                 print(error)
                 retry_attempts += 1
