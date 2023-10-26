@@ -9,11 +9,11 @@ from storage.storage_manager import StorageManager
 class Collector:
     _LIMITE_REQUEST = 50
 
-    def __init__(self) -> None:
+    def __init__(self, num_planilha: int) -> None:
         self.client = SpotifyClient()
         self.public_client = SpotifyPublicClient()
 
-        self.storage_manager = StorageManager()
+        self.storage_manager = StorageManager(num_planilha)
 
     def collect_data(self):
         start_time = time.time()
