@@ -79,8 +79,6 @@ class SpotifyPublicClient(BaseClient):
                 url=SpotifyEndpoints.GENERATE_AUTH_URL, headers=headers, params=params
             )
             if response.status_code == 200:
-                current_time = self._get_current_time()
-
                 return response.json().get("clientId"), response.json().get(
                     "accessToken"
                 )
@@ -89,7 +87,7 @@ class SpotifyPublicClient(BaseClient):
         except requests.exceptions.RequestException as e:
             pass
 
-    # Não está sendo udado por enquanto, mas vai que precisa
+    # Não está sendo usado por enquanto, mas vai que precisa
     def _get_csrf(self):
         self.session = self._get_session()
         headers = {

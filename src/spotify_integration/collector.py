@@ -5,6 +5,8 @@ from spotify_integration.spotify_client import SpotifyClient
 from spotify_integration.spotify_public_client import SpotifyPublicClient
 from storage.storage_manager import StorageManager
 
+from spotify_integration.exceptions import StopFetchingDataException
+
 
 class Collector:
     _LIMITE_REQUEST = 50
@@ -54,7 +56,7 @@ class Collector:
 
             try:
                 self.collect_data_for_single_artist(artist)
-            except KeyboardInterrupt:
+            except (KeyboardInterrupt, StopFetchingDataException):
                 print("persistindo os dados antes de encerrar")
                 deveria_encerrar_o_programa = True
             finally:

@@ -5,6 +5,8 @@ from typing import Dict
 
 import requests
 
+from spotify_integration.exceptions import StopFetchingDataException
+
 
 class BaseClient:
     _DEFAULT_TIMEOUT = 3
@@ -19,7 +21,7 @@ class BaseClient:
     def __should_refresh_token(self):
         return (
             not self._first_request_time or
-            datetime.datetime.utcnow() - self._first_request_time > datetime.timedelta(minutes=10)
+            (datetime.datetime.utcnow() - self._first_request_time) > datetime.timedelta(minutes=10)
         )
 
     @abstractmethod
@@ -45,15 +47,17 @@ class BaseClient:
                 retry_attempts += 1
 
                 print(error)
+                if error.response.status_code == 429:
+                    raise StopFetchingDataException()
                 if error.response.status_code not in [401, 403]:
                     time.sleep(1)
                     break
                 else:
-                    time.sleep(60)
+                    time.sleep(240)
                     self._reset_auth_token()
 
                     if retry_attempts == self.__MAX_RETRIES:
-                        raise KeyboardInterrupt
+                        raise StopFetchingDataException()
 
             except Exception as error:
                 print(error)
