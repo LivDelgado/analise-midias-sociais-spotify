@@ -19,10 +19,9 @@ class BaseClient:
         self._first_request_time = datetime.datetime.utcnow()
 
     def __should_refresh_token(self):
-        return (
-            not self._first_request_time or
-            (datetime.datetime.utcnow() - self._first_request_time) > datetime.timedelta(minutes=10)
-        )
+        return not self._first_request_time or (
+            datetime.datetime.utcnow() - self._first_request_time
+        ) > datetime.timedelta(minutes=10)
 
     @abstractmethod
     def _reset_auth_token(self):

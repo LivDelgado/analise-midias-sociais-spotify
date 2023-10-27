@@ -6,10 +6,11 @@ from storage.constants import Constants
 
 
 class StorageManager:
-
     def __init__(self, num_planilha: int) -> None:
         self.num_planilha = num_planilha
-        self.__FILE_NAME = f"arquivos/coleta_dividida/coleta_dados_spotify_{num_planilha}.xlsx"
+        self.__FILE_NAME = (
+            f"arquivos/coleta_dividida/coleta_dados_spotify_{num_planilha}.xlsx"
+        )
         self.artists_df = pd.DataFrame()
         self.albums_df = pd.DataFrame()
         self.songs_df = pd.DataFrame()
@@ -216,4 +217,3 @@ class StorageManager:
         self.songs_artists_df.drop_duplicates(
             subset=["track_id", "artist_id"], inplace=True
         )
-

@@ -1,11 +1,10 @@
 import string
 import time
 
+from spotify_integration.exceptions import StopFetchingDataException
 from spotify_integration.spotify_client import SpotifyClient
 from spotify_integration.spotify_public_client import SpotifyPublicClient
 from storage.storage_manager import StorageManager
-
-from spotify_integration.exceptions import StopFetchingDataException
 
 
 class Collector:
@@ -50,13 +49,13 @@ class Collector:
 
         deveria_encerrar_o_programa = False
 
-        for artist in artists[indice_ultimo_artista_coletado+1:]:
+        for artist in artists[indice_ultimo_artista_coletado + 1 :]:
             if artist.get("popularity") == 0:
                 continue
 
             try:
                 self.collect_data_for_single_artist(artist)
-            except (KeyboardInterrupt, StopFetchingDataException):
+            except Exception:
                 print("persistindo os dados antes de encerrar")
                 deveria_encerrar_o_programa = True
             finally:
@@ -94,7 +93,7 @@ class Collector:
                     for artista in artistas:
                         todos_os_artistas_do_grafo[artista["id"]] = artista
 
-        except KeyboardInterrupt:
+        except Exception:
             print("salvando dados antes de encerrar!")
 
         finally:
@@ -109,13 +108,11 @@ class Collector:
         tracks = []
         tracks_credits = []
 
-        raise_keyboard_interrupt = False
+        raise_exception = False
 
         try:
             print("Coletando albums")
-            albums = self.get_albums(
-                artist_id=artist.get("id"), offset=0, limit=20
-            )
+            albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=20)
 
             for album in albums:
                 print("Coletando tracks do album " + album.get("id"))
@@ -127,16 +124,16 @@ class Collector:
                 print("Coletando credits da track " + track.get("id"))
                 tracks_credits.append(self.get_credits(track_id=track.get("id")))
 
-        except KeyboardInterrupt:
+        except (KeyboardInterrupt, StopFetchingDataException, Exception):
             print("salvando dados do artista em coleta atualmente antes de encerrar")
-            raise_keyboard_interrupt = True
+            raise_exception = True
         finally:
             self.storage_manager.save_songs(tracks)
             self.storage_manager.save_credits(tracks_credits)
             self.storage_manager.save_albums(albums)
 
-            if raise_keyboard_interrupt:
-                raise KeyboardInterrupt
+            if raise_exception:
+                raise Exception()
 
     def get_artists(self, artist_name, offset, limit):
         artists_response = self.client.find_artist(
