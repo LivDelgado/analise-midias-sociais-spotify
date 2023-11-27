@@ -73,7 +73,7 @@ class Collector:
         raise_exception = False
 
         try:
-            print("Coletando albums")
+            print("Coletando albums do artista " + artist.get("name"))
 
             offsets = range(0, 951, self._LIMITE_REQUEST)
 
@@ -86,7 +86,7 @@ class Collector:
                 albums += albums_listed
 
             for album in albums:
-                print("Coletando tracks do album " + album.get("id"))
+                print("Coletando tracks do album " + album.get("name") + " do artista " + artist.get("name"))
 
                 for offset in offsets:
                     tracks_listed = self.get_tracks(
@@ -99,7 +99,7 @@ class Collector:
                     tracks += tracks_listed
 
             for track in tracks:
-                print("Coletando credits da track " + track.get("id"))
+                print("Coletando credits da track " + track.get("name") + " do album " + album.get("name") + " do artista " + artist.get("name"))
                 tracks_credits.append(self.get_credits(track_id=track.get("id")))
 
         except (KeyboardInterrupt, StopFetchingDataException, Exception):
