@@ -112,13 +112,29 @@ class Collector:
 
         try:
             print("Coletando albums")
-            albums = self.get_albums(artist_id=artist.get("id"), offset=0, limit=20)
+
+            offsets = range(0, 951, self._LIMITE_REQUEST)
+
+            for offset in offsets:
+                albums_listed = self.get_albums(artist_id=artist.get("id"), offset=offset, limit=self._LIMITE_REQUEST)
+                
+                if not albums_listed:
+                    break
+                
+                albums += albums_listed
 
             for album in albums:
                 print("Coletando tracks do album " + album.get("id"))
-                tracks += self.get_tracks(
-                    album_id=album.get("id"), offset=0, limit=self._LIMITE_REQUEST
-                )
+
+                for offset in offsets:
+                    tracks_listed = self.get_tracks(
+                        album_id=album.get("id"), offset=offset, limit=self._LIMITE_REQUEST
+                    )
+
+                    if not tracks_listed:
+                        break
+                    
+                    tracks += tracks_listed
 
             for track in tracks:
                 print("Coletando credits da track " + track.get("id"))
@@ -127,6 +143,7 @@ class Collector:
         except (KeyboardInterrupt, StopFetchingDataException, Exception):
             print("salvando dados do artista em coleta atualmente antes de encerrar")
             raise_exception = True
+
         finally:
             self.storage_manager.save_songs(tracks)
             self.storage_manager.save_credits(tracks_credits)
