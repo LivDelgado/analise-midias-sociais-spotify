@@ -6,10 +6,9 @@ from storage.constants import Constants
 
 
 class StorageManager:
-    def __init__(self, num_planilha: int) -> None:
-        self.num_planilha = num_planilha
+    def __init__(self) -> None:
         self.__FILE_NAME = (
-            f"arquivos/coleta_dividida/coleta_dados_spotify_{num_planilha}.xlsx"
+            f"arquivos/main_artists/coleta_top_artists.xlsx"
         )
         self.artists_df = pd.DataFrame()
         self.albums_df = pd.DataFrame()
