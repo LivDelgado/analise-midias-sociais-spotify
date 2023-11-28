@@ -8,7 +8,7 @@ from storage.constants import Constants
 class StorageManager:
     def __init__(self, num_planilha: int) -> None:
         self.__FILE_NAME = (
-            f"arquivos/main_artists/coleta_top_artists_{num_planilha}.xlsx"
+            f"arquivos/main_artists_dividida/coleta_top_artists_{num_planilha}.xlsx"
         )
         self.artists_df = pd.DataFrame()
         self.albums_df = pd.DataFrame()
