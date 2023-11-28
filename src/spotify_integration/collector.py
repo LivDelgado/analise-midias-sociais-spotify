@@ -85,6 +85,8 @@ class Collector:
                 
                 albums += albums_listed
 
+            print("Foram coletados " + str(len(albums)) + " albums do artista " + artist.get("name"))
+
             for album in albums:
                 print("Coletando tracks do album " + album.get("name") + " do artista " + artist.get("name"))
 
@@ -97,6 +99,9 @@ class Collector:
                         break
                     
                     tracks += tracks_listed
+
+
+            print("Foram coletadas " + str(len(tracks)) + " tracks do artista " + artist.get("name"))
 
             for track in tracks:
                 print("Coletando credits da track " + track.get("name") + " do album " + album.get("name") + " do artista " + artist.get("name"))
