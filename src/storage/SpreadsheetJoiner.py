@@ -9,7 +9,7 @@ import pandas as pd
 class SpreadsheetJoiner:
     def __init__(self):
         self.__FILE_NAME = (
-            f"arquivos/coleta_dividida/coleta_dados_spotify_joined.xlsx"
+            f"arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx"
         )
 
         self.artists_df = pd.DataFrame()
@@ -64,3 +64,11 @@ class SpreadsheetJoiner:
             self.lyrics_df = pd.concat([self.lyrics_df, manager.lyrics_df], ignore_index=True)
             self.albums_artists_df = pd.concat([self.albums_artists_df, manager.albums_artists_df], ignore_index=True)
             self.songs_artists_df = pd.concat([self.songs_artists_df, manager.songs_artists_df], ignore_index=True)
+        
+        self.artists_df.drop_duplicates()
+        self.albums_df.drop_duplicates()
+        self.songs_df.drop_duplicates()
+        self.credits_df.drop_duplicates()
+        self.lyrics_df.drop_duplicates()
+        self.albums_artists_df.drop_duplicates()
+        self.songs_artists_df.drop_duplicates()
