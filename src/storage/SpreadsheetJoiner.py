@@ -21,13 +21,6 @@ class SpreadsheetJoiner:
         self.albums_artists_df = pd.DataFrame()
         self.songs_artists_df = pd.DataFrame()
 
-        self._storage_manager_1 = StorageManager(1)
-        self._storage_manager_2 = StorageManager(2)
-        self._storage_manager_3 = StorageManager(3)
-        self._storage_manager_4 = StorageManager(4)
-        self._storage_manager_5 = StorageManager(5)
-        self._storage_manager_6 = StorageManager(6)
-
         self._storage_managers = [
             StorageManager(1),
             StorageManager(2),
