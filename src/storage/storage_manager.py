@@ -6,7 +6,7 @@ from storage.constants import Constants
 
 
 class StorageManager:
-    __FILE_NAME = "arquivos/coleta_dados_spotify.xlsx"
+    __FILE_NAME = "arquivos/top50/coleta_dados_spotify.xlsx"
 
     def __init__(self) -> None:
         self.artists_df = pd.DataFrame()
@@ -17,6 +17,9 @@ class StorageManager:
 
         self.albums_artists_df = pd.DataFrame()
         self.songs_artists_df = pd.DataFrame()
+
+        with open(self.__FILE_NAME, 'a+'):
+            print("Criando arquivo se não existir")
 
         self.fetch_all_data_from_storage()
 
@@ -60,7 +63,8 @@ class StorageManager:
 
     def save_artists(self, artists):
         for artist in artists:
-            del artist["images"]
+            if artist.get("images"):
+                del artist["images"]
 
         new_artists = pd.DataFrame.from_dict(artists)
         self.artists_df = pd.concat([self.artists_df, new_artists], ignore_index=True)

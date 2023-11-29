@@ -68,29 +68,11 @@ class Collector:
         todos_os_artistas_do_grafo = {}
 
         try:
-            alfabeto = list(string.ascii_lowercase)
-            indexes_busca = alfabeto
+            top_50_brasil = self.get_artists_from_playlist("37i9dQZEVXbMXbN3EUUhlg")
+            top_50_global = self.get_artists_from_playlist("37i9dQZEVXbMDoHDwVN2tF")
 
-            """
-            duas_letras = list(itertools.permutations(alfabeto, 2))
-            tres_letras = list(itertools.permutations(alfabeto, 3))
-
-            indexes_busca += duas_letras
-            indexes_busca += tres_letras
-
-            indexes_busca = [''.join(element) for element in indexes_busca]
-            """
-
-            for index_busca in indexes_busca:
-                offsets = range(0, 951, self._LIMITE_REQUEST)
-
-                for i in offsets:
-                    artistas = self.get_artists(
-                        artist_name=index_busca, offset=i, limit=self._LIMITE_REQUEST
-                    )
-
-                    for artista in artistas:
-                        todos_os_artistas_do_grafo[artista["id"]] = artista
+            for artista in (top_50_brasil + top_50_global):
+                todos_os_artistas_do_grafo[artista["id"]] = artista
 
         except KeyboardInterrupt:
             print("salvando dados antes de encerrar!")
@@ -110,19 +92,19 @@ class Collector:
         raise_keyboard_interrupt = False
 
         try:
-            print("Coletando albums")
+            print("Coletando albums do artista " + artist.get("name"))
             albums = self.get_albums(
                 artist_id=artist.get("id"), offset=0, limit=self._LIMITE_REQUEST
             )
 
             for album in albums:
-                print("Coletando tracks do album " + album.get("id"))
+                print("Coletando tracks do album " + album.get("name") + " do artista " + artist.get("name"))
                 tracks += self.get_tracks(
                     album_id=album.get("id"), offset=0, limit=self._LIMITE_REQUEST
                 )
 
             for track in tracks:
-                print("Coletando credits da track " + track.get("id"))
+                print("Coletando credits da track " + track.get("name") + " do album " + album.get("name") + " do artista " + artist.get("name"))
                 tracks_credits.append(self.get_credits(track_id=track.get("id")))
 
         except KeyboardInterrupt:
@@ -135,6 +117,17 @@ class Collector:
 
             if raise_keyboard_interrupt:
                 raise KeyboardInterrupt
+
+    def get_artists_from_playlist(self, playlist_id: str):
+        playlist_items_response = self.client.get_playlist_items(playlist_id=playlist_id)
+
+        items = playlist_items_response["items"]
+        artists = []
+
+        for item in items:
+            artists += item["track"]["artists"]
+
+        return artists
 
     def get_artists(self, artist_name, offset, limit):
         artists_response = self.client.find_artist(
