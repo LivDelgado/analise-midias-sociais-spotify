@@ -47,7 +47,7 @@ class Collector:
                 for i, item in enumerate(artists)
                 if item["id"] == ultimo_artista_coletado
             ),
-            0,
+            -1,
         )
 
         deveria_encerrar_o_programa = False
