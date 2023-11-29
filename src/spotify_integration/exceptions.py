@@ -1,0 +1,2 @@
+class StopFetchingDataException(Exception):
+    pass

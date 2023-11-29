@@ -9,6 +9,7 @@ from spotify_integration.spotify_endpoints import SpotifyEndpoints
 
 class SpotifyClient(BaseClient):
     def __init__(self) -> None:
+        super().__init__()
         self.auth_encoded = self.generate_client_authorization_encoded()
         self._reset_auth_token()
 
@@ -72,7 +73,7 @@ class SpotifyClient(BaseClient):
             SpotifyEndpoints.SPOTIFY_BASE_URL
             + SpotifyEndpoints.ARTIST_ALBUMS.replace("{artist_id}", artist_id)
         )
-        query = f"?market=BR&limit={limit}&offset={offset}"
+        query = f"?market=BR&limit={limit}&offset={offset}&include_groups=single,album"
 
         return self._make_get_request(url=url + query, headers=self.base_header)
 
