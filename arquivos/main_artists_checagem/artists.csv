@@ -1,230 +1,230 @@
 followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_code,num_albums,albums_listed
-89830429,['pop'],06HL4z0CvFAxyc27GXpf02,Taylor Swift,100,Country,United States,USA,US,90,True
-75574891,"['reggaeton', 'trap latino', 'urbano latino']",4q3ewBCX7sLwd24euuV69X,Bad Bunny,97,Country,Puerto Rico,PRI,PR,91,True
-80895796,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']",3TVXtAsR1Inumwj472S9r4,Drake,97,Country,Canada,CAN,CA,69,True
-73324485,"['canadian contemporary r&b', 'canadian pop', 'pop']",1Xyo4u8uXC1ZmMpatF05PJ,The Weeknd,94,Country,Canada,CAN,CA,69,True
-8369140,"['corridos tumbados', 'sad sierreno']",12GqGscKJx3aE4t07u7eVZ,Peso Pluma,92,Country,Mexico,MEX,MX,56,True
-24730858,"['hip hop', 'rap', 'slap house']",0Y5tJX1MQlPlqiwlOH1tJY,Travis Scott,92,Country,United States,USA,US,51,True
-40716781,"['reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",790FomKkXshlbRYZFtlgla,KAROL G,90,Country,Colombia,COL,CO,85,True
-7937290,"['colombian pop', 'pop reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",2LRoIwlKmHjgvigdNGBHNo,Feid,90,Country,Colombia,COL,CO,109,True
-28964158,"['art pop', 'pop']",00FQb4jTyendYWaN8pK0wa,Lana Del Rey,90,Country,United States,USA,US,59,True
+89830429,['pop'],06HL4z0CvFAxyc27GXpf02,Taylor Swift,100,Country,United States,USA,US,64,True
+75574891,"['reggaeton', 'trap latino', 'urbano latino']",4q3ewBCX7sLwd24euuV69X,Bad Bunny,97,Country,Puerto Rico,PRI,PR,84,True
+80895796,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']",3TVXtAsR1Inumwj472S9r4,Drake,97,Country,Canada,CAN,CA,53,True
+73324485,"['canadian contemporary r&b', 'canadian pop', 'pop']",1Xyo4u8uXC1ZmMpatF05PJ,The Weeknd,94,Country,Canada,CAN,CA,56,True
+8369140,"['corridos tumbados', 'sad sierreno']",12GqGscKJx3aE4t07u7eVZ,Peso Pluma,92,Country,Mexico,MEX,MX,51,True
+24730858,"['hip hop', 'rap', 'slap house']",0Y5tJX1MQlPlqiwlOH1tJY,Travis Scott,92,Country,United States,USA,US,50,True
+40716781,"['reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",790FomKkXshlbRYZFtlgla,KAROL G,90,Country,Colombia,COL,CO,82,True
+7937290,"['colombian pop', 'pop reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",2LRoIwlKmHjgvigdNGBHNo,Feid,90,Country,Colombia,COL,CO,100,True
+28964158,"['art pop', 'pop']",00FQb4jTyendYWaN8pK0wa,Lana Del Rey,90,Country,United States,USA,US,50,True
 29205213,['pop'],1McMsnEElThX1knmY4oliG,Olivia Rodrigo,90,Country,United States,USA,US,19,True
-21626057,"['chicago rap', 'hip hop', 'rap']",5K4W6rqBFWDnAN6FQUkS6x,Kanye West,90,Country,United States,USA,US,47,True
+21626057,"['chicago rap', 'hip hop', 'rap']",5K4W6rqBFWDnAN6FQUkS6x,Kanye West,90,Country,United States,USA,US,44,True
 10970039,"['corrido', 'corridos tumbados', 'musica mexicana', 'sad sierreno', 'sierreno']",7Gi6gjaWy3DxyilpF1a8Is,Junior H,89,Country,Mexico,MEX,MX,47,True
-92896673,"['filmi', 'modern bollywood']",4YRxDV8wJFPHPTeXepOstw,Arijit Singh,89,Country,India,IND,IN,263,True
-74223789,"['canadian pop', 'pop']",1uNFoZAHBGtllmzznpCI3s,Justin Bieber,88,Country,Canada,CAN,CA,63,True
+92896673,"['filmi', 'modern bollywood']",4YRxDV8wJFPHPTeXepOstw,Arijit Singh,89,Country,India,IND,IN,246,True
+74223789,"['canadian pop', 'pop']",1uNFoZAHBGtllmzznpCI3s,Justin Bieber,88,Country,Canada,CAN,CA,50,True
 10527334,['k-pop'],6HaGTQPmzraVmaVxvz6EUc,Jung Kook,88,Country,South Korea,KOR,KR,20,True
-114830798,"['pop', 'singer-songwriter pop', 'uk pop']",6eUKZXaKkcviH0Ku9w2n3V,Ed Sheeran,88,Country,United Kingdom,GBR,GB,134,True
-18989321,"['puerto rican pop', 'reggaeton', 'trap latino', 'urbano latino']",1mcTU81TzQhprhouKaTkpq,Rauw Alejandro,87,Country,Puerto Rico,PRI,PR,149,True
-12940970,"['reggaeton', 'trap latino', 'urbano latino']",7iK8PXO48WeuP03g8YR51W,Myke Towers,87,Country,Puerto Rico,PRI,PR,146,True
-70303563,"['k-pop', 'k-pop boy group', 'pop']",3Nrfpe0tUJi4K4DXYWgMUX,BTS,86,Country,South Korea,KOR,KR,73,True
-47602258,"['permanent wave', 'pop']",4gzpq5DPGxSnKTe4SA8HAU,Coldplay,86,Country,United Kingdom,GBR,GB,97,True
-41826994,"['dance pop', 'pop', 'uk pop']",6M2wZ9GZgrQXHCFfjv46we,Dua Lipa,86,Country,United Kingdom,GBR,GB,101,True
-21986140,"['garage rock', 'modern rock', 'permanent wave', 'rock', 'sheffield indie']",7Ln80lUS6He07XvHI8qqHH,Arctic Monkeys,86,Country,United Kingdom,GBR,GB,35,True
-32992508,"['reggaeton', 'reggaeton flow', 'trap boricua', 'trap latino', 'urbano latino']",2R21vXR83lH98kGeO99Y66,Anuel AA,86,Country,Puerto Rico,PRI,PR,140,True
-3002321,"['trap latino', 'urbano latino']",0Q8NcsJwoCbZOHHW63su5S,Mora,86,Country,Puerto Rico,PRI,PR,62,True
+114830798,"['pop', 'singer-songwriter pop', 'uk pop']",6eUKZXaKkcviH0Ku9w2n3V,Ed Sheeran,88,Country,United Kingdom,GBR,GB,113,True
+18989321,"['puerto rican pop', 'reggaeton', 'trap latino', 'urbano latino']",1mcTU81TzQhprhouKaTkpq,Rauw Alejandro,87,Country,Puerto Rico,PRI,PR,142,True
+12940970,"['reggaeton', 'trap latino', 'urbano latino']",7iK8PXO48WeuP03g8YR51W,Myke Towers,87,Country,Puerto Rico,PRI,PR,141,True
+70303563,"['k-pop', 'k-pop boy group', 'pop']",3Nrfpe0tUJi4K4DXYWgMUX,BTS,86,Country,South Korea,KOR,KR,54,True
+47602258,"['permanent wave', 'pop']",4gzpq5DPGxSnKTe4SA8HAU,Coldplay,86,Country,United Kingdom,GBR,GB,72,True
+41826994,"['dance pop', 'pop', 'uk pop']",6M2wZ9GZgrQXHCFfjv46we,Dua Lipa,86,Country,United Kingdom,GBR,GB,104,True
+21986140,"['garage rock', 'modern rock', 'permanent wave', 'rock', 'sheffield indie']",7Ln80lUS6He07XvHI8qqHH,Arctic Monkeys,86,Country,United Kingdom,GBR,GB,40,True
+32992508,"['reggaeton', 'reggaeton flow', 'trap boricua', 'trap latino', 'urbano latino']",2R21vXR83lH98kGeO99Y66,Anuel AA,86,Country,Puerto Rico,PRI,PR,135,True
+3002321,"['trap latino', 'urbano latino']",0Q8NcsJwoCbZOHHW63su5S,Mora,86,Country,Puerto Rico,PRI,PR,58,True
 2114747,['musica chihuahuense'],6XkjpgcEsYab502Vr1bBeW,Grupo Frontera,86,Country,Mexico,MEX,MX,26,True
-5330045,"['corrido', 'corridos tumbados', 'sad sierreno', 'sierreno']",0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,86,Country,Mexico,MEX,MX,89,True
-9075525,"['corrido', 'corridos tumbados', 'musica mexicana', 'sad sierreno', 'sierreno']",0elWFr7TW8piilVRYJUe4P,Natanael Cano,86,Country,Mexico,MEX,MX,77,True
-22235859,"['filmi', 'indian instrumental', 'modern bollywood']",1wRPtKGflJrBx9BmLsSwlU,Pritam,86,Country,India,IND,IN,346,True
-23191822,"['desi hip hop', 'filmi', 'tamil hip hop']",4zCH9qm4R2DADamUHMCa6O,Anirudh Ravichander,86,Country,India,IND,IN,288,True
-26333898,"['big room', 'dance pop', 'edm', 'pop', 'pop dance']",1Cs0zKBU1kc0i8ypK3B9ai,David Guetta,86,Country,France,FRA,FR,369,True
-31637231,"['colombian pop', 'dance pop', 'latin pop', 'pop']",0EmeFodog0BfCgMzAIvKQp,Shakira,86,Country,Colombia,COL,CO,52,True
+5330045,"['corrido', 'corridos tumbados', 'sad sierreno', 'sierreno']",0ys2OFYzWYB5hRDLCsBqxt,Fuerza Regida,86,Country,Mexico,MEX,MX,77,True
+9075525,"['corrido', 'corridos tumbados', 'musica mexicana', 'sad sierreno', 'sierreno']",0elWFr7TW8piilVRYJUe4P,Natanael Cano,86,Country,Mexico,MEX,MX,65,True
+22235859,"['filmi', 'indian instrumental', 'modern bollywood']",1wRPtKGflJrBx9BmLsSwlU,Pritam,86,Country,India,IND,IN,245,True
+23191822,"['desi hip hop', 'filmi', 'tamil hip hop']",4zCH9qm4R2DADamUHMCa6O,Anirudh Ravichander,86,Country,India,IND,IN,239,True
+26333898,"['big room', 'dance pop', 'edm', 'pop', 'pop dance']",1Cs0zKBU1kc0i8ypK3B9ai,David Guetta,86,Country,France,FRA,FR,331,True
+31637231,"['colombian pop', 'dance pop', 'latin pop', 'pop']",0EmeFodog0BfCgMzAIvKQp,Shakira,86,Country,Colombia,COL,CO,50,True
 12940680,"['argentine hip hop', 'pop venezolano', 'trap argentino', 'trap latino', 'urbano latino']",716NhGYqD1jl2wI1Qkgq36,Bizarrap,86,Country,Argentina,ARG,AR,96,True
-37703440,"['reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",1vyhD5VmyZ7KMfW5gqLgo5,J Balvin,85,Country,Colombia,COL,CO,156,True
+37703440,"['reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",1vyhD5VmyZ7KMfW5gqLgo5,J Balvin,85,Country,Colombia,COL,CO,147,True
 29821473,['pop'],6KImCVD70vtIoJWnq6nGn3,Harry Styles,85,Country,United Kingdom,GBR,GB,4,True
-34349124,"['latin pop', 'reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",1r4hJ1h58CWwUQe3MxPuau,Maluma,85,Country,Colombia,COL,CO,112,True
-3129711,"['rap canario', 'trap latino', 'urbano latino']",52iwsT98xCoGgiGntTiR7K,Quevedo,85,Country,Spain,ESP,ES,56,True
-967405,['hoerspiel'],3meJIgRw7YleJrmbpbJK6S,Die drei ???,84,Country,Germany,DEU,DE,277,True
+34349124,"['latin pop', 'reggaeton', 'reggaeton colombiano', 'trap latino', 'urbano latino']",1r4hJ1h58CWwUQe3MxPuau,Maluma,85,Country,Colombia,COL,CO,96,True
+3129711,"['rap canario', 'trap latino', 'urbano latino']",52iwsT98xCoGgiGntTiR7K,Quevedo,85,Country,Spain,ESP,ES,55,True
+967405,['hoerspiel'],3meJIgRw7YleJrmbpbJK6S,Die drei ???,84,Country,Germany,DEU,DE,1,True
 5788267,"['k-pop', 'k-pop girl group']",6HvZYsbFfjnjFrWF950C9d,NewJeans,83,Country,South Korea,KOR,KR,11,True
 15731386,"['j-division', 'korean ost']",3JsHnjpbhX4SnySpvpa9DK,V,83,Country,South Korea,KOR,KR,9,True
 1261073,['trap argentino'],19HM5j0ULGSmEoRcrSe5x3,Milo j,83,Country,Argentina,ARG,AR,23,True
 46218159,"['k-pop', 'k-pop girl group', 'pop']",41MozSoPIsD1dJM0CLPjZF,BLACKPINK,82,Country,South Korea,KOR,KR,24,True
-20282032,"['filmi', 'modern bollywood']",0oOet2f43PA68X5RxKobEy,Shreya Ghoshal,82,Country,India,IND,IN,289,True
-7114701,"['big room', 'brostep', 'dutch edm', 'edm', 'house', 'pop dance', 'slap house', 'trance']",2o5jDhtHVPhrJdv3cEQ99Z,Tiësto,82,Country,Netherlands,NLD,NL,338,True
-9604010,"['argentine hip hop', 'trap argentino', 'trap latino', 'trap triste', 'urbano latino']",1bAftSH8umNcGZ0uyV7LMg,Duki,82,Country,Argentina,ARG,AR,120,True
+20282032,"['filmi', 'modern bollywood']",0oOet2f43PA68X5RxKobEy,Shreya Ghoshal,82,Country,India,IND,IN,256,True
+7114701,"['big room', 'brostep', 'dutch edm', 'edm', 'house', 'pop dance', 'slap house', 'trance']",2o5jDhtHVPhrJdv3cEQ99Z,Tiësto,82,Country,Netherlands,NLD,NL,248,True
+9604010,"['argentine hip hop', 'trap argentino', 'trap latino', 'trap triste', 'urbano latino']",1bAftSH8umNcGZ0uyV7LMg,Duki,82,Country,Argentina,ARG,AR,113,True
 3878467,"['alt z', 'pop']",45dkTj5sMRSjrmBSBeiHym,Tate McRae,82,Country,Canada,CAN,CA,48,True
 3267999,"['agronejo', 'sertanejo pop']",2CKOmarVWvWqkNWUatHCex,Ana Castela,82,Country,Brazil,BRA,BR,48,True
-3340210,['funk paulista'],75i9GaW2MJUgt4BkdUnuUY,MC Ryan SP,82,Country,Brazil,BRA,BR,211,True
-27029102,"['australian dance', 'australian pop', 'pop']",5WUlDfRSoLAfcVSX1WnrxN,Sia,82,Country,Australia,AUS,AU,125,True
-5074698,['pop argentino'],1DxLCyH42yaHKGK3cl5bvG,Maria Becerra,81,Country,Argentina,ARG,AR,54,True
-20153578,"['agronejo', 'arrocha', 'sertanejo', 'sertanejo universitario']",3p7PcrEHaaKLJnPUGOtRlT,Henrique & Juliano,81,Country,Brazil,BRA,BR,77,True
-42502682,"['canadian pop', 'pop', 'viral pop']",7n2wHs1TKAczGzO7Dd2rGr,Shawn Mendes,81,Country,Canada,CAN,CA,43,True
-6025491,"['irish singer-songwriter', 'modern rock', 'pov: indie']",2FXC3k01G6Gw61bmprjgqS,Hozier,81,Country,Ireland,IRL,IE,32,True
-5977288,"['r&b en espanol', 'spanish hip hop', 'trap latino', 'urbano espanol', 'urbano latino']",2IMZYfNi21MGqxopj9fWx8,Rels B,81,Country,Spain,ESP,ES,73,True
-39309054,['electro house'],7vk5e3vY1uw9plTHJAMwjN,Alan Walker,80,Country,Norway,NOR,NO,97,True
-23099783,"['dance pop', 'edm', 'pop', 'pop dance']",1vCWHaC5f2uS3yhpwWbIA6,Avicii,80,Country,Sweden,SWE,SE,73,True
-2831767,['cumbia pop'],06Q5VlSAku57lFzyME3HrM,Ke Personajes,80,Country,Argentina,ARG,AR,70,True
+3340210,['funk paulista'],75i9GaW2MJUgt4BkdUnuUY,MC Ryan SP,82,Country,Brazil,BRA,BR,208,True
+27029102,"['australian dance', 'australian pop', 'pop']",5WUlDfRSoLAfcVSX1WnrxN,Sia,82,Country,Australia,AUS,AU,117,True
+5074698,['pop argentino'],1DxLCyH42yaHKGK3cl5bvG,Maria Becerra,81,Country,Argentina,ARG,AR,52,True
+20153578,"['agronejo', 'arrocha', 'sertanejo', 'sertanejo universitario']",3p7PcrEHaaKLJnPUGOtRlT,Henrique & Juliano,81,Country,Brazil,BRA,BR,65,True
+42502682,"['canadian pop', 'pop', 'viral pop']",7n2wHs1TKAczGzO7Dd2rGr,Shawn Mendes,81,Country,Canada,CAN,CA,42,True
+6025491,"['irish singer-songwriter', 'modern rock', 'pov: indie']",2FXC3k01G6Gw61bmprjgqS,Hozier,81,Country,Ireland,IRL,IE,34,True
+5977288,"['r&b en espanol', 'spanish hip hop', 'trap latino', 'urbano espanol', 'urbano latino']",2IMZYfNi21MGqxopj9fWx8,Rels B,81,Country,Spain,ESP,ES,65,True
+39309054,['electro house'],7vk5e3vY1uw9plTHJAMwjN,Alan Walker,80,Country,Norway,NOR,NO,92,True
+23099783,"['dance pop', 'edm', 'pop', 'pop dance']",1vCWHaC5f2uS3yhpwWbIA6,Avicii,80,Country,Sweden,SWE,SE,69,True
+2831767,['cumbia pop'],06Q5VlSAku57lFzyME3HrM,Ke Personajes,80,Country,Argentina,ARG,AR,69,True
 7953563,"['australian pop', 'pop', 'viral pop']",3WGpXCj9YhhfX11TToZcXP,Troye Sivan,80,Country,Australia,AUS,AU,37,True
-20639218,"['agronejo', 'arrocha', 'sertanejo', 'sertanejo universitario']",7MiDcPa6UiV3In7lIM71IN,Gusttavo Lima,80,Country,Brazil,BRA,BR,82,True
-9645042,"['electro', 'filter house', 'rock']",4tZwfgrHOc3mvqYlEYSvVi,Daft Punk,80,Country,France,FRA,FR,35,True
-6961446,"['afrobeats', 'azontobeats', 'dancehall', 'nigerian hip hop', 'nigerian pop']",3wcj11K77LjEY1PkEazffa,Burna Boy,80,Country,Nigeria,NGA,NG,64,True
-4024610,['dance pop'],0z4gvV4rjIZ9wHck67ucSV,Akon,80,Country,Senegal,SEN,SN,82,True
+20639218,"['agronejo', 'arrocha', 'sertanejo', 'sertanejo universitario']",7MiDcPa6UiV3In7lIM71IN,Gusttavo Lima,80,Country,Brazil,BRA,BR,66,True
+9645042,"['electro', 'filter house', 'rock']",4tZwfgrHOc3mvqYlEYSvVi,Daft Punk,80,Country,France,FRA,FR,37,True
+6961446,"['afrobeats', 'azontobeats', 'dancehall', 'nigerian hip hop', 'nigerian pop']",3wcj11K77LjEY1PkEazffa,Burna Boy,80,Country,Nigeria,NGA,NG,52,True
+4024610,['dance pop'],0z4gvV4rjIZ9wHck67ucSV,Akon,80,Country,Senegal,SEN,SN,61,True
 7948478,"['latin viral pop', 'pop', 'r&b en espanol']",7ltDVBr6mKbRvohxheJ9h1,ROSALÍA,80,Country,Spain,ESP,ES,26,True
-40033524,['filmi'],1mYsTxnqsietFxj1OgoGbG,A.R. Rahman,79,Country,India,IND,IN,494,True
-4811565,['australian hip hop'],2tIP7SsRs7vjIcLrU85W8J,The Kid LAROI,79,Country,Australia,AUS,AU,28,True
-33040713,"['arrocha', 'sertanejo', 'sertanejo universitario']",1yR65psqiazQpeM79CcGh8,Marília Mendonça,79,Country,Brazil,BRA,BR,51,True
+40033524,['filmi'],1mYsTxnqsietFxj1OgoGbG,A.R. Rahman,79,Country,India,IND,IN,243,True
+4811565,['australian hip hop'],2tIP7SsRs7vjIcLrU85W8J,The Kid LAROI,79,Country,Australia,AUS,AU,26,True
+33040713,"['arrocha', 'sertanejo', 'sertanejo universitario']",1yR65psqiazQpeM79CcGh8,Marília Mendonça,79,Country,Brazil,BRA,BR,50,True
 297727,"['urbano espanol', 'urbano latino']",2O8vbr4RYPpk6MRA4fio7u,Saiko,79,Country,Chile,CHL,CL,49,True
-8414425,"['french hip hop', 'pop urbaine', 'rap marseille']",3IW7ScrzXmPvZhB27hmfgy,Jul,79,Country,France,FRA,FR,202,True
+8414425,"['french hip hop', 'pop urbaine', 'rap marseille']",3IW7ScrzXmPvZhB27hmfgy,Jul,79,Country,France,FRA,FR,174,True
 27454485,"['australian rock', 'hard rock', 'rock']",711MCceyCBcFnzjGY4Q7Un,AC/DC,79,Country,Australia,AUS,AU,24,True
-4488544,"['dance pop', 'dancehall', 'pop', 'pop rap']",3Isy6kedDrgPYoTS1dazA9,Sean Paul,79,Country,Jamaica,JAM,JM,140,True
-11904892,"['panamanian pop', 'reggaeton', 'trap latino', 'urbano latino']",77ziqFxp5gaInVrF2lj4ht,Sech,79,Country,Panama,PAN,PA,82,True
+4488544,"['dance pop', 'dancehall', 'pop', 'pop rap']",3Isy6kedDrgPYoTS1dazA9,Sean Paul,79,Country,Jamaica,JAM,JM,128,True
+11904892,"['panamanian pop', 'reggaeton', 'trap latino', 'urbano latino']",77ziqFxp5gaInVrF2lj4ht,Sech,79,Country,Panama,PAN,PA,74,True
 7993234,"['indie rock italiano', 'italian pop']",0lAWpj5szCSwM4rUMHYmrr,Måneskin,79,Country,Italy,ITA,IT,19,True
 5828442,['alternative r&b'],7cYEt1pqMgXJdq00hAwVpT,Chase Atlantic,78,Country,Australia,AUS,AU,28,True
-8839145,"['french hip hop', 'pop urbaine']",6Te49r3A6f5BiIgBRxH7FH,Ninho,78,Country,France,FRA,FR,68,True
+8839145,"['french hip hop', 'pop urbaine']",6Te49r3A6f5BiIgBRxH7FH,Ninho,78,Country,France,FRA,FR,56,True
 8773537,"['german metal', 'industrial', 'industrial metal', 'industrial rock', 'neue deutsche harte']",6wWVKhxIU2cEi0K81v7HvP,Rammstein,78,Country,Germany,DEU,DE,22,True
 5733633,"['italian hip hop', 'italian pop', 'trap italiana', 'trap latino']",23TFHmajVfBtlRx5MXqgoz,Sfera Ebbasta,78,Country,Italy,ITA,IT,39,True
 132252,"['binaural', 'healing hz', 'meditation']",4rXABp4A7KjG9elWFNAbO4,Miracle Tones,78,Country,Sweden,SWE,SE,23,True
 11077465,"['europop', 'swedish pop']",0LcJLqbBmaGUft1e9Mm8HV,ABBA,78,Country,Sweden,SWE,SE,17,True
-3329487,"['afrobeats', 'nigerian pop']",46pWGuE3dSwY3bMMXGBvVS,Rema,78,Country,Nigeria,NGA,NG,61,True
+3329487,"['afrobeats', 'nigerian pop']",46pWGuE3dSwY3bMMXGBvVS,Rema,78,Country,Nigeria,NGA,NG,59,True
 1773810,['pop argentino'],0AqlFI0tz2DsEoJlKSIiT9,Emilia,77,Country,Sweden,SWE,SE,40,True
-8407165,"['edm', 'pop', 'pop dance', 'tropical house']",23fqKkggKUBHNkbKtXEls4,Kygo,77,Country,Norway,NOR,NO,64,True
-3130867,"['dembow', 'rap dominicano', 'trap latino', 'urbano latino']",2oQX8QiMXOyuqbcZEFsZfm,El Alfa,77,Country,Dominican Republic,DOM,DO,131,True
+8407165,"['edm', 'pop', 'pop dance', 'tropical house']",23fqKkggKUBHNkbKtXEls4,Kygo,77,Country,Norway,NOR,NO,59,True
+3130867,"['dembow', 'rap dominicano', 'trap latino', 'urbano latino']",2oQX8QiMXOyuqbcZEFsZfm,El Alfa,77,Country,Dominican Republic,DOM,DO,121,True
 6587986,"['j-pop', 'japanese teen pop']",64tJ2EAv1R6UaZqc4iOCyj,YOASOBI,77,Country,Japan,JPN,JP,40,True
-2169863,"['drill espanol', 'urbano espanol']",4az97MtWmBQ5Db3GfDh9j9,Morad,77,Country,France,FRA,FR,97,True
-11824514,"['reggae', 'roots reggae']",2QsynagSdAqZj3U9HgDzjD,Bob Marley & The Wailers,77,Country,Jamaica,JAM,JM,67,True
-3202771,"['compositional ambient', 'neo-classical']",2uFUBdaVGtyMqckSeCl0Qj,Ludovico Einaudi,77,Country,Italy,ITA,IT,101,True
-11606662,"['irish rock', 'permanent wave', 'rock']",51Blml2LZPmy7TTiAg47vQ,U2,77,Country,Ireland,IRL,IE,65,True
+2169863,"['drill espanol', 'urbano espanol']",4az97MtWmBQ5Db3GfDh9j9,Morad,77,Country,France,FRA,FR,95,True
+11824514,"['reggae', 'roots reggae']",2QsynagSdAqZj3U9HgDzjD,Bob Marley & The Wailers,77,Country,Jamaica,JAM,JM,50,True
+3202771,"['compositional ambient', 'neo-classical']",2uFUBdaVGtyMqckSeCl0Qj,Ludovico Einaudi,77,Country,Italy,ITA,IT,54,True
+11606662,"['irish rock', 'permanent wave', 'rock']",51Blml2LZPmy7TTiAg47vQ,U2,77,Country,Ireland,IRL,IE,50,True
 991228,['german pop'],2rEVnwCPBeGkWMv425KoG1,AYLIVA,77,Country,Germany,DEU,DE,17,True
-3093502,"['deep euro house', 'deep house', 'edm', 'german dance', 'pop dance', 'tropical house']",3t5xRXzsuZmMDkQzgOX35S,Robin Schulz,77,Country,Germany,DEU,DE,120,True
-4154137,"['baroque', 'classical', 'early music', 'german baroque']",5aIqB5nVVvmFsvSdExz408,Johann Sebastian Bach,76,Country,Germany,DEU,DE,1209,True
-2745142,"['belgian edm', 'edm', 'pop dance', 'tropical house']",7f5Zgnp2spUuuzKplmRkt7,Lost Frequencies,76,Country,Belgium,BEL,BE,104,True
+3093502,"['deep euro house', 'deep house', 'edm', 'german dance', 'pop dance', 'tropical house']",3t5xRXzsuZmMDkQzgOX35S,Robin Schulz,77,Country,Germany,DEU,DE,118,True
+4154137,"['baroque', 'classical', 'early music', 'german baroque']",5aIqB5nVVvmFsvSdExz408,Johann Sebastian Bach,76,Country,Germany,DEU,DE,759,True
+2745142,"['belgian edm', 'edm', 'pop dance', 'tropical house']",7f5Zgnp2spUuuzKplmRkt7,Lost Frequencies,76,Country,Belgium,BEL,BE,99,True
 125494,[],0jbo7KFNMiIkfBR6ih0yhm,iñigo quintero,76,Country,Spain,ESP,ES,4,True
-11214060,"['dance pop', 'latin pop', 'mexican pop']",7qG3b048QCHVRO5Pv1T5lw,Enrique Iglesias,76,Country,Spain,ESP,ES,88,True
+11214060,"['dance pop', 'latin pop', 'mexican pop']",7qG3b048QCHVRO5Pv1T5lw,Enrique Iglesias,76,Country,Spain,ESP,ES,56,True
 2761961,"['hard rock', 'metal']",1Qp56T7n950O3EGMsSl81D,Ghost,75,Country,Sweden,SWE,SE,24,True
-4404560,"['afrobeats', 'afropop', 'azonto', 'nigerian hip hop', 'nigerian pop']",3tVQdUvClmAT7URs9V3rsp,Wizkid,75,Country,Nigeria,NGA,NG,57,True
-12286971,"['cantautor', 'latin arena pop', 'latin pop']",0h1zs4CTlU9D2QtgPxptUD,Ricardo Arjona,75,Country,Guatemala,GTM,GT,46,True
-1508328,"['mambo chileno', 'urbano chileno']",1Yj5Xey7kTwvZla8sqdsdE,Cris Mj,75,Country,Chile,CHL,CL,88,True
+4404560,"['afrobeats', 'afropop', 'azonto', 'nigerian hip hop', 'nigerian pop']",3tVQdUvClmAT7URs9V3rsp,Wizkid,75,Country,Nigeria,NGA,NG,50,True
+12286971,"['cantautor', 'latin arena pop', 'latin pop']",0h1zs4CTlU9D2QtgPxptUD,Ricardo Arjona,75,Country,Guatemala,GTM,GT,48,True
+1508328,"['mambo chileno', 'urbano chileno']",1Yj5Xey7kTwvZla8sqdsdE,Cris Mj,75,Country,Chile,CHL,CL,86,True
 680248,['reggaeton chileno'],35oGZihZclGoTVuICPXRP9,Jere Klein,75,Country,Chile,CHL,CL,29,True
-18533559,"['classic pakistani pop', 'filmi', 'modern bollywood', 'sufi']",2oSONSC9zQ4UonDKnLqksx,Atif Aslam,75,Country,Pakistan,PAK,PK,82,True
+18533559,"['classic pakistani pop', 'filmi', 'modern bollywood', 'sufi']",2oSONSC9zQ4UonDKnLqksx,Atif Aslam,75,Country,Pakistan,PAK,PK,79,True
 9809879,['pop'],1Hsdzj7Dlq2I7tHP7501T4,Niall Horan,75,Country,Ireland,IRL,IE,46,True
 6465097,"['bedroom pop', 'indie pop', 'norwegian indie', 'pov: indie']",3uwAm6vQy7kWPS2bciKWx9,girl in red,75,Country,Norway,NOR,NO,22,True
 9969192,"['art pop', 'metropopolis', 'nz pop', 'pop']",163tK9Wjr9P9DmM0AVK7lm,Lorde,75,Country,New Zealand,NZL,NZ,16,True
-15689856,"['dutch edm', 'edm', 'pop', 'pop dance', 'progressive house']",60d24wfXkVzDSfLS6hyCjZ,Martin Garrix,75,Country,Netherlands,NLD,NL,121,True
-2511866,"['dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house', 'slap house']",6cEuCEZu7PAE9ZSzLLc2oQ,R3HAB,75,Country,Netherlands,NLD,NL,395,True
+15689856,"['dutch edm', 'edm', 'pop', 'pop dance', 'progressive house']",60d24wfXkVzDSfLS6hyCjZ,Martin Garrix,75,Country,Netherlands,NLD,NL,116,True
+2511866,"['dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house', 'slap house']",6cEuCEZu7PAE9ZSzLLc2oQ,R3HAB,75,Country,Netherlands,NLD,NL,391,True
 1728477,"['italian hip hop', 'italian pop', 'trap italiana']",2K5nCggbhSZ00YCYP5qkZS,Shiva,75,Country,Japan,JPN,JP,48,True
 1538750,"['italian hip hop', 'italian pop', 'rap napoletano', 'trap italiana']",27LlKWxS3KXW7RRAxN5S8s,Geolier,75,Country,Italy,ITA,IT,22,True
-678525,"['edm', 'pop dance', 'pop house', 'uk dance']",0xRXCcSX89eobfrshSVdyu,MEDUZA,75,Country,Italy,ITA,IT,70,True
+678525,"['edm', 'pop dance', 'pop house', 'uk dance']",0xRXCcSX89eobfrshSVdyu,MEDUZA,75,Country,Italy,ITA,IT,66,True
 1866471,['turkish pop'],1CcZoULzFHa8Uhwo6OlQcp,Semicenk,74,Country,Turkey,TUR,TR,16,True
 1410453,"['polish hip hop', 'polish trap']",7CJgLPEqiIRuneZSolpawQ,Taco Hemingway,74,Country,Poland,POL,PL,29,True
-1454733,"['noise pop', 'pov: indie']",3XxNRirzbjfLdDli06zMaB,Eyedress,74,Country,Philippines,PHL,PH,52,True
+1454733,"['noise pop', 'pov: indie']",3XxNRirzbjfLdDli06zMaB,Eyedress,74,Country,Philippines,PHL,PH,50,True
 4499803,"['bachata', 'latin pop', 'tropical']",3nlpTZci9O5W8RsNoNH559,Juan Luis Guerra 4.40,74,Country,Dominican Republic,DOM,DO,44,True
-1699534,['german hip hop'],0Dvx6p8JDyzeOPGmaCIH1L,RAF Camora,74,Country,Austria,AUT,AT,96,True
+1699534,['german hip hop'],0Dvx6p8JDyzeOPGmaCIH1L,RAF Camora,74,Country,Austria,AUT,AT,71,True
 13481524,"['indonesian jazz', 'indonesian pop', 'indonesian singer-songwriter']",2iDVt6mFbtbDEZG5ax0dTi,Tulus,74,Country,Norway,NOR,NO,14,True
-3049774,"['anime rock', 'j-pop', 'j-rock']",4QvgGvpgzgyUOo8Yp8LDm9,Mrs. GREEN APPLE,74,Country,Japan,JPN,JP,36,True
+3049774,"['anime rock', 'j-pop', 'j-rock']",4QvgGvpgzgyUOo8Yp8LDm9,Mrs. GREEN APPLE,74,Country,Japan,JPN,JP,34,True
 3214108,"['j-pop', 'japanese teen pop']",6mEQK9m2krja6X1cfsAjfl,Ado,74,Country,Japan,JPN,JP,32,True
 1250447,"['afro r&b', 'alte', 'nigerian pop']",687cZJR45JO7jhk1LHIbgq,Tems,74,Country,Nigeria,NGA,NG,15,True
 8248970,"['boom bap espanol', 'rap conciencia', 'rap politico', 'venezuelan hip hop']",1wGIhYkKWSq4yACtTkCkSX,Canserbero,73,Country,Venezuela,VEN,VE,16,True
-401775,['hardwave'],0dgJbQ0bKPyUXco8hEXN7X,Øneheart,73,Country,Russia,RUS,RU,101,True
+401775,['hardwave'],0dgJbQ0bKPyUXco8hEXN7X,Øneheart,73,Country,Russia,RUS,RU,99,True
 660435,"['rap latina', 'trap dominicano']",2p4aN0Uxkk3iT3HK0cJ2cJ,Tokischa,73,Country,Dominican Republic,DOM,DO,48,True
-574435,"['bubblegum dance', 'eurodance', 'europop']",6kBjAFKyd0he7LiA5GQ3Gz,Aqua,73,Country,Denmark,DNK,DK,28,True
-4845832,"['belgian hip hop', 'french hip hop', 'pop urbaine', 'r&b francais', 'rap belge', 'rap conscient']",2UwqpfQtNuhBwviIC0f2ie,Damso,73,Country,Belgium,BEL,BE,34,True
-5208919,"['classical', 'classical era']",4NJhFmfw43RLBLjQvxDuRS,Wolfgang Amadeus Mozart,73,Country,Austria,AUT,AT,1028,True
-8067128,"['latin arena pop', 'latin pop', 'mexican pop']",5xd2Tg7Zo8755eCy8Gxkp8,Ha*Ash,73,Country,Japan,JPN,JP,25,True
-1984887,['afrobeats'],3ZpEKRjHaHANcpk10u6Ntq,Ayra Starr,73,Country,Nigeria,NGA,NG,38,True
-4314410,"['dutch house', 'dutch trance', 'edm', 'pop dance', 'progressive house', 'trance']",0SfsnGyD8FpIN4U4WCkBZ5,Armin van Buuren,73,Country,Netherlands,NLD,NL,354,True
-6313752,"['dance pop', 'edm', 'electro house', 'moombahton', 'pop', 'pop dance']",738wLrAtLtCtFOLvQBXOXp,Major Lazer,73,Country,Jamaica,JAM,JM,118,True
+574435,"['bubblegum dance', 'eurodance', 'europop']",6kBjAFKyd0he7LiA5GQ3Gz,Aqua,73,Country,Denmark,DNK,DK,26,True
+4845832,"['belgian hip hop', 'french hip hop', 'pop urbaine', 'r&b francais', 'rap belge', 'rap conscient']",2UwqpfQtNuhBwviIC0f2ie,Damso,73,Country,Belgium,BEL,BE,33,True
+5208919,"['classical', 'classical era']",4NJhFmfw43RLBLjQvxDuRS,Wolfgang Amadeus Mozart,73,Country,Austria,AUT,AT,680,True
+8067128,"['latin arena pop', 'latin pop', 'mexican pop']",5xd2Tg7Zo8755eCy8Gxkp8,Ha*Ash,73,Country,Japan,JPN,JP,26,True
+1984887,['afrobeats'],3ZpEKRjHaHANcpk10u6Ntq,Ayra Starr,73,Country,Nigeria,NGA,NG,39,True
+4314410,"['dutch house', 'dutch trance', 'edm', 'pop dance', 'progressive house', 'trance']",0SfsnGyD8FpIN4U4WCkBZ5,Armin van Buuren,73,Country,Netherlands,NLD,NL,333,True
+6313752,"['dance pop', 'edm', 'electro house', 'moombahton', 'pop', 'pop dance']",738wLrAtLtCtFOLvQBXOXp,Major Lazer,73,Country,Jamaica,JAM,JM,102,True
 2490060,['indonesian pop'],20zafXaLhm5IcXnSU93rNn,Nadin Amizah,73,Country,Indonesia,IDN,ID,14,True
-3667149,"['irish rock', 'pop rock', 'rock']",7t0rwkOPGlDPEhaOcVtOt9,The Cranberries,73,Country,Ireland,IRL,IE,34,True
-1988880,"['german drill', 'german hip hop']",3CJKkU0XuElRT1z8rEtIYg,Luciano,73,Country,Jamaica,JAM,JM,86,True
-8255894,['turkish pop'],64d1rUxfizSAOE9UbMnUZd,Sezen Aksu,72,Country,Turkey,TUR,TR,60,True
+3667149,"['irish rock', 'pop rock', 'rock']",7t0rwkOPGlDPEhaOcVtOt9,The Cranberries,73,Country,Ireland,IRL,IE,36,True
+1988880,"['german drill', 'german hip hop']",3CJKkU0XuElRT1z8rEtIYg,Luciano,73,Country,Jamaica,JAM,JM,70,True
+8255894,['turkish pop'],64d1rUxfizSAOE9UbMnUZd,Sezen Aksu,72,Country,Turkey,TUR,TR,50,True
 4995776,"['c-pop', 'mandopop', 'taiwan pop', 'zhongguo feng']",2elBjNSdBE2Y3f0j1mjrql,Jay Chou,72,Country,Taiwan,TWN,TW,47,True
-3153547,"['classical', 'early romantic era', 'polish classical']",7y97mc3bZRFXzT2szRM4L4,Frédéric Chopin,72,Country,Poland,POL,PL,963,True
-17495939,"['classic pakistani pop', 'filmi', 'modern bollywood', 'qawwali', 'sufi']",3OLGltG8UPIea8sA4w0yg0,Rahat Fateh Ali Khan,72,Country,Pakistan,PAK,PK,320,True
-3239037,"['art pop', 'norwegian pop']",1WgXqy2Dd70QQOU7Ay074N,AURORA,72,Country,Norway,NOR,NO,58,True
-4854776,"['french hip hop', 'pop urbaine', 'r&b francais', 'rap algerien']",0GgY7hjMoGDsX8ZDe2mwds,Soolking,72,Country,Algeria,DZA,DZ,67,True
-9481550,"['latin pop', 'rap latina', 'reggaeton', 'urbano latino']",1GDbiv3spRmZ1XdM1jQbT7,NATTI NATASHA,72,Country,Dominican Republic,DOM,DO,59,True
-8041812,"['celtic rock', 'pop']",3AQRLZ9PuTAozP28Skbq8V,The Script,72,Country,Ireland,IRL,IE,21,True
+3153547,"['classical', 'early romantic era', 'polish classical']",7y97mc3bZRFXzT2szRM4L4,Frédéric Chopin,72,Country,Poland,POL,PL,775,True
+17495939,"['classic pakistani pop', 'filmi', 'modern bollywood', 'qawwali', 'sufi']",3OLGltG8UPIea8sA4w0yg0,Rahat Fateh Ali Khan,72,Country,Pakistan,PAK,PK,170,True
+3239037,"['art pop', 'norwegian pop']",1WgXqy2Dd70QQOU7Ay074N,AURORA,72,Country,Norway,NOR,NO,51,True
+4854776,"['french hip hop', 'pop urbaine', 'r&b francais', 'rap algerien']",0GgY7hjMoGDsX8ZDe2mwds,Soolking,72,Country,Algeria,DZA,DZ,63,True
+9481550,"['latin pop', 'rap latina', 'reggaeton', 'urbano latino']",1GDbiv3spRmZ1XdM1jQbT7,NATTI NATASHA,72,Country,Dominican Republic,DOM,DO,55,True
+8041812,"['celtic rock', 'pop']",3AQRLZ9PuTAozP28Skbq8V,The Script,72,Country,Ireland,IRL,IE,20,True
 2405570,['indonesian pop'],51kyrUsAVqUBcoDEMFkX12,Hindia,72,Country,Indonesia,IDN,ID,27,True
 4931640,['indonesian pop'],0kPb52ySN2k9P6wEZPTUzm,Tiara Andini,72,Country,Indonesia,IDN,ID,15,True
 629542,['turkce drill'],1GMwSpFzrLd12jUX15bHB6,BLOK3,71,Country,Turkey,TUR,TR,15,True
 1253988,"['drill chileno', 'urbano chileno', 'urbano latino']",4yxLYO2imECxGYTTV7RQKb,Pailita,71,Country,Chile,CHL,CL,59,True
-1197861,"['argentine hip hop', 'trap argentino', 'trap triste']",7fT2Me47PQ8T7954PKrcwR,Bhavi,71,Country,Belgium,BEL,BE,60,True
-197764,"['electro house', 'pop dance', 'slap house']",5rGrDvrLOV2VV8SCFVGWlj,Imanbek,71,Country,Kazakhstan,KAZ,KZ,72,True
+1197861,"['argentine hip hop', 'trap argentino', 'trap triste']",7fT2Me47PQ8T7954PKrcwR,Bhavi,71,Country,Belgium,BEL,BE,57,True
+197764,"['electro house', 'pop dance', 'slap house']",5rGrDvrLOV2VV8SCFVGWlj,Imanbek,71,Country,Kazakhstan,KAZ,KZ,71,True
 9275821,['indonesian pop'],3wOsYKZM0zcKNasi3I7fP4,Mahalini,71,Country,Indonesia,IDN,ID,15,True
-2046188,"['pop rap', 'reggae fusion']",5EvFsr3kj42KNv97ZEnqij,Shaggy,71,Country,Jamaica,JAM,JM,139,True
+2046188,"['pop rap', 'reggae fusion']",5EvFsr3kj42KNv97ZEnqij,Shaggy,71,Country,Jamaica,JAM,JM,118,True
 3456606,"['acoustic opm', 'opm', 'p-pop']",67IN4cLJ7798gUapyZlmac,Zack Tabudlo,70,Country,Philippines,PHL,PH,46,True
-460701,"['polish hip hop', 'polish trap']",3U5Oag04Yl2WnvPULOlsMD,Kukon,70,Country,Poland,POL,PL,86,True
-112378,[],61TQfpvTjHYQjPrvtJPwVa,NBSPLV,70,Country,Russia,RUS,RU,153,True
-51789,['reggaeton colombiano'],18dspUI6gqabm5XCC2RcUD,SOG,70,Country,New Zealand,NZL,NZ,48,True
-3999660,"['big room', 'dance pop', 'dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house']",4D75GcNG95ebPtNvoNVXhz,AFROJACK,70,Country,Netherlands,NLD,NL,215,True
-804542,"['mambo chileno', 'urbano chileno']",5CAruGjgds3QlF5ICtEnnc,Jairo Vera,70,Country,Chile,CHL,CL,106,True
-386575,['japanese vgm'],2YvlK6lKiKVjXxsjvNbnqg,HOYO-MiX,70,Country,China,CHN,CN,52,True
-4187105,"['classic indonesian rock', 'indonesian pop', 'indonesian rock']",48bKH1ugFBhERC1rdojP9d,Dewa 19,70,Country,Indonesia,IDN,ID,70,True
-2926362,"['otacore', 'pixel', 'pov: indie']",0I6yADrmeyvw66g7yjkqIF,The Living Tombstone,70,Country,Israel,ISR,IL,69,True
+460701,"['polish hip hop', 'polish trap']",3U5Oag04Yl2WnvPULOlsMD,Kukon,70,Country,Poland,POL,PL,74,True
+112378,[],61TQfpvTjHYQjPrvtJPwVa,NBSPLV,70,Country,Russia,RUS,RU,146,True
+51789,['reggaeton colombiano'],18dspUI6gqabm5XCC2RcUD,SOG,70,Country,New Zealand,NZL,NZ,47,True
+3999660,"['big room', 'dance pop', 'dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house']",4D75GcNG95ebPtNvoNVXhz,AFROJACK,70,Country,Netherlands,NLD,NL,213,True
+804542,"['mambo chileno', 'urbano chileno']",5CAruGjgds3QlF5ICtEnnc,Jairo Vera,70,Country,Chile,CHL,CL,105,True
+386575,['japanese vgm'],2YvlK6lKiKVjXxsjvNbnqg,HOYO-MiX,70,Country,China,CHN,CN,50,True
+4187105,"['classic indonesian rock', 'indonesian pop', 'indonesian rock']",48bKH1ugFBhERC1rdojP9d,Dewa 19,70,Country,Indonesia,IDN,ID,63,True
+2926362,"['otacore', 'pixel', 'pov: indie']",0I6yADrmeyvw66g7yjkqIF,The Living Tombstone,70,Country,Israel,ISR,IL,66,True
 306084,"['italian hip hop', 'italian pop']",7K80yOTC0Id95gRaOxDG5u,ANNA,70,Country,Greece,GRC,GR,21,True
 1446666,"['argentine rock', 'rock en espanol', 'rock uruguayo']",13JJKrUewC1CJYmIDXQNoH,El Cuarteto De Nos,69,Country,Uruguay,URY,UY,27,True
-6812836,"['latin pop', 'pop venezolano', 'reggaeton', 'urbano latino']",2wkoKEfS6dXwThbyTnZWFU,Mau y Ricky,69,Country,Venezuela,VEN,VE,58,True
-2134410,"['danish pop', 'scandipop']",25u4wHJWxCA9vO0CzxAbK7,Lukas Graham,69,Country,Denmark,DNK,DK,38,True
+6812836,"['latin pop', 'pop venezolano', 'reggaeton', 'urbano latino']",2wkoKEfS6dXwThbyTnZWFU,Mau y Ricky,69,Country,Venezuela,VEN,VE,55,True
+2134410,"['danish pop', 'scandipop']",25u4wHJWxCA9vO0CzxAbK7,Lukas Graham,69,Country,Denmark,DNK,DK,41,True
 2434294,"['danish metal', 'danish rock']",0L5fC7Ogm2YwgqVCRcF1bT,Volbeat,69,Country,Denmark,DNK,DK,15,True
-1643585,"['icelandic indie', 'icelandic rock', 'modern alternative rock']",7jdFEYD2LTYjfwxOdlVjmc,KALEO,69,Country,Iceland,ISL,IS,17,True
+1643585,"['icelandic indie', 'icelandic rock', 'modern alternative rock']",7jdFEYD2LTYjfwxOdlVjmc,KALEO,69,Country,Iceland,ISL,IS,13,True
 307568,['alt z'],46xBNx0j6cwY6sD9LgMTm1,Rosa Linn,69,Country,Armenia,ARM,AM,8,True
-3120614,"['belgian pop', 'g-house']",5j4HeCoUlzhfWtjAfM1acR,Stromae,69,Country,Belgium,BEL,BE,17,True
+3120614,"['belgian pop', 'g-house']",5j4HeCoUlzhfWtjAfM1acR,Stromae,69,Country,Belgium,BEL,BE,15,True
 1713063,"['opm', 'pinoy alternative rap', 'pinoy hip hop', 'pinoy r&b', 'pinoy trap']",2G7VQ1kVhVfNagytlousgm,Al James,69,Country,Philippines,PHL,PH,18,True
-15777,['uk funky'],77DAFfvm3O9zT5dIoG0eIO,Kyla,69,Country,Philippines,PHL,PH,10,True
-1258225,"['dance pop', 'romanian house', 'romanian pop']",2w9zwq3AktTeYYMuhMjju8,INNA,69,Country,Romania,ROU,RO,237,True
+15777,['uk funky'],77DAFfvm3O9zT5dIoG0eIO,Kyla,69,Country,Philippines,PHL,PH,9,True
+1258225,"['dance pop', 'romanian house', 'romanian pop']",2w9zwq3AktTeYYMuhMjju8,INNA,69,Country,Romania,ROU,RO,253,True
 1813507,['turkce drill'],6CPZWzcKiOKkHn4L2XI4i2,cakal,69,Country,Turkey,TUR,TR,39,True
 3701092,"['turkish hip hop', 'turkish trap']",1KXTegXtnCPKXjRaX1llcD,Sagopa Kajmer,68,Country,Turkey,TUR,TR,41,True
-332678,['gym phonk'],5ja9cfKWW8Zj9aloyK8WuY,MoonDeity,68,Country,Ukraine,UKR,UA,68,True
-1838073,"['trap latino', 'trap venezolano', 'urbano latino', 'venezuelan hip hop']",1aWJsBQa67l72j1VT3D6Ow,Micro TDH,68,Country,Venezuela,VEN,VE,69,True
+332678,['gym phonk'],5ja9cfKWW8Zj9aloyK8WuY,MoonDeity,68,Country,Ukraine,UKR,UA,65,True
+1838073,"['trap latino', 'trap venezolano', 'urbano latino', 'venezuelan hip hop']",1aWJsBQa67l72j1VT3D6Ow,Micro TDH,68,Country,Venezuela,VEN,VE,66,True
 1550252,"['cubaton', 'electro latino', 'latin hip hop', 'latin pop']",2cy1zPcrFcXAJTP0APWewL,Gente De Zona,68,Country,Cuba,CUB,CU,48,True
 667750,['polish hip hop'],1oxn6cQ37twQ7yGnlE3ETd,Oki,68,Country,Cuba,CUB,CU,48,True
-1451508,"['dance pop', 'danish pop', 'electropop', 'pop dance']",0bdfiayQAKewqEvaU6rXCv,MØ,68,Country,Denmark,DNK,DK,56,True
-229780,['mollywood'],50iBEPSw6kQ8GQkumXz7XZ,Hesham Abdul Wahab,68,Country,Egypt,EGY,EG,111,True
-3397890,"['belgian dance', 'belgian edm', 'big room', 'dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house']",73jBynjsVtofjRpdpRAJGk,Dimitri Vegas & Like Mike,68,Country,Belgium,BEL,BE,156,True
+1451508,"['dance pop', 'danish pop', 'electropop', 'pop dance']",0bdfiayQAKewqEvaU6rXCv,MØ,68,Country,Denmark,DNK,DK,51,True
+229780,['mollywood'],50iBEPSw6kQ8GQkumXz7XZ,Hesham Abdul Wahab,68,Country,Egypt,EGY,EG,107,True
+3397890,"['belgian dance', 'belgian edm', 'big room', 'dutch house', 'edm', 'electro house', 'pop dance', 'progressive electro house']",73jBynjsVtofjRpdpRAJGk,Dimitri Vegas & Like Mike,68,Country,Belgium,BEL,BE,150,True
 1480242,"['pinoy hip hop', 'pinoy r&b', 'tagalog rap']",3PDFGpPl4ienSn5Vwisfrh,Flow G,68,Country,Philippines,PHL,PH,17,True
-258223,['polish hip hop'],1T4HxOYolAEb5PadIVKdWZ,Gibbs,68,Country,Poland,POL,PL,96,True
-1156122,"['polish hip hop', 'polish trap']",4nPxrGG7k7aEKmNLsfX4cd,White 2115,68,Country,Poland,POL,PL,51,True
-9435,['musica de fondo'],0ABU5rOo3hIfRLxQVIDz0x,Sueño Profundo Club,68,Country,South Africa,ZAF,ZA,124,True
-5068875,"['latin arena pop', 'latin pop']",4NEYQeEYBUjfaXgDQGvFvu,Franco De Vita,67,Country,Venezuela,VEN,VE,31,True
+258223,['polish hip hop'],1T4HxOYolAEb5PadIVKdWZ,Gibbs,68,Country,Poland,POL,PL,84,True
+1156122,"['polish hip hop', 'polish trap']",4nPxrGG7k7aEKmNLsfX4cd,White 2115,68,Country,Poland,POL,PL,50,True
+9435,['musica de fondo'],0ABU5rOo3hIfRLxQVIDz0x,Sueño Profundo Club,68,Country,South Africa,ZAF,ZA,122,True
+5068875,"['latin arena pop', 'latin pop']",4NEYQeEYBUjfaXgDQGvFvu,Franco De Vita,67,Country,Venezuela,VEN,VE,39,True
 911083,"['salsa', 'salsa venezolana', 'tropical']",70nxnxEqDQIEWneRjg2Q4O,Adolescent's Orquesta,67,Country,Venezuela,VEN,VE,19,True
 2330230,['pov: indie'],7yntSJ6uojO3z6GFUVwhAW,CORPSE,67,Country,Bulgaria,BGR,BG,19,True
 495290,"['czech drill', 'czech hip hop', 'czsk hip hop']",4cG43cUBRJWWDsRh4SW48i,Viktor Sheen,67,Country,Czech Republic,CZE,CZ,29,True
 1005593,"['melodic rap', 'slap house']",0H39MdGGX6dbnnQPt6NQkZ,SAINt JHN,67,Country,Guyana,GUY,GY,31,True
 3506793,"['folk-pop', 'metropopolis', 'modern rock', 'stomp and holler']",4dwdTW1Lfiq0cM8nBAqIIz,Of Monsters and Men,67,Country,Iceland,ISL,IS,14,True
 1182623,"['desi hip hop', 'hindi hip hop', 'pakistani hip hop', 'urdu hip hop']",69xcFpmqTOmFNOL08Bxyci,Talha Anjum,67,Country,Pakistan,PAK,PK,43,True
-1213833,"['classical', 'classical drill', 'late romantic era', 'russian romanticism']",3MKCzCnpzw3TjUYs2v7vDA,Pyotr Ilyich Tchaikovsky,67,Country,Russia,RUS,RU,1164,True
-404930,"['chill phonk', 'drift phonk']",0XFgyr4jwM0MGeZZW0VzA5,DVRST,67,Country,Russia,RUS,RU,52,True
+1213833,"['classical', 'classical drill', 'late romantic era', 'russian romanticism']",3MKCzCnpzw3TjUYs2v7vDA,Pyotr Ilyich Tchaikovsky,67,Country,Russia,RUS,RU,932,True
+404930,"['chill phonk', 'drift phonk']",0XFgyr4jwM0MGeZZW0VzA5,DVRST,67,Country,Russia,RUS,RU,51,True
 2167243,"['latin alternative', 'reggae uruguayo', 'rock en espanol', 'rock uruguayo']",4ZDoy7AWNgQVmX7T0u0B1j,No Te Va Gustar,66,Country,Uruguay,URY,UY,33,True
 324269,['hungarian pop'],6EIriUxo7vznEgJtTDlXpq,Azahriah,66,Country,Hungary,HUN,HU,26,True
-122564,"['austrian orchestra', 'classical', 'classical performance', 'orchestra']",003f4bk13c6Q3gAUXv7dGJ,Wiener Philharmoniker,66,Country,Austria,AUT,AT,1058,True
-151056,"['melbourne bounce international', 'slap house']",0TKFPt9w0AAEnhB9bd0pLy,LUM!X,66,Country,Austria,AUT,AT,49,True
-162465,"['classical', 'classical performance', 'orchestral performance']",5zCaQxjl110XTrm4LQ1CxY,Herbert von Karajan,66,Country,Austria,AUT,AT,722,True
+122564,"['austrian orchestra', 'classical', 'classical performance', 'orchestra']",003f4bk13c6Q3gAUXv7dGJ,Wiener Philharmoniker,66,Country,Austria,AUT,AT,917,True
+151056,"['melbourne bounce international', 'slap house']",0TKFPt9w0AAEnhB9bd0pLy,LUM!X,66,Country,Austria,AUT,AT,48,True
+162465,"['classical', 'classical performance', 'orchestral performance']",5zCaQxjl110XTrm4LQ1CxY,Herbert von Karajan,66,Country,Austria,AUT,AT,599,True
 774295,"['countrygaze', 'lo-fi emo', 'lo-fi indie', 'pov: indie', 'slowcore', 'small room']",0pg0Zm8FsGAYy5kdHuBnSo,salvia palth,66,Country,New Zealand,NZL,NZ,2,True
 498803,['social media pop'],5yw4tA8D5uG7tT3NaDvq10,Stellar,66,Country,New Zealand,NZL,NZ,20,True
-5377404,"['classic pakistani pop', 'filmi', 'indian fusion', 'pakistani folk', 'qawwali', 'sufi', 'world']",5HcunTidTUrOaf8V0iJcvl,Nusrat Fateh Ali Khan,66,Country,Pakistan,PAK,PK,1216,True
-386378,"['reggaeton', 'reggaeton flow', 'urbano latino']",3fZk3Gm5dN5v5yfYMQ04Bx,Dímelo Flow,66,Country,Panama,PAN,PA,53,True
+5377404,"['classic pakistani pop', 'filmi', 'indian fusion', 'pakistani folk', 'qawwali', 'sufi', 'world']",5HcunTidTUrOaf8V0iJcvl,Nusrat Fateh Ali Khan,66,Country,Pakistan,PAK,PK,665,True
+386378,"['reggaeton', 'reggaeton flow', 'urbano latino']",3fZk3Gm5dN5v5yfYMQ04Bx,Dímelo Flow,66,Country,Panama,PAN,PA,51,True
 2329989,['opm'],1DlYnIiliftt6R21Y5NOW2,Adie,66,Country,South Africa,ZAF,ZA,13,True
-2844873,"['mandopop', 'singaporean mandopop', 'singaporean pop']",7Dx7RhX0mFuXhCOUgB01uM,JJ Lin,65,Country,Singapore,SGP,SG,74,True
+2844873,"['mandopop', 'singaporean mandopop', 'singaporean pop']",7Dx7RhX0mFuXhCOUgB01uM,JJ Lin,65,Country,Singapore,SGP,SG,54,True
 21166,"['pop dance', 'russian edm']",0Upxnyh9nIUNSOmNE8WF4R,BYOR,65,Country,Russia,RUS,RU,61,True
 98621,"['pakistani hip hop', 'urdu hip hop']",1n6pjRJkTY5v8RtUCAv5pi,Umair,65,Country,Pakistan,PAK,PK,48,True
 1557034,['modern indie pop'],7gXb99Sf9nNmpNYeAgIQFG,Sub Urban,65,Country,Finland,FIN,FI,10,True
 566905,"['modern salsa', 'salsa']",2rwLjVHS15sfzciKXXNbgA,Yiyo Sarante,65,Country,Dominican Republic,DOM,DO,79,True
 102855,['new york drill'],43s6uFZrdusv7ggmDSpO41,TaTa,65,Country,Cameroon,CMR,CM,26,True
-125301,"['corrido', 'musica sinaloense']",3p8PwzenE7ktd4BVFuQzMD,La Receta,65,Country,Latvia,LVA,LV,72,True
+125301,"['corrido', 'musica sinaloense']",3p8PwzenE7ktd4BVFuQzMD,La Receta,65,Country,Latvia,LVA,LV,65,True
 212433,['drift phonk'],14uo609t1MvRGZcskySt9R,SXMPRA,65,Country,New Zealand,NZL,NZ,84,True
-213923,['rap dominicano'],1UjxAZqzphB1tsMb1aWBj0,Omega,65,Country,Hungary,HUN,HU,70,True
+213923,['rap dominicano'],1UjxAZqzphB1tsMb1aWBj0,Omega,65,Country,Hungary,HUN,HU,69,True
 236809,"['afro r&b', 'afrobeats', 'alternative r&b', 'ghanaian alternative', 'ghanaian pop']",21UPYSRWFKwtqvSAnFnSvS,Amaarae,65,Country,Ghana,GHA,GH,19,True
 655611,['israeli pop'],3EOEK57CV77D4ovYVcmiyt,Dennis Lloyd,65,Country,Israel,ISR,IL,37,True
 1361393,['mandopop'],5fEQLwq1BWWQNR8GzhOIvi,Eric Chou,64,Country,Taiwan,TWN,TW,36,True
 554719,"['indie viet', 'v-pop', 'vietnamese hip hop', 'vietnamese melodic rap']",3diftVOq7aEIebXKkC34oR,tlinh,64,Country,Vietnam,VNM,VN,39,True
-2068677,"['fantasy metal', 'finnish metal', 'finnish power metal', 'gothic metal', 'gothic symphonic metal', 'opera metal', 'power metal', 'symphonic metal']",2NPduAUeLVsfIauhRwuft1,Nightwish,64,Country,Finland,FIN,FI,43,True
+2068677,"['fantasy metal', 'finnish metal', 'finnish power metal', 'gothic metal', 'gothic symphonic metal', 'opera metal', 'power metal', 'symphonic metal']",2NPduAUeLVsfIauhRwuft1,Nightwish,64,Country,Finland,FIN,FI,42,True
 125961,['anime lo-fi'],3yTNaLgtCufxUYDsWa5MpA,Kato,64,Country,Denmark,DNK,DK,44,True
 255399,"['compositional ambient', 'experimental classical', 'icelandic classical', 'icelandic experimental', 'nordic soundtrack', 'soundtrack']",3IpQziA6YwD53PQ5xbwgLF,Jóhann Jóhannsson,64,Country,Iceland,ISL,IS,49,True
-2572014,"['c-pop', 'cantopop', 'mandopop']",2QcZxAgcs2I1q7CtCkl6MI,Eason Chan,64,Country,Hong Kong,HKG,HK,83,True
+2572014,"['c-pop', 'cantopop', 'mandopop']",2QcZxAgcs2I1q7CtCkl6MI,Eason Chan,64,Country,Hong Kong,HKG,HK,50,True
 1314166,"['v-pop', 'vietnamese hip hop', 'vietnamese melodic rap']",1cPpd989kghzlZqfpP4KwL,RAP VIỆT,64,Country,Portugal,PRT,PT,45,True
 5979,[],0lhLr0ciehx5g6hxih2aqk,Barulho De Chuva,64,Country,Portugal,PRT,PT,31,True
 260602,['edm'],3v6Ji4uoWtKRkhuDUaxi9n,Dynoro,64,Country,Lithuania,LTU,LT,21,True
 172327,['football'],5C01hDqpEmrmDfUhX9YWsH,FIFA Sound,63,Country,Switzerland,CHE,CH,6,True
-804885,"['cantautor', 'latin afrobeat', 'latin alternative', 'latin rock', 'nueva cancion', 'trova']",4ssUf5gLb1GBLxi1BhPrVt,Jorge Drexler,63,Country,Uruguay,URY,UY,33,True
-1179650,"['bolero', 'folklore ecuatoriano', 'musica popular colombiana']",6HqPNOo6OV9rPbEY7MP9T8,Julio Jaramillo,63,Country,Ecuador,ECU,EC,223,True
-561153,"['cha-cha-cha', 'cuban rumba', 'mambo', 'musica tradicional cubana', 'salsa']",2weA6hhVqTIN2gSn9PUB9U,Celia Cruz,63,Country,Cuba,CUB,CU,183,True
+804885,"['cantautor', 'latin afrobeat', 'latin alternative', 'latin rock', 'nueva cancion', 'trova']",4ssUf5gLb1GBLxi1BhPrVt,Jorge Drexler,63,Country,Uruguay,URY,UY,32,True
+1179650,"['bolero', 'folklore ecuatoriano', 'musica popular colombiana']",6HqPNOo6OV9rPbEY7MP9T8,Julio Jaramillo,63,Country,Ecuador,ECU,EC,187,True
+561153,"['cha-cha-cha', 'cuban rumba', 'mambo', 'musica tradicional cubana', 'salsa']",2weA6hhVqTIN2gSn9PUB9U,Celia Cruz,63,Country,Cuba,CUB,CU,81,True
 150785,['japanese vgm'],6CY7WNJfd5uZclcS3WeEjx,Yu-Peng Chen,63,Country,China,CHN,CN,33,True
 6559440,"['arab pop', 'belly dance', 'egyptian pop', 'persian pop', 'rif']",5abSRg0xN1NV3gLbuvX24M,Amr Diab,63,Country,Egypt,EGY,EG,50,True
-913471,"['dance pop', 'pop rap', 'post-teen pop']",5tKXB9uuebKE34yowVaU3C,Iyaz,63,Country,British Virgin Islands,VGB,VG,18,True
-525111,"['alt z', 'deep pop edm']",1eMmoIprPDWeFdB1FxU6ZV,Au/Ra,63,Country,Antigua and Barbuda,ATG,AG,60,True
+913471,"['dance pop', 'pop rap', 'post-teen pop']",5tKXB9uuebKE34yowVaU3C,Iyaz,63,Country,British Virgin Islands,VGB,VG,16,True
+525111,"['alt z', 'deep pop edm']",1eMmoIprPDWeFdB1FxU6ZV,Au/Ra,63,Country,Antigua and Barbuda,ATG,AG,59,True
 504173,"['panamanian pop', 'reggaeton', 'urbano latino']",2NfSBtmWe7oPw1EmetJVso,Boza,63,Country,Panama,PAN,PA,49,True
-2167392,"['arabic hip hop', 'rap maroc']",4BFLElxtBEdsdwGA1kHTsx,ElGrandeToto,63,Country,Morocco,MAR,MA,63,True
+2167392,"['arabic hip hop', 'rap maroc']",4BFLElxtBEdsdwGA1kHTsx,ElGrandeToto,63,Country,Morocco,MAR,MA,60,True
 3004067,['cumbia peruana'],0l8RtvcBMjeOqfgRSVo2d6,Grupo 5,63,Country,Peru,PER,PE,36,True
 4287,[],5ys86BAZteP8RpVCDmT4p5,Los Patos Feos Inc,63,Country,Peru,PER,PE,7,True
 721129,"['afrobeats', 'nigerian pop']",4zmZ8lVLzGc84S4v2B1rLx,Seyi Vibez,63,Country,Ghana,GHA,GH,42,True
@@ -236,36 +236,36 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 74857,['gym phonk'],6rzNFUmaEVnYb8kzh9tBTt,CURSEDEVIL,63,Country,Kazakhstan,KAZ,KZ,81,True
 1071611,"['south african house', 'south african pop', 'south african pop dance']",6wMr4zKPrrR0UVz08WtUWc,Black Coffee,62,Country,South Africa,ZAF,ZA,48,True
 278346,[],73mSg0dykFyhvU96tb5xQV,Hermanos Gutiérrez,62,Country,Switzerland,CHE,CH,17,True
-251951,"['chinese classical performance', 'chinese classical piano', 'classical performance', 'classical piano']",1YZhNFBxkEB5UKTgMDvot4,Lang Lang,62,Country,China,CHN,CN,70,True
-423787,"['czech drill', 'czech hip hop', 'czsk hip hop']",721o1Z0J6jQupyzLt9RnEk,Yzomandias,62,Country,Czech Republic,CZE,CZ,60,True
-117721,"['orchestra', 'scorecore', 'symfonicky orchestr', 'theme']",2oQJQUIpJFFnfKvHJA0xBu,The City of Prague Philharmonic Orchestra,62,Country,Czech Republic,CZE,CZ,220,True
-49715,['cubaton'],5luyt0SUvGkDMY4ILP6Qhl,Descemer Bueno,62,Country,Cuba,CUB,CU,39,True
+251951,"['chinese classical performance', 'chinese classical piano', 'classical performance', 'classical piano']",1YZhNFBxkEB5UKTgMDvot4,Lang Lang,62,Country,China,CHN,CN,50,True
+423787,"['czech drill', 'czech hip hop', 'czsk hip hop']",721o1Z0J6jQupyzLt9RnEk,Yzomandias,62,Country,Czech Republic,CZE,CZ,50,True
+117721,"['orchestra', 'scorecore', 'symfonicky orchestr', 'theme']",2oQJQUIpJFFnfKvHJA0xBu,The City of Prague Philharmonic Orchestra,62,Country,Czech Republic,CZE,CZ,170,True
+49715,['cubaton'],5luyt0SUvGkDMY4ILP6Qhl,Descemer Bueno,62,Country,Cuba,CUB,CU,41,True
 1329790,"['cantautor', 'latin alternative', 'nueva cancion', 'trova']",4rUyBlggM5tZUH5QZn9ZuO,Silvio Rodríguez,62,Country,Cuba,CUB,CU,37,True
-649845,"['balkan hip hop', 'turbo folk']",6C1X5Uh3DPIkC2gaVq00BL,Jala Brat,62,Country,Bosnia and Herzegovina,BIH,BA,67,True
-235356,"['romanian house', 'romanian pop']",6XwwFnewNgWp81MYMK8zLq,Edward Maya,62,Country,Romania,ROU,RO,138,True
+649845,"['balkan hip hop', 'turbo folk']",6C1X5Uh3DPIkC2gaVq00BL,Jala Brat,62,Country,Bosnia and Herzegovina,BIH,BA,61,True
+235356,"['romanian house', 'romanian pop']",6XwwFnewNgWp81MYMK8zLq,Edward Maya,62,Country,Romania,ROU,RO,126,True
 1567005,"['classic indonesian rock', 'indonesian pop', 'indonesian rock']",4ucwey7FxkHXkLK7jSfevU,Andra & The Backbone,62,Country,Romania,ROU,RO,8,True
 6105,[],0u6hC9vldLdqrv74BWRxkP,Som De Chuva e Trovoadas,62,Country,Portugal,PRT,PT,34,True
 662782,"['v-pop', 'vietnamese hip hop', 'vietnamese melodic rap', 'vietnamese trap']",1zSv9qZANOWB4HRE8sxeTL,RPT MCK,62,Country,Portugal,PRT,PT,13,True
-546207,"['albanian hip hop', 'albanian pop', 'greek trap']",2SabhGDiBSyaM6QSuBUVqB,Noizy,62,Country,Albania,ALB,AL,126,True
+546207,"['albanian hip hop', 'albanian pop', 'greek trap']",2SabhGDiBSyaM6QSuBUVqB,Noizy,62,Country,Albania,ALB,AL,123,True
 106946,"['kazakh pop', 'russian electronic']",5EiDVD35ofoSKq1KE0jcs8,Izzamuzzic,62,Country,Kazakhstan,KAZ,KZ,49,True
 110782,"['cantopop', 'hk-pop']",0DwdA5ZgTJcIQ2uIhc110D,Keung To,62,Country,Hong Kong,HKG,HK,22,True
-758875,"['compositional ambient', 'icelandic classical', 'neoclassical darkwave']",7E3BRXV9ZbCt5lQTCXMTia,Ólafur Arnalds,62,Country,Iceland,ISL,IS,83,True
-503703,['progressive uplifting trance'],29zsVzEH33dD5QqxeL8dvy,Vini Vici,62,Country,Israel,ISR,IL,76,True
+758875,"['compositional ambient', 'icelandic classical', 'neoclassical darkwave']",7E3BRXV9ZbCt5lQTCXMTia,Ólafur Arnalds,62,Country,Iceland,ISL,IS,63,True
+503703,['progressive uplifting trance'],29zsVzEH33dD5QqxeL8dvy,Vini Vici,62,Country,Israel,ISR,IL,70,True
 52613,"['drift phonk', 'gym phonk']",6yxKWJK7XtaOMK2j9FXqSC,SCXR SOUL,61,Country,Ukraine,UKR,UA,47,True
-146072,"['reggae fusion', 'virgin islands reggae']",4TH4BHy0LdBi3dpBW4P2UX,R. City,61,Country,U.S. Virgin Islands,VIR,VI,22,True
-394918,"['deep house', 'electra', 'house', 'progressive house', 'swiss pop']",24DO0PijjITGIEWsO8XaPs,Nora En Pure,61,Country,Switzerland,CHE,CH,109,True
-581303,"['classical', 'czech classical', 'late romantic era']",6n7nd5iceYpXVwcx8VPpxF,Antonín Dvořák,61,Country,Czech Republic,CZE,CZ,970,True
-49176,"['finnish hip hop', 'finnish trap']",2Pn8JMNrnRnSpNRPPgtiWA,ibe,61,Country,Finland,FIN,FI,38,True
-763233,"['classical', 'late romantic era']",1385hLNbrnbCJGokfH2ac2,Franz Liszt,61,Country,Hungary,HUN,HU,1146,True
+146072,"['reggae fusion', 'virgin islands reggae']",4TH4BHy0LdBi3dpBW4P2UX,R. City,61,Country,U.S. Virgin Islands,VIR,VI,24,True
+394918,"['deep house', 'electra', 'house', 'progressive house', 'swiss pop']",24DO0PijjITGIEWsO8XaPs,Nora En Pure,61,Country,Switzerland,CHE,CH,107,True
+581303,"['classical', 'czech classical', 'late romantic era']",6n7nd5iceYpXVwcx8VPpxF,Antonín Dvořák,61,Country,Czech Republic,CZE,CZ,825,True
+49176,"['finnish hip hop', 'finnish trap']",2Pn8JMNrnRnSpNRPPgtiWA,ibe,61,Country,Finland,FIN,FI,37,True
+763233,"['classical', 'late romantic era']",1385hLNbrnbCJGokfH2ac2,Franz Liszt,61,Country,Hungary,HUN,HU,951,True
 269283,['greek hip hop'],4NKSnDH3KS823DGnHDDDsy,Bloody Hawk,61,Country,Greece,GRC,GR,22,True
 1081802,"['belarusian indie', 'russian post-punk', 'sovietwave']",1nVq0hKIVReeaiB3xJgKf0,Molchat Doma,61,Country,Belarus,BLR,BY,11,True
 135852,"['albanian pop', 'tallava']",5lU3mLIonARnLpRtp5f77M,DJ Gimi-O,61,Country,Albania,ALB,AL,29,True
-1512214,"['latin jazz', 'salsa', 'tipico', 'tropical']",5BwMgvRwlq61SmknvsVIQj,Rubén Blades,61,Country,Panama,PAN,PA,67,True
+1512214,"['latin jazz', 'salsa', 'tipico', 'tropical']",5BwMgvRwlq61SmknvsVIQj,Rubén Blades,61,Country,Panama,PAN,PA,50,True
 285989,"['panamanian pop', 'reggaeton']",13VwGEitoK8J0qjNjbgeTN,Flex,61,Country,Panama,PAN,PA,31,True
-13570,['moldovan pop'],34dZRjYum6vVBGslgYaBtB,Vika Jigulina,61,Country,Romania,ROU,RO,11,True
-2853306,['amapiano'],1bNjWBFWsAAzZSR59lRdpR,Kabza De Small,61,Country,South Africa,ZAF,ZA,92,True
+13570,['moldovan pop'],34dZRjYum6vVBGslgYaBtB,Vika Jigulina,61,Country,Romania,ROU,RO,13,True
+2853306,['amapiano'],1bNjWBFWsAAzZSR59lRdpR,Kabza De Small,61,Country,South Africa,ZAF,ZA,73,True
 64229,[],5japL3H3OQvvJfhtsNh3eU,Teya Dora,61,Country,Serbia,SRB,RS,10,True
-522027,"['nordic house', 'pop house']",6yTYR09WCvsgdnurDW4WQo,DJ Antoine,60,Country,Switzerland,CHE,CH,160,True
+522027,"['nordic house', 'pop house']",6yTYR09WCvsgdnurDW4WQo,DJ Antoine,60,Country,Switzerland,CHE,CH,143,True
 960948,"['latin alternative', 'reggae uruguayo', 'rock en espanol', 'rock uruguayo']",6nVcjUJemqpJjc1WevwTvL,La Vela Puerca,60,Country,Uruguay,URY,UY,30,True
 24394,[],3Cd3LHNXuJd9NudRiH1IxS,DJ RICK 013,60,Country,Finland,FIN,FI,26,True
 74100,['memphis phonk'],6n9sdNb7mWvVmARDT6ujnJ,Memphis Cult,60,Country,Moldova,MDA,MD,15,True
@@ -274,83 +274,83 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 172350,"['desi pop', 'sinhala indie']",6hyCmqlpgEhkMKKr65sFgI,Yohani,59,Country,Sri Lanka,LKA,LK,24,True
 183746,"['v-pop', 'vietnamese hip hop', 'vietnamese melodic rap']",0ZbgKh0FgPYeFP38nVaEGp,Obito,59,Country,Vietnam,VNM,VN,15,True
 4426920,"['egyptian hip hop', 'egyptian trap']",4BKC2HOGEqtYz2Xbgp9N1q,Wegz,59,Country,Egypt,EGY,EG,53,True
-223874,"['classical', 'finnish classical', 'impressionism', 'post-romantic era']",7jzR5qj8vFnSu5JHaXgFEr,Jean Sibelius,59,Country,Finland,FIN,FI,610,True
-854229,"['azontobeats', 'musique urbaine kinshasa', 'ndombolo', 'r&b francais', 'rumba congolaise']",6IflU2YrY5Cyw7YoBICosV,Fally Ipupa,59,Country,Democratic Republic of the Congo,COD,CD,49,True
+223874,"['classical', 'finnish classical', 'impressionism', 'post-romantic era']",7jzR5qj8vFnSu5JHaXgFEr,Jean Sibelius,59,Country,Finland,FIN,FI,499,True
+854229,"['azontobeats', 'musique urbaine kinshasa', 'ndombolo', 'r&b francais', 'rumba congolaise']",6IflU2YrY5Cyw7YoBICosV,Fally Ipupa,59,Country,Democratic Republic of the Congo,COD,CD,48,True
 284101,['gaming edm'],157L8iTHgbdrKVxdQEXluh,Lost Sky,59,Country,Croatia,HRV,HR,11,True
 1837949,"['belarusian hip hop', 'russian hip hop']",5meD8C7oGK5yUEY2T7ZZ7W,Max Korzh,59,Country,Belarus,BLR,BY,28,True
 1951857,['tamil pop'],4ONKKiZXVVuz5nAWCUnnjG,Stephen Zechariah,59,Country,Singapore,SGP,SG,22,True
 1042678,"['cuatro venezolano', 'latin pop', 'modern salsa', 'musica nicaraguense', 'salsa', 'tropical']",2mUI4K6csTQd3jieswcmiI,Luis Enrique,59,Country,Nicaragua,NIC,NI,40,True
 28715,['tollywood'],6umn0ODoYa5UsGpswA99gx,Vijai Bulganin,59,Country,Mongolia,MNG,MN,37,True
-634072,"['musica santomense', 'portuguese pop']",6PIIKavZx20FlVKyIvb4Um,Calema,59,Country,Sao Tome and Principe,STP,ST,41,True
-1689204,"['arab pop', 'classic arab pop', 'dabke', 'lebanese pop']",0dwFxqYkvZLSA6U6XfQcDV,Fairuz,59,Country,Lebanon,LBN,LB,115,True
-66533,['movie tunes'],6zTbBugfNc95zo8ClFDhIn,Troy,59,Country,Israel,ISR,IL,2,True
-1083256,"['israeli mediterranean', 'israeli pop', 'mizrahi']",1IAEef07H0fd9aA8aUHUlL,Omer Adam,59,Country,Israel,ISR,IL,104,True
-2486912,"['afghan pop', 'arab pop', 'belly dance', 'lebanese pop']",0LnHdW6HMPoOlNdhG3DHjE,Nancy Ajram,59,Country,Lebanon,LBN,LB,62,True
+634072,"['musica santomense', 'portuguese pop']",6PIIKavZx20FlVKyIvb4Um,Calema,59,Country,Sao Tome and Principe,STP,ST,40,True
+1689204,"['arab pop', 'classic arab pop', 'dabke', 'lebanese pop']",0dwFxqYkvZLSA6U6XfQcDV,Fairuz,59,Country,Lebanon,LBN,LB,73,True
+66533,['movie tunes'],6zTbBugfNc95zo8ClFDhIn,Troy,59,Country,Israel,ISR,IL,0,True
+1083256,"['israeli mediterranean', 'israeli pop', 'mizrahi']",1IAEef07H0fd9aA8aUHUlL,Omer Adam,59,Country,Israel,ISR,IL,92,True
+2486912,"['afghan pop', 'arab pop', 'belly dance', 'lebanese pop']",0LnHdW6HMPoOlNdhG3DHjE,Nancy Ajram,59,Country,Lebanon,LBN,LB,50,True
 1681543,"['thai hip hop', 'thai pop', 'thai trap']",0AvGycOEDZTaBFLCaiGd9S,YOUNGOHM,58,Country,Thailand,THA,TH,35,True
 187711,[],4mr4X9nJC8DPlNukWbgAaI,HYBS,58,Country,Thailand,THA,TH,12,True
 733009,"['v-pop', 'vietnamese hip hop']",5HZtdKfC4xU0wvhEyYDWiY,HIEUTHUHAI,58,Country,Vietnam,VNM,VN,28,True
 1987034,"['chinese idol pop', 'k-pop']",1qBsABYUrxg9afpMtyoFKz,WayV,58,Country,China,CHN,CN,13,True
-4421648,"['arab pop', 'egyptian pop']",4cGfgRmpFc9zgZMfuSXhqy,Tamer Hosny,58,Country,Egypt,EGY,EG,56,True
-746727,['mandopop'],1cg0bYpP5e2DNG0RgK2CMN,Joker Xue,58,Country,China,CHN,CN,76,True
-255090,['drill espanol'],3J1MhhyXLJRNRZVrx11Lbf,Cyril Kamer,58,Country,Cameroon,CMR,CM,34,True
-1716590,"['classic arab pop', 'moroccan pop', 'rai']",28ztjHIXceRRntmTUfnmUX,Khaled,58,Country,Algeria,DZA,DZ,166,True
-7775,"['chamber orchestra', 'symfonicky orchestr']",3COykW4UPvB0DqwnzlnfWt,Capella Istropolitana,58,Country,Slovakia,SVK,SK,97,True
-598911,"['cyberpunk', 'synthesizer']",4P70aqttdpJ9vuYFDmf7f6,Vangelis,58,Country,Greece,GRC,GR,57,True
+4421648,"['arab pop', 'egyptian pop']",4cGfgRmpFc9zgZMfuSXhqy,Tamer Hosny,58,Country,Egypt,EGY,EG,50,True
+746727,['mandopop'],1cg0bYpP5e2DNG0RgK2CMN,Joker Xue,58,Country,China,CHN,CN,68,True
+255090,['drill espanol'],3J1MhhyXLJRNRZVrx11Lbf,Cyril Kamer,58,Country,Cameroon,CMR,CM,35,True
+1716590,"['classic arab pop', 'moroccan pop', 'rai']",28ztjHIXceRRntmTUfnmUX,Khaled,58,Country,Algeria,DZA,DZ,123,True
+7775,"['chamber orchestra', 'symfonicky orchestr']",3COykW4UPvB0DqwnzlnfWt,Capella Istropolitana,58,Country,Slovakia,SVK,SK,93,True
+598911,"['cyberpunk', 'synthesizer']",4P70aqttdpJ9vuYFDmf7f6,Vangelis,58,Country,Greece,GRC,GR,50,True
 434504,"['afrobeats', 'ghanaian alternative', 'ghanaian pop']",4tIKaxUmpXzshok2yCnwdf,King Promise,58,Country,Ghana,GHA,GH,46,True
 598754,['thai pop'],5xq3BK55BJmutN0X7eTyQB,Jeff Satur,57,Country,Thailand,THA,TH,31,True
 406142,['mandopop'],3AroL2oDPiAnMpTmIQv3KP,Cyndi Wang,57,Country,Taiwan,TWN,TW,23,True
 354427,"['mandopop', 'taiwan pop']",4TcOznbEZBqev21LzAH4KE,高爾宣 OSN,57,Country,Taiwan,TWN,TW,23,True
-227147,"['deep disco house', 'melodic techno', 'swiss house']",02DWGcShQivFepRvGJ7xhB,Adriatique,57,Country,Switzerland,CHE,CH,41,True
+227147,"['deep disco house', 'melodic techno', 'swiss house']",02DWGcShQivFepRvGJ7xhB,Adriatique,57,Country,Switzerland,CHE,CH,40,True
 347338,['ukrainian electronic'],3BkRu2TGd2I1uBxZKddfg1,ARTBAT,57,Country,Ukraine,UKR,UA,44,True
 10387,['ambient lo-fi'],02WFtZreToLN0ARfpZukYI,Kapa Boy,57,Country,Uganda,UGA,UG,38,True
 686644,"['indie viet', 'v-pop']",6NF9Oa4ThQWCj6mogFSrVD,W/N,57,Country,Vietnam,VNM,VN,15,True
-225266,[],6Lad89OaqnRo5nf7FyVipt,Garena Free Fire,57,Country,Singapore,SGP,SG,76,True
+225266,[],6Lad89OaqnRo5nf7FyVipt,Garena Free Fire,57,Country,Singapore,SGP,SG,70,True
 90646,"['soca', 'vincy soca']",1GaBsp1ICIp1e6udgE7fba,Kevin Lyttle,57,Country,Saint Vincent and The Grenadines,VCT,VC,37,True
-905541,"['german techno', 'hamburg electronic', 'melodic techno', 'minimal techno']",5wJK4kQAkVGjqM9x46KQOC,Solomun,57,Country,Bosnia and Herzegovina,BIH,BA,75,True
+905541,"['german techno', 'hamburg electronic', 'melodic techno', 'minimal techno']",5wJK4kQAkVGjqM9x46KQOC,Solomun,57,Country,Bosnia and Herzegovina,BIH,BA,69,True
 328481,['albanian pop'],3oo88ul6DPnYZwZG4CZBTY,Butrint Imeri,57,Country,Albania,ALB,AL,38,True
 125933,"['lithuanian edm', 'lithuanian electronic']",1aQwKFn00nswXRDUDipm0K,Gaullin,57,Country,Lithuania,LTU,LT,71,True
 3484,[],3eegqYNOBDWAuQME8S5W1q,Salve Crazy,57,Country,Latvia,LVA,LV,26,True
-30594,[],3itPIBjRCrJmrDgwCRYRHl,Chilled Cat,57,Country,Portugal,PRT,PT,95,True
+30594,[],3itPIBjRCrJmrDgwCRYRHl,Chilled Cat,57,Country,Portugal,PRT,PT,83,True
 36470,['drift phonk'],6agBXAcUugzO8DQTChZZrx,WEEDMANE,57,Country,Estonia,EST,EE,32,True
 235549,"['deep tropical house', 'edm', 'pop dance', 'progressive electro house', 'tropical house']",6i1GVNJCyyssRwXmnaeEFH,Syn Cole,57,Country,Estonia,EST,EE,86,True
 4358612,"['arab pop', 'egyptian pop']",6bb9VI1PpPTEmdgcgjTppX,Mohamed Hamaki,57,Country,Egypt,EGY,EG,37,True
-476217,['new age'],72qxDp6R6v22pai96pZioz,Yanni,57,Country,Greece,GRC,GR,53,True
+476217,['new age'],72qxDp6R6v22pai96pZioz,Yanni,57,Country,Greece,GRC,GR,50,True
 13690,"['hungarian hip hop', 'hungarian pop']",0zmW213tzA7NFv6ESRso7N,Young Fly,57,Country,Hungary,HUN,HU,7,True
-677694,['c-pop'],3df3XLKuqTQ6iOSmi0K3Wp,Faye Wong,57,Country,Hong Kong,HKG,HK,40,True
-462317,['cantopop'],2MVfNjocvNrE03cQuxpsWK,Hins Cheung,57,Country,Hong Kong,HKG,HK,66,True
+677694,['c-pop'],3df3XLKuqTQ6iOSmi0K3Wp,Faye Wong,57,Country,Hong Kong,HKG,HK,39,True
+462317,['cantopop'],2MVfNjocvNrE03cQuxpsWK,Hins Cheung,57,Country,Hong Kong,HKG,HK,50,True
 95727,"['cantopop', 'hk-pop']",1qW9Pi35NXnu7Q8KWyVYe6,陳卓賢 Ian,57,Country,Hong Kong,HKG,HK,20,True
-359138,"['chinese r&b', 'mandopop', 'taiwan singer-songwriter']",7y3HnWCFEvWj4KM9GFSkiX,WeiBird,56,Country,Taiwan,TWN,TW,61,True
-56277,[],5bgu60VOkifx3xadonzsgi,T3NZU,56,Country,Serbia,SRB,RS,59,True
-174719,['drift phonk'],4Xpfcr6PHXIPeoCBlXNwtC,Phonk Killer,56,Country,Ukraine,UKR,UA,80,True
+359138,"['chinese r&b', 'mandopop', 'taiwan singer-songwriter']",7y3HnWCFEvWj4KM9GFSkiX,WeiBird,56,Country,Taiwan,TWN,TW,53,True
+56277,[],5bgu60VOkifx3xadonzsgi,T3NZU,56,Country,Serbia,SRB,RS,55,True
+174719,['drift phonk'],4Xpfcr6PHXIPeoCBlXNwtC,Phonk Killer,56,Country,Ukraine,UKR,UA,79,True
 1765051,"['indie viet', 'rock viet', 'v-pop', 'vietnamese singer-songwriter']",57g2v7gJZepcwsuwssIfZs,Vũ.,56,Country,Vietnam,VNM,VN,29,True
 242296,"['chill phonk', 'drift phonk']",4TS37lr3ZraUxBHS727sEp,LXST CXNTURY,56,Country,Belarus,BLR,BY,22,True
 1020687,"['bow pop', 'cello', 'string duo']",6Fi8CHfO8WGtu3yO8c2Mc4,2CELLOS,56,Country,Croatia,HRV,HR,26,True
-65115,['acid house'],4ME85YvMUi1hdqhbind7gy,Guru Josh Project,56,Country,Jersey,JEY,JE,18,True
+65115,['acid house'],4ME85YvMUi1hdqhbind7gy,Guru Josh Project,56,Country,Jersey,JEY,JE,20,True
 791226,"['mongolian alternative', 'oriental metal']",0b2B3PwcYzQAhuJacmcYgc,The HU,56,Country,Mongolia,MNG,MN,19,True
-4617,['white noise'],0sKsn885C4hMXbWfhLKGy6,Womb Sound,56,Country,Latvia,LVA,LV,305,True
+4617,['white noise'],0sKsn885C4hMXbWfhLKGy6,Womb Sound,56,Country,Latvia,LVA,LV,296,True
 3299,['harpsichord'],3XqsvVsJuMXQsfVwpYZLFZ,Janos Sebestyen,56,Country,Hungary,HUN,HU,26,True
 7049,[],2APh66XEiqOiDt3bKhBWmn,NONTHENSE,55,Country,Ukraine,UKR,UA,53,True
 626592,"['african reggae', 'reggae', 'roots reggae']",41ekW4MXG59xJMXR8dX1OG,Alpha Blondy,55,Country,Côte d'Ivoire,CIV,CI,32,True
-81009,"['basshall', 'dutch rap pop', 'ritmo kombina']",4NEThNYJ3WyNcJWcmpjq88,Ir Sais,55,Country,"Bonaire, Sint Eustatius and Saba",BES,BQ,58,True
-5842,['neo-classical'],43HScyaOrzPzHaKEqEkc3x,Jiří Horák,55,Country,Czech Republic,CZE,CZ,64,True
-113591,"['eurodance', 'europop', 'moldovan pop']",5M5PjPSiKeXynM6Ohu350r,O-Zone,55,Country,Moldova,MDA,MD,10,True
-205957,"['afropop', 'malian blues', 'mande pop', 'world']",3KH7WsR2JZQ94Ik8SyabU6,Amadou & Mariam,55,Country,Mali,MLI,ML,41,True
-434710,['malaysian pop'],3kHVioJpVxlazAAKQ64pC1,Yuna,55,Country,Malaysia,MYS,MY,51,True
+81009,"['basshall', 'dutch rap pop', 'ritmo kombina']",4NEThNYJ3WyNcJWcmpjq88,Ir Sais,55,Country,"Bonaire, Sint Eustatius and Saba",BES,BQ,55,True
+5842,['neo-classical'],43HScyaOrzPzHaKEqEkc3x,Jiří Horák,55,Country,Czech Republic,CZE,CZ,58,True
+113591,"['eurodance', 'europop', 'moldovan pop']",5M5PjPSiKeXynM6Ohu350r,O-Zone,55,Country,Moldova,MDA,MD,11,True
+205957,"['afropop', 'malian blues', 'mande pop', 'world']",3KH7WsR2JZQ94Ik8SyabU6,Amadou & Mariam,55,Country,Mali,MLI,ML,39,True
+434710,['malaysian pop'],3kHVioJpVxlazAAKQ64pC1,Yuna,55,Country,Malaysia,MYS,MY,50,True
 6048,[],11zVzNHj5hETQ17BilwY3I,Levis Remix,55,Country,Latvia,LVA,LV,26,True
 34932,['polish alternative'],6I5JdHLVup9pIjn9g5K20N,Igo,55,Country,Latvia,LVA,LV,14,True
 67526,['indonesian pop punk'],0kw7tMniMnrp9Pcr7vgDAm,Stereo Wall,55,Country,Greece,GRC,GR,15,True
-271476,['ghanaian pop'],42q0rYXtR561ypg1Fcw1PI,Shatta Wale,55,Country,Ghana,GHA,GH,495,True
+271476,['ghanaian pop'],42q0rYXtR561ypg1Fcw1PI,Shatta Wale,55,Country,Ghana,GHA,GH,479,True
 16841,['estonian pop'],0cA0C4yBNRaN2EZsE2wT3Y,Daniel Levi,55,Country,Estonia,EST,EE,19,True
-5090,[],3252lQrYqRgAFw2xXuNdVZ,Klaüs,55,Country,Ecuador,ECU,EC,72,True
-171951,['trinidadian reggae'],0NZQTozgPtlt5iN3hmANhy,Queen Omega,54,Country,Trinidad and Tobago,TTO,TT,41,True
+5090,[],3252lQrYqRgAFw2xXuNdVZ,Klaüs,55,Country,Ecuador,ECU,EC,63,True
+171951,['trinidadian reggae'],0NZQTozgPtlt5iN3hmANhy,Queen Omega,54,Country,Trinidad and Tobago,TTO,TT,40,True
 492919,"['thai hip hop', 'thai pop', 'thai trap']",2MnMuRYL9qsGvWPsZGeDGQ,F.HERO,54,Country,Thailand,THA,TH,42,True
-203238,['rap uruguayo'],5ayyPSqoObeTOj1UGtM79C,Zeballos,54,Country,Uruguay,URY,UY,114,True
+203238,['rap uruguayo'],5ayyPSqoObeTOj1UGtM79C,Zeballos,54,Country,Uruguay,URY,UY,110,True
 713593,"['pop r&b', 'r&b', 'teen pop']",5AtWO8IEnjhRLzaVVQxFUs,SoMo,54,Country,Democratic Republic of the Congo,COD,CD,48,True
-363330,"['afropop', 'cape verdean folk', 'morna', 'musica cabo-verdiana', 'twoubadou', 'world']",0Nks3cFWU2a7rooAlFQYgn,Cesária Evora,54,Country,Cape Verde,CPV,CV,28,True
+363330,"['afropop', 'cape verdean folk', 'morna', 'musica cabo-verdiana', 'twoubadou', 'world']",0Nks3cFWU2a7rooAlFQYgn,Cesária Evora,54,Country,Cape Verde,CPV,CV,23,True
 530317,['russian alt pop'],2zYmwYLeJvcr8vRQe5pQRa,Valentin Strykalo,54,Country,Belarus,BLR,BY,4,True
 196204,"['albanian hip hop', 'albanian pop']",2z6t0UGq0WAM8X6zDeXKXj,Don Xhoni,54,Country,Albania,ALB,AL,26,True
-2312809,"['arab pop', 'lebanese pop']",5HczG7gdd89oDKY0CUyPof,Wael Jassar,54,Country,Lebanon,LBN,LB,62,True
-239003,"['albanian hip hop', 'albanian pop', 'kosovan pop']",5519qQ4H5p0qIIidEWUOB6,Ledri Vula,54,Country,Kosovo,KOS,XK,53,True
+2312809,"['arab pop', 'lebanese pop']",5HczG7gdd89oDKY0CUyPof,Wael Jassar,54,Country,Lebanon,LBN,LB,50,True
+239003,"['albanian hip hop', 'albanian pop', 'kosovan pop']",5519qQ4H5p0qIIidEWUOB6,Ledri Vula,54,Country,Kosovo,KOS,XK,51,True
 176240,"['albanian pop', 'kosovan pop']",2qI59HaiEtvev8vnUkmRpT,Yll Limani,54,Country,Kosovo,KOS,XK,45,True
 3242,[],0mCLY8Z5X5H9mNsu9pQ7mY,MC Erik,54,Country,Slovakia,SVK,SK,60,True
 400359,"['afrobeats', 'ghanaian pop']",14PimM6ohO2gYftuwTam9V,KiDi,54,Country,Ghana,GHA,GH,38,True
@@ -360,11 +360,11 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 476655,"['moldovan pop', 'romanian pop']",1OQa8VMULlbmbFmDcdfBZj,Irina Rimes,53,Country,Moldova,MDA,MD,85,True
 88304,"['caucasian classical piano', 'classical piano']",0bouHpX4JiuPnIfP2jFxRi,Khatia Buniatishvili,53,Country,Georgia,GEO,GE,15,True
 239927,"['afropop', 'desert blues', 'malian blues', 'mande pop', 'wassoulou', 'world']",4G5ZJny3HvX6Il7eHVfnNC,Fatoumata Diawara,53,Country,Mali,MLI,ML,15,True
-121544,"['brostep', 'deathstep', 'dubstep']",2fNr4ldujwq97v1jWeqs8K,Kai Wachi,53,Country,Georgia,GEO,GE,82,True
+121544,"['brostep', 'deathstep', 'dubstep']",2fNr4ldujwq97v1jWeqs8K,Kai Wachi,53,Country,Georgia,GEO,GE,81,True
 256088,['classical cello'],2iSn12gFykgv92aTvPiH4s,HAUSER,53,Country,Croatia,HRV,HR,26,True
 29176,['kizomba'],7dYb5EKtRnRaWM0GQ12cKC,June Freedom,53,Country,Cape Verde,CPV,CV,15,True
 1101056,"['arabic hip hop', 'rap maroc']",7ggM69yllqpMykcU8Tror4,Inkonnu,52,Country,Tunisia,TUN,TN,24,True
-21935,"['orchestra', 'radio symphony', 'symfonicky orchestr']",428GNN7qZnTsMaK3SfPo6D,Slovak Radio Symphony Orchestra,52,Country,Slovakia,SVK,SK,263,True
+21935,"['orchestra', 'radio symphony', 'symfonicky orchestr']",428GNN7qZnTsMaK3SfPo6D,Slovak Radio Symphony Orchestra,52,Country,Slovakia,SVK,SK,253,True
 26563,"['cumbia amazonica', 'cumbia peruana']",2jgrDwQt2J04QHpTu4uHwG,Orquesta Kaliente de Iquitos,52,Country,Peru,PER,PE,6,True
 91642,[],06ATRE8sXvBE7NT1qqeHj7,Habib Ali Zainal Abidin Assegaf,52,Country,Malaysia,MYS,MY,29,True
 203754,['rock kapak'],6JC3uifC84pTUZssGSnBD5,Iklim,52,Country,Malaysia,MYS,MY,16,True
@@ -372,11 +372,11 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 144087,"['albanian hip hop', 'albanian pop', 'kosovan pop']",4poL7YCSkG7kMnWjAdDU91,Era Istrefi,52,Country,Kosovo,KOS,XK,34,True
 597350,"['central asian hip hop', 'kazakh hip hop', 'kazakh pop']",0AGZvVUGRD63ticvhaXZx1,Irina Kairatovna,52,Country,Kazakhstan,KAZ,KZ,19,True
 962243,"['moroccan pop', 'rif']",0CaWnepnGfVPs8uNwOzav6,Zouhair Bahaoui,51,Country,Morocco,MAR,MA,24,True
-589,[],1V8rAXmdVnkT0417znOkAs,Ondrej Lenard,51,Country,Slovakia,SVK,SK,61,True
+589,[],1V8rAXmdVnkT0417znOkAs,Ondrej Lenard,51,Country,Slovakia,SVK,SK,60,True
 212389,"['afropop', 'mbalax', 'world']",77zlytAFjPFjUKda8TNIDY,Youssou N'Dour,51,Country,Senegal,SEN,SN,34,True
-70139,"['caucasian classical', 'classical', 'early modern classical', 'russian modern classical']",5WIoytpqi3VWoFSHnl49in,Aram Khachaturian,51,Country,Armenia,ARM,AM,97,True
+70139,"['caucasian classical', 'classical', 'early modern classical', 'russian modern classical']",5WIoytpqi3VWoFSHnl49in,Aram Khachaturian,51,Country,Armenia,ARM,AM,74,True
 15222,[],4OmG7TmODI5Rj3q7PV3fP5,Sergio Valentino,51,Country,Bosnia and Herzegovina,BIH,BA,23,True
-802,[],2TXfWr90cpiyJ1MHrwsjnQ,Gree Cassua,51,Country,Croatia,HRV,HR,287,True
+802,[],2TXfWr90cpiyJ1MHrwsjnQ,Gree Cassua,51,Country,Croatia,HRV,HR,285,True
 882921,"['arab pop', 'dabke', 'syrian pop']",2ieBl5s08uHBwM8sUPvg65,Nassif Zeytoun,50,Country,Syria,SYR,SY,48,True
 309475,['operatic pop'],5AWgF8Ghqm94WZ4GxCt8K5,Dimash Qudaibergen,50,Country,Kazakhstan,KAZ,KZ,22,True
 225989,['world'],6QncudMSOiKxYRIKRDks6S,Hindi Zahra,50,Country,Morocco,MAR,MA,8,True
@@ -395,14 +395,14 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 5138,['ukrainian pop'],2TdyIW2Ol7vpofth27iAZi,Denis Kalytovskyi,48,Country,Yugoslavia,YUG,YU,34,True
 11413,[],69kFCyHDE14cRD1cctCCcd,Marin Hoxha,48,Country,Albania,ALB,AL,205,True
 924,[],6D8B4iuwUVhFmYRcT1c6Tu,MC BF,48,Country,Estonia,EST,EE,352,True
-11714,['afro house'],3c1sTwL4HuWkrciiKHpnmx,Sparrow & Barbossa,48,Country,Grenada,GRD,GD,53,True
-172932,"['sevdah', 'yugoslav rock']",3Lf5uaye2qaiLNrNDCLraN,Zdravko Čolić,47,Country,Serbia,SRB,RS,27,True
+11714,['afro house'],3c1sTwL4HuWkrciiKHpnmx,Sparrow & Barbossa,48,Country,Grenada,GRD,GD,50,True
+172932,"['sevdah', 'yugoslav rock']",3Lf5uaye2qaiLNrNDCLraN,Zdravko Čolić,47,Country,Serbia,SRB,RS,26,True
 13095,[],08yjRkGm8KNsShKjtbEmt6,Hajaj,47,Country,Saudi Arabia,SAU,SA,3,True
 2197,['deboxe'],048CqIDe4PysymPNk8SD4N,Mc Toy,47,Country,Malaysia,MYS,MY,399,True
 78838,['turbo folk'],0M7vmKfvE4HPMPWAEsTBM3,Zeljko Samardzic,46,Country,Serbia,SRB,RS,32,True
-9586,"['classical piano', 'french classical piano']",2fxWL96h0S44PhEa9e6mtm,Alexis Weissenberg,46,Country,Bulgaria,BGR,BG,43,True
+9586,"['classical piano', 'french classical piano']",2fxWL96h0S44PhEa9e6mtm,Alexis Weissenberg,46,Country,Bulgaria,BGR,BG,36,True
 96066,['turbo folk'],1pIYImXgkOQFZAeGrLk7ZI,Željko Joksimović,45,Country,Serbia,SRB,RS,19,True
-161337,"['dark techno', 'minimal techno', 'raw techno', 'slovenian electronic']",5Hini2nQyoglzpdKe41cZt,UMEK,45,Country,Slovenia,SVN,SI,180,True
+161337,"['dark techno', 'minimal techno', 'raw techno', 'slovenian electronic']",5Hini2nQyoglzpdKe41cZt,UMEK,45,Country,Slovenia,SVN,SI,175,True
 1008,[],0NTTVLWsZy8PsDeT2JD1vv,Gu$Z,45,Country,Slovenia,SVN,SI,7,True
 1857,['sleep'],28XFFzqCAHFNcEdRiuEf71,Najma Wallin,45,Country,Bangladesh,BGD,BD,5,True
 473,['sleep'],61XTODbHm8u4mMws36C1IG,Mila Harper,45,Country,Bangladesh,BGD,BD,5,True
@@ -416,14 +416,14 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 5641,"['easy listening', 'romantico']",6Y2hsZH9wv5E9iRQpNKZxi,Ronald Valentino,44,Country,Bosnia and Herzegovina,BIH,BA,23,True
 21832,"['afro r&b', 'kenyan pop', 'kenyan r&b']",2J4IvVbi2h1wB2A0p5kd86,Xenia Manasseh,43,Country,Kenya,KEN,KE,15,True
 9400,[],36uxDVmNawSCAfPBKsZXHu,Projeto 1+1,42,Country,Bulgaria,BGR,BG,5,True
-36243,['pop costarricense'],0IMYy1oJWKd4mY1hnZgD9r,Lil Quil,42,Country,Costa Rica,CRI,CR,60,True
-37882,['hinos ccb'],5KBqmFmpGP5jxE3kKax1YT,CCB Hinos,42,Country,Benin,BEN,BJ,66,True
+36243,['pop costarricense'],0IMYy1oJWKd4mY1hnZgD9r,Lil Quil,42,Country,Costa Rica,CRI,CR,51,True
+37882,['hinos ccb'],5KBqmFmpGP5jxE3kKax1YT,CCB Hinos,42,Country,Benin,BEN,BJ,63,True
 110410,['virgin islands reggae'],6gFqoCdl6dVKrJ65nmvcXM,Dezarie,41,Country,U.S. Virgin Islands,VIR,VI,6,True
 16964,"['malay rap', 'malaysian hip hop']",1clik527FuABFJlnXLAq4c,Quai,40,Country,Vanuatu,VUT,VU,14,True
-74739,"['arab pop', 'jordanian pop', 'palestinian pop']",1IJJoAyxznu3orwXhlt3XO,Toni Qattan,40,Country,Jordan,JOR,JO,56,True
+74739,"['arab pop', 'jordanian pop', 'palestinian pop']",1IJJoAyxznu3orwXhlt3XO,Toni Qattan,40,Country,Jordan,JOR,JO,55,True
 50234,['hinos ccb'],5v1OgdgtrICpveomwQyu18,CCB Avulsos,39,Country,Benin,BEN,BJ,9,True
 36354,['soukous'],34XQ0y2Kni5E4SDlFaAcG5,Quartier Latin,38,Country,Democratic Republic of the Congo,COD,CD,5,True
-8523,[],4vD6SOCmjO6xkPIzjRrQhK,Qwote,35,Country,Haiti,HTI,HT,21,True
+8523,[],4vD6SOCmjO6xkPIzjRrQhK,Qwote,35,Country,Haiti,HTI,HT,22,True
 983,[],08vwQJxPdhUyPBxT4Tf0cS,Gu,35,Country,Slovenia,SVN,SI,35,True
 17937,['cumbia ecuatoriana'],4sfyUb3NooXvxFnu1U1T0l,El Más Querido de Ecuador Gerardo Morán,34,Country,Ecuador,ECU,EC,2,True
 17616,['rap tunisien'],7KSQKdaecID0uErHDg8y0N,XIIVI,34,Country,Tunisia,TUN,TN,18,True
@@ -436,22 +436,22 @@ followers,genres,artist_id,name,popularity,area_type,area_name,iso_code,alpha_2_
 860,[],0KHkYO9uDEiAB2tjzRs6jJ,Irmã Zélia,22,Country,Democratic Republic of the Congo,COD,CD,2,True
 483,[],2LLPL2Pvq1UeuBhgVvUmny,Renata Queli,19,Country,Estonia,EST,EE,4,True
 15335766,"['pop', 'r&b', 'rap']",7tYKF4w9nC0nq9CsPZTHyP,SZA,89,Country,United States,USA,US,33,True
-77524861,"['detroit hip hop', 'hip hop', 'rap']",7dGJo4pcD2V6oG8kP0tJRR,Eminem,89,Country,United States,USA,US,39,True
-26893537,"['dance pop', 'pop']",5cj0lLjcoR7YOSnhnX0Po5,Doja Cat,89,Country,United States,USA,US,56,True
-15222849,"['atl hip hop', 'hip hop', 'rap']",1URnnhqYAYcrqrcwql10ft,21 Savage,89,Country,United States,USA,US,52,True
-58004463,"['barbadian pop', 'pop', 'urban contemporary']",5pKCCKE2ajJHZ9KAiaK11H,Rihanna,89,Country,United States,USA,US,81,True
-51566811,"['dance pop', 'pop']",0du5cEVh5yTK9QJze8zA0C,Bruno Mars,88,Country,United States,USA,US,24,True
-42368215,"['dfw rap', 'melodic rap', 'pop', 'rap']",246dkjvS1zLTtiykXe5h60,Post Malone,88,Country,United States,USA,US,29,True
-87801069,"['art pop', 'pop']",6qqNVTkY8uBg9cP3Jd7DAH,Billie Eilish,88,Country,United States,USA,US,27,True
-15068005,"['atl hip hop', 'hip hop', 'rap', 'southern hip hop', 'trap']",1RyvyyTE3xzB2ZywiAwp0i,Future,88,Country,United States,USA,US,114,True
+77524861,"['detroit hip hop', 'hip hop', 'rap']",7dGJo4pcD2V6oG8kP0tJRR,Eminem,89,Country,United States,USA,US,44,True
+26893537,"['dance pop', 'pop']",5cj0lLjcoR7YOSnhnX0Po5,Doja Cat,89,Country,United States,USA,US,50,True
+15222849,"['atl hip hop', 'hip hop', 'rap']",1URnnhqYAYcrqrcwql10ft,21 Savage,89,Country,United States,USA,US,50,True
+58004463,"['barbadian pop', 'pop', 'urban contemporary']",5pKCCKE2ajJHZ9KAiaK11H,Rihanna,89,Country,United States,USA,US,50,True
+51566811,"['dance pop', 'pop']",0du5cEVh5yTK9QJze8zA0C,Bruno Mars,88,Country,United States,USA,US,21,True
+42368215,"['dfw rap', 'melodic rap', 'pop', 'rap']",246dkjvS1zLTtiykXe5h60,Post Malone,88,Country,United States,USA,US,28,True
+87801069,"['art pop', 'pop']",6qqNVTkY8uBg9cP3Jd7DAH,Billie Eilish,88,Country,United States,USA,US,28,True
+15068005,"['atl hip hop', 'hip hop', 'rap', 'southern hip hop', 'trap']",1RyvyyTE3xzB2ZywiAwp0i,Future,88,Country,United States,USA,US,78,True
 2411324,"['classic oklahoma country', 'modern country pop']",40ZNYROS4zLfyyBSs2PGe2,Zach Bryan,88,Country,United States,USA,US,27,True
-7427000,['contemporary country'],4oUHIQIBe0LHzYfvXNW4QM,Morgan Wallen,87,Country,United States,USA,US,26,True
-94182752,['pop'],66CXWjxzNUsdJxJ2JdwvnR,Ariana Grande,87,Country,United States,USA,US,40,True
-5866621,['rap'],0iEtIxbK0KxaSlF7G42ZOp,Metro Boomin,87,Country,United States,USA,US,21,True
-25658350,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']",2YZyLoL8N0Wb9xBt1NhZWg,Kendrick Lamar,87,Country,United States,USA,US,28,True
+7427000,['contemporary country'],4oUHIQIBe0LHzYfvXNW4QM,Morgan Wallen,87,Country,United States,USA,US,30,True
+94182752,['pop'],66CXWjxzNUsdJxJ2JdwvnR,Ariana Grande,87,Country,United States,USA,US,39,True
+5866621,['rap'],0iEtIxbK0KxaSlF7G42ZOp,Metro Boomin,87,Country,United States,USA,US,19,True
+25658350,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']",2YZyLoL8N0Wb9xBt1NhZWg,Kendrick Lamar,87,Country,United States,USA,US,29,True
 31052684,"['chicago rap', 'melodic rap', 'rap']",4MCBfE4596Uoi2O4DtmEMz,Juice WRLD,86,Country,United States,USA,US,34,True
-29743689,"['hip pop', 'pop', 'queens hip hop', 'rap']",0hCNtLu0JehylgoiP8L4Gh,Nicki Minaj,86,Country,United States,USA,US,82,True
-15620446,"['atl hip hop', 'atl trap', 'rap', 'trap']",5f7VJjfbwm532GiveGC0ZK,Lil Baby,86,Country,United States,USA,US,76,True
-21673217,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']",6l3HvQ5sa6mXTsMTB19rO5,J. Cole,86,Country,United States,USA,US,29,True
-50634908,"['modern rock', 'pop', 'rock']",53XhwfbYqKCa1cC15pYq2q,Imagine Dragons,86,Country,United States,USA,US,49,True
-8413267,"['corrido', 'musica mexicana', 'sad sierreno', 'sierreno']",66ihevNkSYNzRAl44dx6jJ,Carin Leon,86,Country,Mexico,MEX,MX,86,True
+29743689,"['hip pop', 'pop', 'queens hip hop', 'rap']",0hCNtLu0JehylgoiP8L4Gh,Nicki Minaj,86,Country,United States,USA,US,69,True
+15620446,"['atl hip hop', 'atl trap', 'rap', 'trap']",5f7VJjfbwm532GiveGC0ZK,Lil Baby,86,Country,United States,USA,US,64,True
+21673217,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']",6l3HvQ5sa6mXTsMTB19rO5,J. Cole,86,Country,United States,USA,US,30,True
+50634908,"['modern rock', 'pop', 'rock']",53XhwfbYqKCa1cC15pYq2q,Imagine Dragons,86,Country,United States,USA,US,50,True
+8413267,"['corrido', 'musica mexicana', 'sad sierreno', 'sierreno']",66ihevNkSYNzRAl44dx6jJ,Carin Leon,86,Country,Mexico,MEX,MX,72,True
