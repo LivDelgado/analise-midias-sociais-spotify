@@ -25,10 +25,14 @@ class StorageManager:
     
     def get_artistas_ja_coletados(self):
         try:
-            if self.artists_df.empty:
-                self.fetch_all_data_from_storage("arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx")
+            with open("arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx", "rb") as outfile:
+                self.artists_df = pd.read_excel(
+                    outfile, index_col=0, sheet_name=Constants.NOME_ABA_ARTISTAS
+                )
 
             artistas = self.artists_df.reset_index().to_dict("records")
+
+            self.artists_df = pd.DataFrame()
             return {artista.get("id"): True for artista in artistas}
         except Exception as error:
             print(error)
