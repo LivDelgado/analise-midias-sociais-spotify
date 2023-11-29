@@ -22,6 +22,17 @@ class StorageManager:
             print("Criando arquivo se não existir")
 
         self.fetch_all_data_from_storage()
+    
+    def get_artistas_ja_coletados(self):
+        try:
+            if self.artists_df.empty:
+                self.fetch_all_data_from_storage("arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx")
+
+            artistas = self.artists_df.reset_index().to_dict("records")
+            return {artista.get("id"): True for artista in artistas}
+        except Exception as error:
+            print(error)
+            return None
 
     def get_artists_from_storage(self):
         try:
@@ -150,9 +161,10 @@ class StorageManager:
         new_lyrics = pd.DataFrame.from_dict(lyrics)
         self.lyrics_df = pd.concat([self.lyrics_df, new_lyrics], ignore_index=True)
 
-    def fetch_all_data_from_storage(self):
+    def fetch_all_data_from_storage(self, file_name = None):
+        file_name = file_name or self.__FILE_NAME
         try:
-            with open(self.__FILE_NAME, "rb") as outfile:
+            with open(file_name, "rb") as outfile:
                 self.artists_df = pd.read_excel(
                     outfile, index_col=0, sheet_name=Constants.NOME_ABA_ARTISTAS
                 )

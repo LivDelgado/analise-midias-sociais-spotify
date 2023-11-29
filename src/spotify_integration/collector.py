@@ -10,11 +10,14 @@ from storage.storage_manager import StorageManager
 class Collector:
     _LIMITE_REQUEST = 50
 
-    def __init__(self, num_planilha: int) -> None:
+    def __init__(self) -> None:
         self.client = SpotifyClient()
         self.public_client = SpotifyPublicClient()
 
-        self.storage_manager = StorageManager(num_planilha)
+        self.storage_manager = StorageManager()
+
+        self.artistas_ja_coletados = self.storage_manager.get_artistas_ja_coletados()
+
 
     def collect_data(self):
         start_time = time.time()
@@ -91,6 +94,10 @@ class Collector:
         tracks_credits = []
 
         raise_exception = False
+
+        if self.artistas_ja_coletados.get(artist.get("id")):
+            print("Artista " + artist.get("name") + " já foi coletado")
+            return
 
         try:
             print("Coletando albums do artista " + artist.get("name"))
