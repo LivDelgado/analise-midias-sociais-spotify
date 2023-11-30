@@ -16,10 +16,11 @@ class StorageManager:
         self.albums_artists_df = pd.DataFrame()
         self.songs_artists_df = pd.DataFrame()
 
+        self.__FILE_NAME = file_name or "arquivos/main_artists_checagem/artists_remaining.xlsx"
+
         with open(self.__FILE_NAME, 'a+'):
             print("Criando arquivo se não existir")
 
-        self.__FILE_NAME = file_name or "arquivos/main_artists_checagem/artists_remaining.xlsx"
 
         self.fetch_all_data_from_storage()
     
