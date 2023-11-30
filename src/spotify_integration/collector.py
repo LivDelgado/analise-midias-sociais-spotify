@@ -16,8 +16,6 @@ class Collector:
 
         self.storage_manager = StorageManager()
 
-        self.artistas_ja_coletados = self.storage_manager.get_artistas_ja_coletados()
-
 
     def collect_data(self):
         start_time = time.time()
@@ -26,7 +24,7 @@ class Collector:
         artists = self.storage_manager.get_artists_from_storage()
 
         if artists is None or not len(artists):
-            artists = self.list_all_artists_from_graph()
+            raise EOFError("arquivo nao encontrado")
 
         print(
             "Tempo para listar artistas --- %s segundos ---"
@@ -68,36 +66,12 @@ class Collector:
 
         print("Tempo de coleta --- %s segundos ---" % (time.time() - start_time))
 
-    def list_all_artists_from_graph(self):
-        todos_os_artistas_do_grafo = {}
-
-        try:
-            top_50_brasil = self.get_artists_from_playlist("37i9dQZEVXbMXbN3EUUhlg")
-            top_50_global = self.get_artists_from_playlist("37i9dQZEVXbMDoHDwVN2tF")
-
-            for artista in (top_50_brasil + top_50_global):
-                todos_os_artistas_do_grafo[artista["id"]] = artista
-
-        except KeyboardInterrupt:
-            print("salvando dados antes de encerrar!")
-
-        finally:
-            print(f"Serão coletados {len(todos_os_artistas_do_grafo.keys())} artistas")
-            self.storage_manager.save_artists(todos_os_artistas_do_grafo.values())
-            self.storage_manager.persist()
-
-        return list(todos_os_artistas_do_grafo.values())
-
     def collect_data_for_single_artist(self, artist):
         albums = []
         tracks = []
         tracks_credits = []
 
         raise_exception = False
-
-        if self.artistas_ja_coletados.get(artist.get("id")):
-            print("Artista " + artist.get("name") + " já foi coletado")
-            return
 
         try:
             print("Coletando albums do artista " + artist.get("name"))

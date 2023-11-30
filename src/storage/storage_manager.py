@@ -6,7 +6,7 @@ from storage.constants import Constants
 
 
 class StorageManager:
-    __FILE_NAME = "arquivos/top50/coleta_dados_spotify.xlsx"
+    __FILE_NAME = "arquivos/main_artists_checagem/artists_remaining.xlsx"
 
     def __init__(self) -> None:
         self.artists_df = pd.DataFrame()
@@ -23,21 +23,6 @@ class StorageManager:
 
         self.fetch_all_data_from_storage()
     
-    def get_artistas_ja_coletados(self):
-        try:
-            artistas = []
-            with open("arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx", "rb") as outfile:
-                artistas_coletados = pd.read_excel(
-                    outfile, index_col=0, sheet_name=Constants.NOME_ABA_ARTISTAS
-                )
-
-                artistas = artistas_coletados.reset_index().to_dict("records")
-
-            return {artista.get("id"): True for artista in artistas}
-        except Exception as error:
-            print(error)
-            return None
-
     def get_artists_from_storage(self):
         try:
             if self.artists_df.empty:
