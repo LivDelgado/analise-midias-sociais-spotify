@@ -22,12 +22,8 @@ class SpreadsheetJoiner:
         self.songs_artists_df = pd.DataFrame()
 
         self._storage_managers = [
-            StorageManager(1),
-            StorageManager(2),
-            StorageManager(3),
-            StorageManager(4),
-            StorageManager(5),
-            StorageManager(6),
+            StorageManager("arquivos/main_artists_dividida/coleta_top_artists_joined.xlsx"),
+            StorageManager("arquivos/main_artists_checagem/artists_remaining.xlsx"),
         ]
 
     def persist_in_single_spreadsheet(self):

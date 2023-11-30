@@ -6,9 +6,7 @@ from storage.constants import Constants
 
 
 class StorageManager:
-    __FILE_NAME = "arquivos/main_artists_checagem/artists_remaining.xlsx"
-
-    def __init__(self) -> None:
+    def __init__(self, file_name = None) -> None:
         self.artists_df = pd.DataFrame()
         self.albums_df = pd.DataFrame()
         self.songs_df = pd.DataFrame()
@@ -20,6 +18,8 @@ class StorageManager:
 
         with open(self.__FILE_NAME, 'a+'):
             print("Criando arquivo se não existir")
+
+        self.__FILE_NAME = file_name or "arquivos/main_artists_checagem/artists_remaining.xlsx"
 
         self.fetch_all_data_from_storage()
     
